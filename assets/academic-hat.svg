@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Academic mortarboard</title>
+  <rect width="64" height="64" rx="13" fill="#153e4d"/>
+  <path d="M18 35v9c8 7 20 7 28 0v-9l-14 7Z" fill="#faf9f5"/>
+  <path d="m8 27 24-13 24 13-24 13Z" fill="#faf9f5"/>
+  <path d="m33 26 19 5v14" fill="none" stroke="#709599" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="52" cy="45" r="2.5" fill="#709599"/>
+  <path d="m50 47-1 6h6l-1-6Z" fill="#709599"/>
+</svg>

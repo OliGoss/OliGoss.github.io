@@ -23,7 +23,7 @@ project:
 website:
   title: Olivier Gossner
   description: "Game theory and the economics of information. Research, publications and teaching by Olivier Gossner."
-  favicon: assets/academic-icon.svg
+  favicon: assets/academic-hat.svg
   search: false
   navbar:
     title: Olivier Gossner
