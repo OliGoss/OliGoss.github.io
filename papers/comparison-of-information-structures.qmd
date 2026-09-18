@@ -1,0 +1,23 @@
+---
+title: "Comparison of Information Structures"
+author: ["Olivier Gossner"]
+byline: "Olivier Gossner"
+year: 2000
+publication: "Games and Economic Behavior 30(1), 44–63 (2000)"
+status: "published"
+paper-record: true
+featured: false
+body-classes: "paper-page"
+google-scholar: true
+citation: {"issued": {"year": 2000}, "type": "article-journal", "container-title": "Games and Economic Behavior", "volume": "30", "issue": "1", "page": "44–63", "doi": "10.1006/game.1998.0706"}
+description: "Comparison of Information Structures — Games and Economic Behavior 30(1), 44–63 (2000)"
+publisher-url: "https://doi.org/10.1006/game.1998.0706"
+---
+
+[← All research](index.qmd){.back-link}
+
+{{< meta publication >}}
+
+::: {.paper-downloads}
+[Published version]({{< meta publisher-url >}}){.btn .btn-outline-primary}
+:::

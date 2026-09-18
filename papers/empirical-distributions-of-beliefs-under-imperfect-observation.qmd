@@ -1,0 +1,27 @@
+---
+title: "Empirical distributions of beliefs under imperfect observation"
+author: ["Olivier Gossner", "Tristan Tomala"]
+byline: "Olivier Gossner and Tristan Tomala"
+year: 2006
+publication: "Mathematics of Operations Research, 31: 13-30, 2006"
+status: "published"
+paper-record: true
+featured: false
+pdf: "/wp-content/uploads/2023/01/empirical_distributions_of_beliefs.pdf"
+pdf-label: "Paper PDF"
+publisher-url: ""
+body-classes: "paper-page"
+google-scholar: true
+citation: {"type": "article-journal", "issued": {"year": 2006}, "container-title": "Mathematics of Operations Research"}
+description: "Empirical distributions of beliefs under imperfect observation — Mathematics of Operations Research, 31: 13-30, 2006"
+abstract: |
+  Let (x_n) be a process with values in a finite set X and law P, and let y_n = f(x_n) be a function of the process. At stage n, the conditional distribution p_n = P[x_n |x_1 … x_{n−1}], element of Pi = Delta(X), is the belief that a perfect observer, who observes the process online, holds on its realization at stage n. A statistician observing the signals y_1 …, y_n holds a belief e_n = P[p_n |x_1,…,x_n] ∈ Delta(Pi) on the possible predictions of the perfect observer. Given X and f, we characterize the set of limits of expected empirical distributions of the process e_n when P ranges over all possible laws of (x_n).
+---
+
+[← All research](index.qmd){.back-link}
+
+{{< meta publication >}}
+
+::: {.paper-downloads}
+[{{< meta pdf-label >}}]({{< meta pdf >}}){.btn .btn-primary}
+:::

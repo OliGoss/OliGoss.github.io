@@ -1,0 +1,46 @@
+[
+  {
+    "arxiv_id": "2609.12149",
+    "url": "https://arxiv.org/abs/2609.12149",
+    "source_file": "papers/comparative-statics-of-information-acquisition-and-risk-aversion.qmd",
+    "title": "Comparative Statics of Information Acquisition and Risk Aversion",
+    "authors": [
+      "Antonio Cabrales",
+      "Gregorio Curello",
+      "Olivier Gossner",
+      "Roberto Serrano"
+    ],
+    "first_submitted": "2026/09/10",
+    "current_version_date": "2026/09/10",
+    "metadata_checked": "2026-09-18",
+    "pdf_strategy": "Link to the unversioned arXiv PDF, which follows subsequent revisions."
+  },
+  {
+    "arxiv_id": "2607.21851",
+    "url": "https://arxiv.org/abs/2607.21851",
+    "source_file": "papers/direct-representations-for-interim-correlated-rationalizability.qmd",
+    "title": "Direct Representations for Interim Correlated Rationalizability",
+    "authors": [
+      "Olivier Gossner",
+      "Rafael Veiel"
+    ],
+    "first_submitted": "2026/07/23",
+    "current_version_date": "2026/07/31",
+    "metadata_checked": "2026-09-18",
+    "pdf_strategy": "Link to the unversioned arXiv PDF, which follows subsequent revisions."
+  },
+  {
+    "arxiv_id": "2606.08297",
+    "url": "https://arxiv.org/abs/2606.08297",
+    "source_file": "papers/strategic-type-spaces.qmd",
+    "title": "Strategic Type Spaces",
+    "authors": [
+      "Olivier Gossner",
+      "Rafael Veiel"
+    ],
+    "first_submitted": "2026/06/06",
+    "current_version_date": "2026/09/09",
+    "metadata_checked": "2026-09-18",
+    "pdf_strategy": "Link to the unversioned arXiv PDF, which follows subsequent revisions."
+  }
+]

@@ -1,0 +1,28 @@
+---
+title: "Performing best when it matters most: evidence from professional tennis"
+author: ["Julio González-Díaz", "Olivier Gossner", "Brian Rogers"]
+byline: "Julio González-Díaz, Olivier Gossner and Brian Rogers"
+year: 2012
+publication: "Journal of Economic Behavior & Organization 84(3), 767–781 (2012)"
+status: "published"
+paper-record: true
+featured: false
+pdf: "/wp-content/uploads/2022/12/Tennis.pdf"
+pdf-label: "Paper PDF"
+publisher-url: "https://doi.org/10.1016/j.jebo.2012.09.021"
+body-classes: "paper-page"
+google-scholar: true
+citation: {"type": "article-journal", "issued": {"year": 2012}, "container-title": "Journal of Economic Behavior & Organization", "volume": "84", "page": "767–781", "doi": "10.1016/j.jebo.2012.09.021", "issue": "3"}
+description: "Performing best when it matters most: evidence from professional tennis — Journal of Economic Behavior & Organization 84(3), 767–781 (2012)"
+abstract: |
+  Stakes affect aggregate performance in a wide variety of settings. At the individual level, we define the critical ability as an agent’s ability to adapt performance to the importance of the situation. We identify individual critical abilities of professional tennis players, relying on point-level data from twelve years of the US Open tournament. We establish persistent heterogeneity in critical abilities. We find a significant statistical relationship between identified critical abilities and overall career success, which validates the identification procedure and suggests that response to pressure is a significant factor for success.
+---
+
+[← All research](index.qmd){.back-link}
+
+{{< meta publication >}}
+
+::: {.paper-downloads}
+[{{< meta pdf-label >}}]({{< meta pdf >}}){.btn .btn-primary}
+[Published version]({{< meta publisher-url >}}){.btn .btn-outline-primary}
+:::

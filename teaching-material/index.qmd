@@ -1,0 +1,33 @@
+---
+title: Teaching
+description: "Lecture notes and course materials in economics and game theory by Olivier Gossner."
+---
+
+::: {.page-intro}
+Lecture notes in economics and game theory, for undergraduate and graduate study.
+:::
+
+::: {.course-section}
+## Introduction aux sciences économiques
+
+École polytechnique · ECO361 · French
+
+Course notes written with Jean-Baptiste Michau and Vincent Rollet.
+
+[Download course notes](/wp-content/uploads/2023/08/ECO361-3.pdf){.btn .btn-primary}
+:::
+
+::: {.course-section}
+## Advanced microeconomics: game theory
+
+Graduate lecture notes · English
+
+```{=html}
+<ul class="resource-list">
+  <li><a href="/wp-content/uploads/2023/10/M2_MicroEconomics_Session_1.pdf">Modeling information and knowledge</a><small>Lecture notes · PDF</small></li>
+  <li><a href="/wp-content/uploads/2023/10/M2_MicroEconomics_Solution-Concepts.pdf">Solution concepts</a><small>Lecture notes · PDF</small></li>
+  <li><a href="/wp-content/uploads/2023/10/M2_MicroEconomics_Value-of-Information.pdf">Value of information</a><small>Lecture notes · PDF</small></li>
+  <li><a href="/wp-content/uploads/2024/01/Ozgadar-correlated-rationalizability.pdf">Rationalizability</a><small>Additional notes by Ozgadar · PDF</small></li>
+</ul>
+```
+:::

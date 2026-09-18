@@ -1,0 +1,27 @@
+---
+title: "Optimal use of communication resources"
+author: ["Olivier Gossner", "Penélope Hernández", "and Abraham Neyman"]
+byline: "Olivier Gossner, Penélope Hernández, and Abraham Neyman"
+year: 2006
+publication: "Econometrica, 74: 1603-1636, 2006"
+status: "published"
+paper-record: true
+featured: false
+pdf: "/wp-content/uploads/2023/01/OptimalUseofCommunicationResources.pdf"
+pdf-label: "Paper PDF"
+publisher-url: ""
+body-classes: "paper-page"
+google-scholar: true
+citation: {"type": "article-journal", "issued": {"year": 2006}, "container-title": "Econometrica"}
+description: "Optimal use of communication resources — Econometrica, 74: 1603-1636, 2006"
+abstract: |
+  We study a repeated game with asymmetric information about a dynamic state of nature. In the course of the game, the better-informed player can communicate some or all of his information to the other. Our model covers costly and/or bounded communication. We characterize the set of equilibrium payoffs and contrast these with the communication equilibrium payoffs, which by definition entail no communication costs.
+---
+
+[← All research](index.qmd){.back-link}
+
+{{< meta publication >}}
+
+::: {.paper-downloads}
+[{{< meta pdf-label >}}]({{< meta pdf >}}){.btn .btn-primary}
+:::

@@ -1,0 +1,29 @@
+---
+title: "The value of information in zero-sum games"
+author: ["Olivier Gossner", "Jean-François Mertens"]
+byline: "Olivier Gossner and Jean-François Mertens"
+year: 2020
+publication: "Working paper, June 2020 version"
+status: "working"
+paper-record: true
+featured: false
+pdf: "/wp-content/uploads/2022/12/ValueofInfo2020.pdf"
+pdf-label: "Paper PDF"
+publisher-url: ""
+body-classes: "paper-page"
+google-scholar: true
+citation: {"type": "report", "issued": {"year": 2020}}
+description: "The value of information in zero-sum games — working paper, June 2020 version"
+abstract: |
+  We study the description and value of information in zero-sum games. We define a series of informational relations between information schemes, and show that informational equivalence classes are captured by canonical information structures. Moreover, two information schemes induce the same value in every game if and only if they are informationally equivalent. We prove the existence of a revealing game in which unique optimal strategies are homeomorphic to canonical types.
+---
+
+[← All research](index.qmd){.back-link}
+
+{{< meta publication >}}
+
+::: {.paper-downloads}
+[{{< meta pdf-label >}}]({{< meta pdf >}}){.btn .btn-primary}
+:::
+
+The downloadable manuscript is dated June 2020.

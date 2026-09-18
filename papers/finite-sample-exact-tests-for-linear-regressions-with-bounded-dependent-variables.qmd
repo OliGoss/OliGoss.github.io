@@ -1,0 +1,29 @@
+---
+title: "Finite-sample exact tests for linear regressions with bounded dependent variables"
+author: ["Olivier Gossner", "Karl H. Schlag"]
+byline: "Olivier Gossner and Karl H. Schlag"
+year: 2013
+publication: "Journal of Econometrics 177(1), 75–84 (2013)"
+status: "published"
+paper-record: true
+featured: false
+pdf: "/wp-content/uploads/2022/12/exact_linear_regressions-.pdf"
+pdf-label: "Paper PDF"
+publisher-url: "https://doi.org/10.1016/j.jeconom.2013.06.003"
+body-classes: "paper-page"
+google-scholar: true
+citation: {"type": "article-journal", "issued": {"year": 2013}, "container-title": "Journal of Econometrics", "volume": "177", "issue": "1", "page": "75–84", "doi": "10.1016/j.jeconom.2013.06.003"}
+description: "Finite-sample exact tests for linear regressions with bounded dependent variables — Journal of Econometrics 177(1), 75–84 (2013)"
+abstract: |
+  We introduce tests for finite-sample linear regressions with heteroskedastic errors. The tests are exact, i.e., they have guaranteed type I error probabilities when bounds are known on the range of the dependent variable, without any assumptions about the noise structure. We provide upper bounds on probability of type II errors, and apply the tests to empirical data.
+---
+
+[← All research](index.qmd){.back-link}
+
+{{< meta publication >}}
+
+::: {.paper-downloads}
+[{{< meta pdf-label >}}]({{< meta pdf >}}){.btn .btn-primary}
+[Published version]({{< meta publisher-url >}}){.btn .btn-outline-primary}
+:::
+

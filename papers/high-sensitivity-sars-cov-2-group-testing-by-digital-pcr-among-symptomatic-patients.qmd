@@ -1,0 +1,32 @@
+---
+title: "High-sensitivity SARS-CoV-2 group testing by digital PCR among symptomatic patients in hospital settings"
+author: ["Alexandra Martin", "Alexandre Storto", "Quentin Le Hingrat", "Gilles Collin", "Barbara André", "Allison Mallory", "Rémi Dangla", "Diane Descamps", "Benoit Visseaux", "Olivier Gossner"]
+byline: "Alexandra Martin, Alexandre Storto, Quentin Le Hingrat, Gilles Collin, Barbara André, Allison Mallory, Rémi Dangla, Diane Descamps, Benoit Visseaux and Olivier Gossner"
+year: 2021
+publication: "Journal of Clinical Virology 141, 104895 (2021)"
+status: "published"
+paper-record: true
+featured: false
+pdf: "/wp-content/uploads/2022/12/High-sensititvity.pdf"
+pdf-label: "Paper PDF"
+publisher-url: "https://doi.org/10.1016/j.jcv.2021.104895"
+body-classes: "paper-page"
+google-scholar: true
+citation: {"type": "article-journal", "issued": {"year": 2021}, "container-title": "Journal of Clinical Virology", "volume": "141", "page": "104895", "doi": "10.1016/j.jcv.2021.104895"}
+description: "High-sensitivity SARS-CoV-2 group testing by digital PCR among symptomatic patients in hospital settings — Journal of Clinical Virology 141, 104895 (2021)"
+abstract: |
+  Background: Worldwide demand for SARS-CoV-2 RT-PCR testing is still high as testing remains central to follow the disease spread and vaccine efficacy. Group testing has been proposed as a solution to expand testing capabilities but sensitivity concerns may limit its impact on the management of the pandemic. Digital PCR (RT-dPCR) has been shown to be highly sensitive and could help by providing larger testing capabilities without compromising sensitivity.
+  
+  Methods: We implemented RT-dPCR based COVID-19 group testing on a commercially available system and assay (naica® system from Stilla Technologies) and investigated the sensitivity of the method in real life conditions of a university hospital in Paris, France, in May 2020. We tested the protocol in a direct comparison with reference RT-PCR testing on 448 samples split into groups of 8, 16 and 32 samples for RT-dPCR analysis.
+  
+  Results: Individual RT-PCR testing identified 25/448 positive samples. Using 56 groups of 8, RT-dPCR identified 23 groups as positive, corresponding to 26 positive samples by individual PCR (positive percentage agreement 95.2% [95% confidence interval: 76.2-99.9%]) and including 2 samples not detected by individual RT-PCR but confirmed positive by further investigation. 15 of 28 groups of 16 tested positive, corresponding to 25 positive samples by individual PCR (positive percentage agreement 87.5% [95% confidence interval: 61.7-98.4%]). 14 groups of 32 were fully concordant with individual PCR testing but will need to be confirmed on larger datasets.
+---
+
+[← All research](index.qmd){.back-link}
+
+{{< meta publication >}}
+
+::: {.paper-downloads}
+[{{< meta pdf-label >}}]({{< meta pdf >}}){.btn .btn-primary}
+[Published version]({{< meta publisher-url >}}){.btn .btn-outline-primary}
+:::

@@ -1,0 +1,18 @@
+---
+title: Selected media
+description: "Selected press contributions and coverage featuring Olivier Gossner."
+---
+
+::: {.page-intro}
+Selected contributions and coverage, from economic policy to the public use of information.
+:::
+
+```{=html}
+<ul class="resource-list">
+<li><a href="/wp-content/uploads/2023/06/Et-si-on-gerait-les-ressources-a-lechelle-mondiale-.pdf">Et si on gérait les ressources à l’échelle mondiale ?</a><small>Le Figaro Vox · 19 June 2023 · French · PDF</small></li>
+<li><a href="/wp-content/uploads/2023/06/Des-patates-et-des-vaccins-%E2%80%93-la-tribune-dOlivier-Gossner-%E2%80%93-Politique-LOpinion-copy.pdf">Des patates et des vaccins</a><small>L’Opinion · 7 January 2021 · French · PDF</small></li>
+<li><a href="/wp-content/uploads/2023/06/LeMondeTestsGroupes.pdf">Nous pouvons accroître notre capacité de dépistage sans attendre la fabrication de nouveaux tests</a><small>Le Monde · 1 April 2020 · French · PDF</small></li>
+<li><a href="/wp-content/uploads/2023/06/Testing-people-in-groups-would-speed-the-revival-of-the-economy-The-Washington-Post.pdf">A temporary coronavirus testing fix: Use each kit on 50 people at a time</a><small>The Washington Post · 31 March 2020 · English · PDF</small></li>
+<li>Brexit, le temps des négociations<small>Les Échos · 27 July 2016 · French</small></li>
+</ul>
+```

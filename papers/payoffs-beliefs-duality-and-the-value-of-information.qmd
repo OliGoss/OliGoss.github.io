@@ -1,0 +1,27 @@
+---
+title: "Payoffs-beliefs duality and the value of information"
+author: ["Michel de Lara", "Olivier Gossner"]
+byline: "Michel de Lara and Olivier Gossner"
+year: 2020
+publication: "SIAM Journal on Optimization, 30(1), 464-489, 2020."
+status: "published"
+paper-record: true
+featured: false
+pdf: "/wp-content/uploads/2022/12/payoff-beliefs-duality.pdf"
+pdf-label: "Paper PDF"
+publisher-url: ""
+body-classes: "paper-page"
+google-scholar: true
+citation: {"type": "article-journal", "issued": {"year": 2020}, "container-title": "SIAM Journal on Optimization"}
+description: "Payoffs-beliefs duality and the value of information — SIAM Journal on Optimization, 30(1), 464-489, 2020."
+abstract: |
+  In decision problems under incomplete information, actions (identified to payoff vectors indexed by states of nature) and beliefs are naturally paired by bilinear duality. We exploit this duality to analyze the value of information, using concepts and tools from convex analysis. We define the value function as the support function of the set of available actions: the subdifferential at a belief is the set of optimal actions at this belief; the set of beliefs at which an action is optimal is the normal cone of the set of available actions at this point. Our main results are 1) a necessary and sufficient condition for positive value of information 2) global estimates of the value of information of any information structure from local properties of the value function and of the set of optimal actions taken at the prior belief only. We apply our results to the marginal value of information at the null, that is, when the agent is close to receiving no information at all, and we provide conditions under which the marginal value of information is infinite, null, or positive and finite.
+---
+
+[← All research](index.qmd){.back-link}
+
+{{< meta publication >}}
+
+::: {.paper-downloads}
+[{{< meta pdf-label >}}]({{< meta pdf >}}){.btn .btn-primary}
+:::

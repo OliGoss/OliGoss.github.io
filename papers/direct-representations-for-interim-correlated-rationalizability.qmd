@@ -1,0 +1,39 @@
+---
+title: "Direct Representations for Interim Correlated Rationalizability"
+author: ["Olivier Gossner", "Rafael Veiel"]
+byline: "Olivier Gossner and Rafael Veiel"
+year: 2026
+publication: "arXiv:2607.21851, 2026"
+status: "working"
+paper-record: true
+featured: false
+pdf: "https://arxiv.org/pdf/2607.21851"
+pdf-label: "PDF"
+arxiv-url: "https://arxiv.org/abs/2607.21851"
+body-classes: "paper-page"
+google-scholar: true
+citation: {"type": "report", "issued": {"year": 2026}, "publisher": "arXiv", "number": "2607.21851", "doi": "10.48550/arXiv.2607.21851", "url": "https://arxiv.org/abs/2607.21851"}
+description: "Direct Representations for Interim Correlated Rationalizability — Olivier Gossner, Rafael Veiel"
+abstract: |
+  We study direct representations of information for interim correlated rationalizability. For a fixed
+  finite payoff structure, each type induces a hierarchy of surviving action sets. Pushing the common
+  prior through this map projects the information structure onto the solution concept's output
+  language. When best-response regions are convex, this representation is direct: the solution concept
+  applied to the hierarchy seen as a type is the identity. The induced distributions are characterized
+  by level-by-level obedience constraints. Terminal ICR sets alone do not have this property. For
+  arbitrary finite payoff structures, we refine each hierarchy level with a tag identifying a convex
+  cell of its best-response region. Augmented hierarchies provide a direct representation and project
+  onto the ordinary hierarchy. Full augmented hierarchies may form a continuum, but retaining only the
+  tags at the boundaries of constant stretches of the ordinary hierarchy yields an exact countable
+  representation with finitely many obedience constraints per type. Finite-type models are dense in
+  terminal rationalizability outcome distributions.
+---
+
+[← All research](index.qmd){.back-link}
+
+{{< meta publication >}}
+
+::: {.paper-downloads}
+[{{< meta pdf-label >}}]({{< meta pdf >}}){.btn .btn-primary}
+[arXiv record]({{< meta arxiv-url >}})
+:::

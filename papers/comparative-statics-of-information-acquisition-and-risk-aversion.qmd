@@ -1,0 +1,38 @@
+---
+title: "Comparative Statics of Information Acquisition and Risk Aversion"
+author: ["Antonio Cabrales", "Gregorio Curello", "Olivier Gossner", "Roberto Serrano"]
+byline: "Antonio Cabrales, Gregorio Curello, Olivier Gossner and Roberto Serrano"
+year: 2026
+publication: "arXiv:2609.12149, 2026"
+status: "working"
+paper-record: true
+featured: false
+pdf: "https://arxiv.org/pdf/2609.12149"
+pdf-label: "PDF"
+arxiv-url: "https://arxiv.org/abs/2609.12149"
+body-classes: "paper-page"
+google-scholar: true
+citation: {"type": "report", "issued": {"year": 2026}, "publisher": "arXiv", "number": "2609.12149", "doi": "10.48550/arXiv.2609.12149", "url": "https://arxiv.org/abs/2609.12149"}
+description: "Comparative Statics of Information Acquisition and Risk Aversion — Antonio Cabrales, Gregorio Curello, Olivier Gossner, Roberto Serrano"
+abstract: |
+  We study how willingness to pay for information depends on risk aversion when a decision maker faces
+  background risk and can acquire information before choosing from a menu of assets. We distinguish
+  investment menus, whose payoffs are procyclical with background wealth, from insurance menus, whose
+  payoffs are countercyclical. Our main results show that the interaction between asset cyclicality
+  and the tail geometry of background risk determines the direction of the comparative statics. When
+  the density of background risk is log-concave, willingness to pay for information decreases with
+  risk aversion for investment menus, whereas with downward-log-convex background risk it increases
+  with risk aversion for insurance menus. The proofs compare the distributions of terminal wealth with
+  and without information and develop new aggregation arguments for state-dependent single-crossing
+  comparisons. We also construct reversals under strictly log-convex tails for investment menus and
+  super-exponential left tails for insurance menus.
+---
+
+[← All research](index.qmd){.back-link}
+
+{{< meta publication >}}
+
+::: {.paper-downloads}
+[{{< meta pdf-label >}}]({{< meta pdf >}}){.btn .btn-primary}
+[arXiv record]({{< meta arxiv-url >}})
+:::

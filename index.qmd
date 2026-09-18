@@ -1,0 +1,39 @@
+---
+title: "Olivier Gossner"
+pagetitle: "Olivier Gossner"
+description: "Olivier Gossner — CNRS, CREST, École polytechnique and London School of Economics. Research in game theory and the economics of information."
+title-block-style: default
+body-classes: home-page
+---
+
+::: {.academic-profile}
+::: {.profile-details}
+# Olivier Gossner
+
+::: {.affiliations}
+[CNRS · CREST](https://crest.science/user/olivier-gossner/)  
+[École polytechnique](https://www.polytechnique.edu/annuaire/gossner-olivier)  
+[London School of Economics](https://www.lse.ac.uk/people/olivier-gossner)
+:::
+
+[Curriculum vitae](cv/index.qmd)
+:::
+
+::: {.profile-portrait}
+![Olivier Gossner](assets/olivier-gossner.jpeg){width=180 height=240}
+:::
+:::
+
+## Research
+
+Game theory and the economics of information, including repeated games, bounded rationality, and applications to finance and insurance.
+
+[Working papers and publications](papers/index.qmd)
+
+[SInfoNiA](sinfonia/index.qmd) — ERC Advanced Grant, awarded in 2024.
+
+## Contact {#contact}
+
+[ogossner@gmail.com](mailto:ogossner@gmail.com)
+
+[ORCID](https://orcid.org/0000-0003-3950-0208) · [RePEc](https://ideas.repec.org/e/pgo39.html) · [Mastodon](https://econtwitter.net/@o)

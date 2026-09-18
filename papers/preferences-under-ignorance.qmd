@@ -1,0 +1,27 @@
+---
+title: "Preferences under ignorance"
+author: ["Olivier Gossner", "Christoph Kuzmics"]
+byline: "Olivier Gossner and Christoph Kuzmics"
+year: 2019
+publication: "International Economic Review, 60: 241-257, 2019"
+status: "published"
+paper-record: true
+featured: false
+pdf: "/wp-content/uploads/2022/12/PreferencesUnverIgnorance.pdf"
+pdf-label: "Paper PDF"
+publisher-url: ""
+body-classes: "paper-page"
+google-scholar: true
+citation: {"type": "article-journal", "issued": {"year": 2019}, "container-title": "International Economic Review"}
+description: "Preferences under ignorance — International Economic Review, 60: 241-257, 2019"
+abstract: |
+  A decision maker (DM) makes choices from different sets of alternatives. The DM is initially ignorant of the payoff associated with each alternative, and learns these payoffs only after a large number of choices have been made. We show that, in the presence of an outside option, once payoffs are learned, the optimal choice rule from sets of alternatives can be rationalized by a DM with strict preferences over all alternatives. Under this model, the DM has preferences for preferences while being ignorant of what preferences are “right”.
+---
+
+[← All research](index.qmd){.back-link}
+
+{{< meta publication >}}
+
+::: {.paper-downloads}
+[{{< meta pdf-label >}}]({{< meta pdf >}}){.btn .btn-primary}
+:::

@@ -1,0 +1,27 @@
+---
+title: "Unintended consequences of German stock delisting legislation"
+author: ["Olivier Gossner", "Michael Florig"]
+byline: "Olivier Gossner and Michael Florig"
+year: 2023
+publication: "CREST WP, 2023"
+status: "working"
+paper-record: true
+featured: false
+pdf: "/wp-content/uploads/2023/01/WP01GOSSNER.pdf"
+pdf-label: "Paper PDF"
+publisher-url: ""
+body-classes: "paper-page"
+google-scholar: true
+citation: {"type": "report", "issued": {"year": 2023}, "container-title": "CREST WP"}
+description: "Unintended consequences of German stock delisting legislation — CREST WP, 2023"
+abstract: |
+  The German stock exchange act enables a company’s management to delist the shares without shareholder consent, provided a sponsor of the delisting offers to acquire outstanding shares at a price equal to at least a six month average of the share price. We capture the economic impact of this legislation in a model in which management has the option to delist the stock after public release of information. Delistings are likely to follow positive news on the asset value, which depresses the stock value even before information is released. This makes the option to delist even more attractive and generates a downwards self-reinforcing loop on stock price. Such unintended consequences of the legislation could be mitigated via mandatory shareholder consent, similar to the current French or UK legislation, by giving minority shareholders an appraisal right as in the US, or by requiring an independent expert evaluation.
+---
+
+[← All research](index.qmd){.back-link}
+
+{{< meta publication >}}
+
+::: {.paper-downloads}
+[{{< meta pdf-label >}}]({{< meta pdf >}}){.btn .btn-primary}
+:::

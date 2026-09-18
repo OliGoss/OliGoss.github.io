@@ -1,0 +1,69 @@
+---
+title: Research
+description: "Research by Olivier Gossner on game theory, information, bounded rationality, and finance."
+listing:
+  - id: working-papers
+    contents: "*.qmd"
+    template: ../_templates/publications.ejs.md
+    template-params:
+      mode: working
+    sort: "year desc"
+    max-items: 100
+  - id: chapters
+    contents: "*.qmd"
+    template: ../_templates/publications.ejs.md
+    template-params:
+      mode: chapter
+    sort: "year desc"
+    max-items: 100
+  - id: editorial-work
+    contents: "*.qmd"
+    template: ../_templates/publications.ejs.md
+    template-params:
+      mode: editorial
+    sort: "year desc"
+    max-items: 100
+  - id: earlier-working-papers
+    contents: "*.qmd"
+    template: ../_templates/publications.ejs.md
+    template-params:
+      mode: archived
+    sort: "year desc"
+    max-items: 100
+  - id: publications
+    contents: "*.qmd"
+    template: ../_templates/publications.ejs.md
+    template-params:
+      mode: published
+    sort: "year desc"
+    max-items: 100
+---
+
+::: {.research-jump}
+[Working papers](#working-papers-section) · [Publications](#publications-section) · [Chapters](#chapters-section) · [Editorial work](#editorial-section) · [Earlier working papers](#earlier-working-papers-section)
+:::
+
+## Working papers {#working-papers-section}
+
+::: {#working-papers}
+:::
+
+## Publications {#publications-section}
+
+::: {#publications}
+:::
+
+## Chapters {#chapters-section}
+
+::: {#chapters}
+:::
+
+## Editorial work {#editorial-section}
+
+::: {#editorial-work}
+:::
+
+## Earlier working papers {#earlier-working-papers-section}
+
+::: {#earlier-working-papers}
+:::

@@ -1,0 +1,27 @@
+---
+title: "Rationalizable Outcome Distributions: A Markov Characterization"
+author: ["Olivier Gossner", "Rafael Veiel"]
+byline: "Olivier Gossner and Rafael Veiel"
+year: 2022
+publication: "SSRN preprint, 2022"
+status: "working"
+paper-record: true
+featured: false
+pdf: "/wp-content/uploads/2023/01/rationalizable.pdf"
+pdf-label: "Paper PDF"
+publisher-url: ""
+body-classes: "paper-page"
+google-scholar: true
+citation: {"type": "report", "issued": {"year": 2022}, "container-title": "SSRN preprint"}
+description: "Rationalizable Outcome Distributions: A Markov Characterization — SSRN preprint, 2022"
+abstract: |
+  We study (interim correlated) rationalizability in a game with incomplete information. We characterize the recursive set of possible rationalizable hierarchies through a finite automaton, and provide a revelation principle that characterizes the distributions over these hierarchies that arise from any common prior. We show that a simple and finitely parametrized class of information structures, Stationary Common Automaton Markov Priors (SCAMP), is sufficient to generate every outcome distribution induced by general common prior information structures. Using this result, we characterize the set of rationalizable distributions as a convex polyhedron.
+---
+
+[← All research](index.qmd){.back-link}
+
+{{< meta publication >}}
+
+::: {.paper-downloads}
+[{{< meta pdf-label >}}]({{< meta pdf >}}){.btn .btn-primary}
+:::

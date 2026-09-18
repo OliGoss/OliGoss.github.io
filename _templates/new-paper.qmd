@@ -1,0 +1,28 @@
+---
+title: "Title of the new paper"
+author: ["Olivier Gossner", "Coauthor Name"]
+byline: "Olivier Gossner and Coauthor Name"
+year: 2026
+publication: "Working paper, 2026"
+status: "working"
+paper-record: true
+featured: false
+pdf: "/assets/papers/new-paper.pdf"
+pdf-label: "Paper PDF"
+publisher-url: ""
+body-classes: "paper-page"
+google-scholar: true
+citation:
+  type: report
+  issued: {year: 2026}
+abstract: |
+  Write or paste the abstract here. Keep the two spaces at the start of each line.
+---
+
+[← All research](index.qmd){.back-link}
+
+{{< meta publication >}}
+
+::: {.paper-downloads}
+[{{< meta pdf-label >}}]({{< meta pdf >}}){.btn .btn-primary}
+:::

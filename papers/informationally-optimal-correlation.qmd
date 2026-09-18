@@ -1,0 +1,27 @@
+---
+title: "Informationally optimal correlation"
+author: ["Olivier Gossner", "Rida Laraki", "Tristan Tomala"]
+byline: "Olivier Gossner, Rida Laraki and Tristan Tomala"
+year: 2009
+publication: "Mathematical Programming series B, 116: 147-172, 2009"
+status: "published"
+paper-record: true
+featured: false
+pdf: "/wp-content/uploads/2023/01/informationally_optimal_correlation.pdf"
+pdf-label: "Paper PDF"
+publisher-url: ""
+body-classes: "paper-page"
+google-scholar: true
+citation: {"type": "article-journal", "issued": {"year": 2009}, "container-title": "Mathematical Programming series B"}
+description: "Informationally optimal correlation — Mathematical Programming series B, 116: 147-172, 2009"
+abstract: |
+  This papers studies an optimization problem under entropy constraints arising from repeated games with signals. We provide general properties of solutions and a full characterization of optimal solutions for 2 × 2 sets of actions. As an application we compute the min max values of some repeated games with signals.
+---
+
+[← All research](index.qmd){.back-link}
+
+{{< meta publication >}}
+
+::: {.paper-downloads}
+[{{< meta pdf-label >}}]({{< meta pdf >}}){.btn .btn-primary}
+:::

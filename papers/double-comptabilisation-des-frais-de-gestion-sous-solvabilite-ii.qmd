@@ -1,0 +1,27 @@
+---
+title: "Double comptabilisation des frais de gestion sous Solvabilité II"
+author: ["Olivier Gossner", "Michael Florig"]
+byline: "Olivier Gossner et Michael Florig"
+year: 2023
+publication: "Revue Risques, 2023"
+status: "published"
+paper-record: true
+featured: false
+pdf: "/wp-content/uploads/2022/12/S-2-frais-de-gestion-projet-Risques.docx.pdf"
+pdf-label: "Paper PDF"
+publisher-url: ""
+body-classes: "paper-page"
+google-scholar: true
+citation: {"type": "article-journal", "issued": {"year": 2023}, "container-title": "Revue Risques"}
+description: "Double comptabilisation des frais de gestion sous Solvabilité II — Revue Risques, 2023"
+abstract: |
+  Nous mettons en évidence une double comptabilisation des frais de gestion des actifs assurantiels dans l’interprétation majoritaire actuelle de la directive Solvabilité II. Cette double comptabilisation conduit à des provisions injustifiées d’un montant total que nous estimons être de l’ordre de 100 milliards d’euros, et à une distorsion de l’investissement de l’épargne qui pénalise considérablement l’investissement productif et de long terme. Nous exposons ici les données du problème, les moyens de le résoudre et l’impact positif significatif qu’une correction entraînerait pour l’investissement productif français et européen.
+---
+
+[← All research](index.qmd){.back-link}
+
+{{< meta publication >}}
+
+::: {.paper-downloads}
+[{{< meta pdf-label >}}]({{< meta pdf >}}){.btn .btn-primary}
+:::

@@ -1,0 +1,27 @@
+---
+title: "Informational cascades elicit private information"
+author: ["Olivier Gossner", "Nicolas Melissas"]
+byline: "Olivier Gossner and Nicolas Melissas"
+year: 2006
+publication: "International Economic Review, 47: 297-325, 2006"
+status: "published"
+paper-record: true
+featured: false
+pdf: "/wp-content/uploads/2023/01/informational-cascades-elicit-private-information.pdf"
+pdf-label: "Paper PDF"
+publisher-url: ""
+body-classes: "paper-page"
+google-scholar: true
+citation: {"type": "article-journal", "issued": {"year": 2006}, "container-title": "International Economic Review"}
+description: "Informational cascades elicit private information — International Economic Review, 47: 297-325, 2006"
+abstract: |
+  We introduce cheap talk in a dynamic investment model with information externalities. We first show how social learning adversely affects the credibility of cheap talk messages. Next, we show how an informational cascade makes truthtelling incentive compatible. A separating equilibrium only exists for high-surplus projects. Both an investment subsidy and an investment tax can increase welfare. The more precise the sender’s information, the higher her incentives to truthfully reveal her private information.
+---
+
+[← All research](index.qmd){.back-link}
+
+{{< meta publication >}}
+
+::: {.paper-downloads}
+[{{< meta pdf-label >}}]({{< meta pdf >}}){.btn .btn-primary}
+:::

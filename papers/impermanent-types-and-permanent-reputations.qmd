@@ -1,0 +1,27 @@
+---
+title: "Impermanent types and permanent reputations"
+author: ["Olivier Gossner", "Mehmet Ekmekci", "Andrea Wilson"]
+byline: "Olivier Gossner, Mehmet Ekmekci, Andrea Wilson"
+year: 2012
+publication: "Journal of Economic Theory, 147: 162-178, 2012"
+status: "published"
+paper-record: true
+featured: false
+pdf: "/wp-content/uploads/2022/12/impermanent-types-JET.pdf"
+pdf-label: "Paper PDF"
+publisher-url: ""
+body-classes: "paper-page"
+google-scholar: true
+citation: {"type": "article-journal", "issued": {"year": 2012}, "container-title": "Journal of Economic Theory"}
+description: "Impermanent types and permanent reputations — Journal of Economic Theory, 147: 162-178, 2012"
+abstract: |
+  We study the impact of unobservable stochastic replacements for the long-run player in the classical reputation model with a long-run player and a series of short-run players. We provide explicit lower bounds on the Nash equilibrium payoffs of a long-run player, both ex-ante and following any positive probability history. Under general conditions on the convergence rates of the discount factor to one and of the rate of replacement to zero, both bounds converge to the Stackelberg payoff if the type space is sufficiently rich. These limiting conditions hold in particular if the game is played very frequently.
+---
+
+[← All research](index.qmd){.back-link}
+
+{{< meta publication >}}
+
+::: {.paper-downloads}
+[{{< meta pdf-label >}}]({{< meta pdf >}}){.btn .btn-primary}
+:::

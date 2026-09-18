@@ -1,0 +1,28 @@
+---
+title: "Entropy and the value of information for investors"
+author: ["Antonio Cabrales", "Olivier Gossner", "Roberto Serrano"]
+byline: "Antonio Cabrales, Olivier Gossner, Roberto Serrano"
+year: 2013
+publication: "American Economic Review 103(1), 360–377 (2013)"
+status: "published"
+paper-record: true
+featured: 3
+pdf: "/wp-content/uploads/2022/12/Entropy_Investors.pdf"
+pdf-label: "Paper PDF"
+publisher-url: "https://doi.org/10.1257/aer.103.1.360"
+body-classes: "paper-page"
+google-scholar: true
+citation: {"type": "article-journal", "issued": {"year": 2013}, "container-title": "American Economic Review", "volume": "103", "page": "360–377", "doi": "10.1257/aer.103.1.360", "issue": "1"}
+description: "Entropy and the value of information for investors — American Economic Review 103(1), 360–377 (2013)"
+abstract: |
+  Consider any investor who fears ruin when facing any set of investments that satisfy no-arbitrage. Before investing, he can purchase information about the state of nature in the form of an information structure. Given his prior, information structure α investment dominates information structure β if, whenever he is willing to buy β at some price, he is also willing to buy α at that price. We show that this informativeness ordering is complete and is represented by the decrease in entropy of his beliefs, regardless of his preferences, initial wealth, or investment problem. We also show that no prior-independent informativeness ordering based on similar premises exists.
+---
+
+[← All research](index.qmd){.back-link}
+
+{{< meta publication >}}
+
+::: {.paper-downloads}
+[{{< meta pdf-label >}}]({{< meta pdf >}}){.btn .btn-primary}
+[Published version]({{< meta publisher-url >}}){.btn .btn-outline-primary}
+:::

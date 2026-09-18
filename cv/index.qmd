@@ -1,0 +1,24 @@
+---
+title: Curriculum vitae
+description: "Curriculum vitae and institutional profiles of Olivier Gossner."
+---
+
+::: {.article-body}
+::: {.page-intro}
+Academic appointments, publications, teaching, and service.
+:::
+
+[Download CV](/cv.pdf){.btn .btn-primary}
+
+[Current document: January 2024 · PDF]{.cv-date}
+
+## Institutional profiles
+
+- [CNRS–CREST](https://crest.science/user/olivier-gossner/)
+- [École polytechnique](https://www.polytechnique.edu/annuaire/gossner-olivier)
+- [London School of Economics](https://www.lse.ac.uk/people/olivier-gossner)
+
+## Research identifiers
+
+[ORCID](https://orcid.org/0000-0003-3950-0208) · [RePEc](https://ideas.repec.org/e/pgo39.html)
+:::

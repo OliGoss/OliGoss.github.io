@@ -1,0 +1,27 @@
+---
+title: "Dynamiques de Communication"
+author: ["Olivier Gossner", "Penélope Hernández", "Abraham Neyman"]
+byline: "Olivier Gossner, Penélope Hernández, Abraham Neyman"
+year: 2004
+publication: "Revue Économique, 55: 509-516,2004"
+status: "published"
+paper-record: true
+featured: false
+pdf: "/wp-content/uploads/2023/01/DynamiquesdeCommunication.pdf"
+pdf-label: "Paper PDF"
+publisher-url: ""
+body-classes: "paper-page"
+google-scholar: true
+citation: {"type": "article-journal", "issued": {"year": 2004}, "container-title": "Revue Économique"}
+description: "Dynamiques de Communication — Revue Économique, 55: 509-516,2004"
+abstract: |
+  Nous introduisons un modèle de communication avec état de la nature dynamique. En utilisant l’entropie comme mesure d’information, nous caractérisons les distributions empiriques espérées sur les actions qui sont réalisables. Nous présentons des applications aux jeux avec et sans intérêts communs.
+---
+
+[← All research](index.qmd){.back-link}
+
+{{< meta publication >}}
+
+::: {.paper-downloads}
+[{{< meta pdf-label >}}]({{< meta pdf >}}){.btn .btn-primary}
+:::

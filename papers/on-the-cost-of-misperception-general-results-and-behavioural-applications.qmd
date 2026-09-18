@@ -1,0 +1,27 @@
+---
+title: "On the cost of misperception: General results and behavioural applications"
+author: ["Olivier Gossner", "Jakub Steiner"]
+byline: "Olivier Gossner and Jakub Steiner"
+year: 2018
+publication: "Journal of Economic Theory, 177: 816-847, 2018"
+status: "published"
+paper-record: true
+featured: false
+pdf: "/wp-content/uploads/2022/12/optimism_published.pdf"
+pdf-label: "Paper PDF"
+publisher-url: ""
+body-classes: "paper-page"
+google-scholar: true
+citation: {"type": "article-journal", "issued": {"year": 2018}, "container-title": "Journal of Economic Theory"}
+description: "On the cost of misperception: General results and behavioural applications — Journal of Economic Theory, 177: 816-847, 2018"
+abstract: |
+  In a choice model, we characterize the loss induced by misperceptions of payoff- relevant parameters across a distribution of decision problems. When the agent cannot avoid misperceptions but has some control over the distribution of errors, we show that strategies that minimize loss from misperception exhibit systematic biases, akin to some documented in the behavioural and psychological literatures. We include illusion of control, order effect, overprecision, and overweighting of small probabilities as illustrative examples.
+---
+
+[← All research](index.qmd){.back-link}
+
+{{< meta publication >}}
+
+::: {.paper-downloads}
+[{{< meta pdf-label >}}]({{< meta pdf >}}){.btn .btn-primary}
+:::

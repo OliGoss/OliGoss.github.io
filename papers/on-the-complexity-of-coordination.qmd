@@ -1,0 +1,23 @@
+---
+title: "On the Complexity of Coordination"
+author: ["Olivier Gossner", "Penélope Hernández"]
+byline: "Olivier Gossner and Penélope Hernández"
+year: 2003
+publication: "Mathematics of Operations Research 28(1), 127–140 (2003)"
+status: "published"
+paper-record: true
+featured: false
+body-classes: "paper-page"
+google-scholar: true
+citation: {"issued": {"year": 2003}, "type": "article-journal", "container-title": "Mathematics of Operations Research", "volume": "28", "issue": "1", "page": "127–140", "doi": "10.1287/moor.28.1.127.14257"}
+description: "On the Complexity of Coordination — Mathematics of Operations Research 28(1), 127–140 (2003)"
+publisher-url: "https://doi.org/10.1287/moor.28.1.127.14257"
+---
+
+[← All research](index.qmd){.back-link}
+
+{{< meta publication >}}
+
+::: {.paper-downloads}
+[Published version]({{< meta publisher-url >}}){.btn .btn-outline-primary}
+:::

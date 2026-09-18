@@ -1,0 +1,23 @@
+---
+title: "Repeated Communication through the Mechanism “and”"
+author: ["Olivier Gossner", "Nicolas Vieille"]
+byline: "Olivier Gossner and Nicolas Vieille"
+year: 2001
+publication: "International Journal of Game Theory 30(1), 41–60 (2001)"
+status: "published"
+paper-record: true
+featured: false
+body-classes: "paper-page"
+google-scholar: true
+citation: {"issued": {"year": 2001}, "type": "article-journal", "container-title": "International Journal of Game Theory", "volume": "30", "issue": "1", "page": "41–60", "doi": "10.1007/s001820100063"}
+description: "Repeated Communication through the Mechanism “and” — International Journal of Game Theory 30(1), 41–60 (2001)"
+publisher-url: "https://doi.org/10.1007/s001820100063"
+---
+
+[← All research](index.qmd){.back-link}
+
+{{< meta publication >}}
+
+::: {.paper-downloads}
+[Published version]({{< meta publisher-url >}}){.btn .btn-outline-primary}
+:::

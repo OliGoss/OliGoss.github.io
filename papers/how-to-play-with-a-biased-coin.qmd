@@ -1,0 +1,23 @@
+---
+title: "How to Play with a Biased Coin?"
+author: ["Olivier Gossner", "Nicolas Vieille"]
+byline: "Olivier Gossner and Nicolas Vieille"
+year: 2002
+publication: "Games and Economic Behavior 41(2), 206–226 (2002)"
+status: "published"
+paper-record: true
+featured: false
+body-classes: "paper-page"
+google-scholar: true
+citation: {"issued": {"year": 2002}, "type": "article-journal", "container-title": "Games and Economic Behavior", "volume": "41", "issue": "2", "page": "206–226", "doi": "10.1016/S0899-8256(02)00507-9"}
+description: "How to Play with a Biased Coin? — Games and Economic Behavior 41(2), 206–226 (2002)"
+publisher-url: "https://doi.org/10.1016/S0899-8256(02)00507-9"
+---
+
+[← All research](index.qmd){.back-link}
+
+{{< meta publication >}}
+
+::: {.paper-downloads}
+[Published version]({{< meta publisher-url >}}){.btn .btn-outline-primary}
+:::

@@ -1,0 +1,27 @@
+---
+title: "The robustness of incomplete penal codes in repeated interactions"
+author: ["Olivier Gossner"]
+byline: "Olivier Gossner"
+year: 2020
+publication: "CREST Working Paper, 2020"
+status: "working"
+paper-record: true
+featured: false
+pdf: "/wp-content/uploads/2022/12/robust.pdf"
+pdf-label: "Paper PDF"
+publisher-url: ""
+body-classes: "paper-page"
+google-scholar: true
+citation: {"type": "report", "issued": {"year": 2020}, "container-title": "CREST Working Paper"}
+description: "The robustness of incomplete penal codes in repeated interactions — CREST Working Paper, 2020"
+abstract: |
+  We study the robustness of equilibria with regards to small payoff perturbations of the dynamic game. We find that complete penal codes, that specify players’ strategies after every history, have only limited robustness. For some generic games, no complete codes exist that are robust to even arbitrarily small perturbations. We define incomplete penal codes as partial descriptions of equilibrium strategies and introduce a notion of robustness for incomplete penal codes. We prove a Folk Theorem in robust incomplete codes that generates a Folk Theorem in a class of stochastic games.
+---
+
+[← All research](index.qmd){.back-link}
+
+{{< meta publication >}}
+
+::: {.paper-downloads}
+[{{< meta pdf-label >}}]({{< meta pdf >}}){.btn .btn-primary}
+:::

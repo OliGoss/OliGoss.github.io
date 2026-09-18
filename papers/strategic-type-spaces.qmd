@@ -1,0 +1,34 @@
+---
+title: "Strategic Type Spaces"
+author: ["Olivier Gossner", "Rafael Veiel"]
+byline: "Olivier Gossner and Rafael Veiel"
+year: 2026
+publication: "arXiv:2606.08297, 2026"
+status: "working"
+paper-record: true
+featured: false
+pdf: "https://arxiv.org/pdf/2606.08297"
+pdf-label: "PDF"
+arxiv-url: "https://arxiv.org/abs/2606.08297"
+body-classes: "paper-page"
+google-scholar: true
+citation: {"type": "report", "issued": {"year": 2026}, "publisher": "arXiv", "number": "2606.08297", "doi": "10.48550/arXiv.2606.08297", "url": "https://arxiv.org/abs/2606.08297"}
+description: "Strategic Type Spaces — Olivier Gossner, Rafael Veiel"
+abstract: |
+  We provide a strategic foundation for information: in any given game with incomplete information we
+  define strategic quotients as information representations that are sufficient for players to compute
+  best-responses to other players. We prove 1/ existence and essential uniqueness of a minimal
+  strategic quotient called the Strategic Type Space (STS) in which a type is given by an interim
+  correlated rationalizability hierarchy and represents a set of beliefs over other players' types and
+  nature that rationalize this hierarchy and 2/ that the minimal STS has a recursive structure that is
+  captured by a finite automaton.
+---
+
+[← All research](index.qmd){.back-link}
+
+{{< meta publication >}}
+
+::: {.paper-downloads}
+[{{< meta pdf-label >}}]({{< meta pdf >}}){.btn .btn-primary}
+[arXiv record]({{< meta arxiv-url >}})
+:::

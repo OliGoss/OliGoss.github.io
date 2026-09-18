@@ -1,0 +1,30 @@
+---
+title: "Group testing against Covid-19"
+author: ["Christian Gollier", "Olivier Gossner"]
+byline: "Christian Gollier and Olivier Gossner"
+year: 2020
+publication: "Covid Economics 2, 32–42 (8 April 2020)"
+status: "published"
+paper-record: true
+featured: false
+pdf: "/wp-content/uploads/2022/12/GroupTesting.pdf"
+pdf-label: "EconPol brief PDF"
+publisher-url: "https://cepr.org/system/files/publication-files/101354-covid_economics_issue_2.pdf"
+body-classes: "paper-page"
+google-scholar: true
+citation: {"type": "article-journal", "issued": {"year": 2020}, "container-title": "Covid Economics", "issue": "2", "page": "32–42"}
+description: "Group testing against Covid-19 — Covid Economics 2, 32–42 (2020)"
+abstract: |
+  We show how group testing can be used in three applications to multiply the efficiency of tests: estimation of virus prevalence, releasing group to the work force, and testing for individual infectious status. For an infection level around 2%, group testing could potentially allow to save 94% of tests in the first application, 95% in the second, and 85% in the third one.
+---
+
+[← All research](index.qmd){.back-link}
+
+{{< meta publication >}}
+
+::: {.paper-downloads}
+[{{< meta pdf-label >}}]({{< meta pdf >}}){.btn .btn-primary}
+[Published version]({{< meta publisher-url >}}){.btn .btn-outline-primary}
+:::
+
+Also issued as *EconPol Policy Brief*, No. 24 (2020). The downloadable PDF above is the EconPol version; the published-version link opens the complete issue of *Covid Economics*.

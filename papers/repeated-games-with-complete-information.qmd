@@ -1,0 +1,32 @@
+---
+title: "Repeated Games with Complete Information"
+author: ["Olivier Gossner", "Tristan Tomala"]
+byline: "Olivier Gossner and Tristan Tomala"
+year: 2009
+publication: "Encyclopedia of Complexity and Systems Science (2009); subsequent editions in 2012 and 2020"
+status: "chapter"
+paper-record: true
+featured: false
+body-classes: "paper-page"
+google-scholar: true
+citation: {"issued": {"year": 2009}, "type": "chapter", "container-title": "Encyclopedia of Complexity and Systems Science"}
+description: "Repeated Games with Complete Information — Encyclopedia of Complexity and Systems Science (2009); subsequent editions in 2012 and 2020"
+pdf: "/wp-content/uploads/2017/01/RG_3dec07.pdf"
+pdf-label: "Author draft (2007)"
+---
+
+[← All research](index.qmd){.back-link}
+
+{{< meta publication >}}
+
+::: {.paper-downloads}
+[{{< meta pdf-label >}}]({{< meta pdf >}}){.btn .btn-primary}
+:::
+
+## Editions
+
+- **2009:** *Encyclopedia of Complexity and Systems Science*, Springer. Listed as “Repeated Games” in the [January 2024 CV](/wp-content/uploads/2024/01/CV-6.pdf).
+- **2012:** *Computational Complexity: Theory, Techniques, and Applications*, pp. 2620–2634. [Published chapter](https://doi.org/10.1007/978-1-4614-1800-9_161).
+- **2020:** *Complex Social and Behavioral Systems: Game Theory and Agent-Based Models*, pp. 139–156. [Publisher’s contents](https://link.springer.com/referencework/10.1007/978-1-0716-0368-0?page=1).
+
+The downloadable author draft is dated 6 December 2007 and titled *Repeated Games*.

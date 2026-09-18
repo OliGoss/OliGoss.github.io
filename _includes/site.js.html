@@ -1,0 +1,11 @@
+<script>
+// Keep historical WordPress numeric links useful on a static host.
+(function () {
+  const query = new URLSearchParams(window.location.search);
+  if (!query.has('p') && !query.has('page_id')) return;
+  const id = query.get('p') || query.get('page_id');
+  fetch('/assets/legacy-ids.json').then(r => r.ok ? r.json() : {}).then(routes => {
+    if (routes[id]) window.location.replace(routes[id] + window.location.hash);
+  }).catch(() => {});
+})();
+</script>

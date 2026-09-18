@@ -1,0 +1,8 @@
+---
+title: SInfoNiA
+description: "SInfoNiA, Olivier Gossner's ERC Advanced Grant project, awarded in 2024."
+---
+
+SInfoNiA is an ERC Advanced Grant project, awarded in 2024.
+
+[Project website at CREST](https://crest.science/erc-grants/sinfonia/)

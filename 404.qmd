@@ -1,0 +1,8 @@
+---
+title: Page not found
+description: "Find research, teaching materials and contact information on Olivier Gossner's website."
+---
+
+The page may have moved. You can browse the [research collection](/papers/), find [teaching materials](/teaching-material/), or return to the [homepage](/).
+
+For a paper you cannot locate, please [email me](mailto:ogossner@gmail.com).

@@ -1,0 +1,27 @@
+---
+title: "Attention please!"
+author: ["Olivier Gossner", "Jakub Steiner", "Colin Stewart"]
+byline: "Olivier Gossner, Jakub Steiner and Colin Stewart"
+year: 2021
+publication: "Econometrica, 89(4), 1717–1751 (2021)"
+status: "published"
+paper-record: true
+featured: 2
+pdf: "/wp-content/uploads/2022/12/attention-please-ecta.pdf"
+pdf-label: "Paper PDF"
+publisher-url: ""
+body-classes: "paper-page"
+google-scholar: true
+citation: {"type": "article-journal", "issued": {"year": 2021}, "container-title": "Econometrica", "volume": "89", "issue": "4", "page": "1717-1751"}
+description: "Attention please! — Econometrica, 89(4), 1717–1751 (2021)"
+abstract: |
+  We study the impact of manipulating the attention of a decision-maker who learns sequentially about a number of items before making a choice. Under natural assumptions on the decision-maker’s strategy, directing attention toward one item increases its likelihood of being chosen regardless of its value. This result applies when the decision- maker can reject all items in favor of an outside option with known value; if no outside option is available, the direction of the effect of manipulation depends on the value of the item. A similar result applies to manipulation of choices in bandit problems.
+---
+
+[← All research](index.qmd){.back-link}
+
+{{< meta publication >}}
+
+::: {.paper-downloads}
+[{{< meta pdf-label >}}]({{< meta pdf >}}){.btn .btn-primary}
+:::

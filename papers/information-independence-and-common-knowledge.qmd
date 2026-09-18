@@ -1,0 +1,27 @@
+---
+title: "Information independence and common knowledge"
+author: ["Olivier Gossner", "Ehud Kalai", "and Robert Weber"]
+byline: "Olivier Gossner, Ehud Kalai, and Robert Weber"
+year: 2009
+publication: "Econometrica, 77: 1317–1328, 2009"
+status: "published"
+paper-record: true
+featured: false
+pdf: "/wp-content/uploads/2023/01/ecta7469.pdf"
+pdf-label: "Paper PDF"
+publisher-url: ""
+body-classes: "paper-page"
+google-scholar: true
+citation: {"type": "article-journal", "issued": {"year": 2009}, "container-title": "Econometrica"}
+description: "Information independence and common knowledge — Econometrica, 77: 1317–1328, 2009"
+abstract: |
+  In Bayesian environments with private information, as described by the types of Harsanyi, how can types of agents be (statistically) disassociated from each other and how are such disassociations reflected in the agents’ knowledge structure? Conditions studied are (i) subjective independence (the opponents’ types are independent conditional on one’s own) and (ii) type disassociation under common knowledge (the agents’ types are independent, conditional on some common-knowledge variable). Subjective independence is motivated by its implications in Bayesian games and in studies of equilibrium concepts. We find that a variable that disassociates types is more informative than any common-knowledge variable. With three or more agents, conditions (i) and (ii) are equivalent. They also imply that any variable which is common knowledge to two agents is common knowledge to all, and imply the existence of a unique common-knowledge variable that disassociates types, which is the one defined by Aumann.
+---
+
+[← All research](index.qmd){.back-link}
+
+{{< meta publication >}}
+
+::: {.paper-downloads}
+[{{< meta pdf-label >}}]({{< meta pdf >}}){.btn .btn-primary}
+:::

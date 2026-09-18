@@ -1,0 +1,25 @@
+---
+title: "Efficiency in the Repeated Prisoner’s Dilemma with Imperfect Private Monitoring"
+author: ["Kyna Fong", "Olivier Gossner", "Johannes Hörner", "Yuliy Sannikov"]
+byline: "Kyna Fong, Olivier Gossner, Johannes Hörner and Yuliy Sannikov"
+year: 2011
+publication: "Working paper, 2011. Stanford Graduate School of Business archive."
+status: "archived"
+paper-record: true
+featured: false
+body-classes: "paper-page"
+google-scholar: true
+citation: {"issued": {"year": 2011}, "type": "report", "url": "https://gsbpreserve.stanford.edu/view/36215/efficiency-in-the-repeated-prisoners-dilemma-with-imperfect-private-monitoring"}
+description: "Efficiency in the Repeated Prisoner’s Dilemma with Imperfect Private Monitoring — Working paper, 2011. Stanford Graduate School of Business archive."
+record-url: "https://gsbpreserve.stanford.edu/view/36215/efficiency-in-the-repeated-prisoners-dilemma-with-imperfect-private-monitoring"
+---
+
+[← All research](index.qmd){.back-link}
+
+{{< meta publication >}}
+
+::: {.paper-downloads}
+[Archive record]({{< meta record-url >}}){.btn .btn-outline-primary}
+:::
+
+Working-paper record dated 10 April 2011, preserved in the Stanford Graduate School of Business archive.
