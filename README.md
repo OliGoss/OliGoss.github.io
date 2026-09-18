@@ -2,11 +2,11 @@
 
 A first working template for gossner.me, prepared on 17 September 2026. It contains 48 research records: the original 29 entries, three recent arXiv preprints, 13 additional journal articles, one chapter, one editorial and one archived working paper. It also includes teaching notes, the workshop archive, selected media and the linked CV. The design is editable and the collection still needs the content review described in `migration/CONTENT-REVIEW.md`.
 
-This standalone Quarto website is published at https://oligoss.github.io/ from the public repository https://github.com/OliGoss/OliGoss.github.io. GitHub Actions builds and publishes updates to the main branch. The preview profile requests no indexing. The custom domain gossner.me still uses the existing Gandi website.
+This standalone Quarto website is published by GitHub Pages from https://github.com/OliGoss/OliGoss.github.io. On 18 September 2026, gossner.me was connected to GitHub and the production profile was deployed. HTTP serving and domain checks pass; HTTPS certificate issuance is still pending. GitHub Actions builds and publishes updates to the main branch.
 
 ## Everyday editing in your browser
 
-Once this folder is in your GitHub account, you can do small edits without FTP, a terminal, or installing Quarto.
+You can do small edits without FTP, a terminal, or installing Quarto.
 
 | What you want to change | File to open |
 |---|---|
@@ -18,11 +18,11 @@ Once this folder is in your GitHub account, you can do small edits without FTP, 
 | SInfoNiA introduction | `sinfonia/index.qmd` |
 | CV download | Replace `cv.pdf`, then update its displayed date in `cv/index.qmd` |
 
-Open a file, click the pencil icon, change the text, and choose **Commit changes** to save. Once GitHub Pages is connected, a successful build publishes the change. A failed check prevents the new version from replacing the working website.
+Open a file, click the pencil icon, change the text, and choose **Commit changes** to save. A successful build publishes the change. A failed check prevents the new version from replacing the working website.
 
 The `.qmd` files contain ordinary text with light formatting. `##` starts a section; `[link text](address)` creates a link. The short block between `---` lines at the top contains the page's title and other settings. You can edit content locally in Quarto's supported visual editors too, but no local software is required for browser edits.
 
-## Try these two tasks before choosing to migrate
+## Two common editing tasks
 
 1. **Change the research description.** Open `index.qmd`, edit the paragraph under “Research”, and save. Check the resulting homepage.
 2. **Add a paper.** Upload the PDF to `assets/papers/` using **Add file → Upload files**. Copy `_templates/new-paper.qmd` into a new file under `papers/`, for example `papers/my-new-paper.qmd`. Replace its title, authors, year, publication line, PDF address and abstract. Save. The research page includes it automatically.
@@ -50,7 +50,7 @@ The initial paper files retain the website's abstract text, including the explic
 
 The initial preview requests search engines not to index it. This is not privacy protection: the preview and the repository are public. The workflow deliberately expects a root website, rather than a `/repository-name/` subdirectory, so existing document addresses remain valid.
 
-After the domain switch is approved, follow `migration/TRANSITION.md` and set `SITE_PROFILE` to `production`. Subsequent saves to the `main` branch publish automatically. To require approval of updates, use a branch and a pull request; the workflow builds and checks pull requests without deploying them. It does not create hosted previews for individual pull requests.
+The repository variable `SITE_PROFILE` is now `production`; keep that value for the live website. See `migration/TRANSITION.md` for launch status and rollback instructions. Subsequent saves to the `main` branch publish automatically. To require approval of updates, use a branch and a pull request; the workflow builds and checks pull requests without deploying them. It does not create hosted previews for individual pull requests.
 
 ## Local preview — optional
 

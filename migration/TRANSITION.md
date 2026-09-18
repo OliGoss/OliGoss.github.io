@@ -1,6 +1,10 @@
 # Transition from WordPress to Quarto
 
-Updated 18 September 2026. This plan is staged so that the current website remains available while the replacement is reviewed. The GitHub preview is published at https://oligoss.github.io/ from https://github.com/OliGoss/OliGoss.github.io using GitHub Actions. The repository variable SITE_PROFILE is preview. No Gandi setting, domain registration or subscription has been changed.
+Updated 18 September 2026. The production website is deployed from https://github.com/OliGoss/OliGoss.github.io with SITE_PROFILE=production. The custom domain gossner.me and its www variant now point to GitHub Pages. GitHub validates both names; HTTP tests pass. HTTPS certificate issuance and enforcement remain pending. Gandi hosting and domain registration remain active.
+
+A complete private WordPress file backup and SQL export have been archived and checksum-verified. The SQL export was restored successfully in an isolated local database; a full WordPress application restoration has not been tested. The DNS export and rollback records are also saved privately.
+
+Live HTTP checks passed for eight main/detail pages on desktop and mobile, four representative legacy routes, and all 60 local downloads (including the CV), whose hashes match the originals. The production sitemap contains 55 HTTPS URLs, robots.txt allows indexing, and the tested pages have no preview noindex tags.
 
 ## Recommended sequence
 
@@ -54,7 +58,7 @@ Switch to the `production` profile only at launch. It sets the canonical site UR
 
 ## 4. Switch the website, keeping domain registration separate
 
-First verify ownership of `gossner.me` in GitHub and add it as the custom domain in the repository's Pages settings. Then update the DNS records that serve the website. Follow GitHub's current official instructions at the time of the switch: [custom domains](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site).
+GitHub recommends account-level domain ownership verification. Add `gossner.me` as the custom domain in the repository's Pages settings before changing DNS. Then update the DNS records that serve the website. Follow GitHub's current official instructions at the time of the switch: [custom domains](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site).
 
 Record the exact changes before applying them. Preserve unrelated records. If necessary, reduce the relevant DNS TTL in advance. Configure both the apex and www addresses, remove conflicting obsolete web-address records, and ensure any CAA policy permits certificate issuance for GitHub Pages. Avoid changing nameservers merely to change hosting.
 
@@ -94,4 +98,4 @@ Do the registrar transfer after the website move has settled so that two indepen
 
 ## Access needed for the live stages
 
-GitHub account setup and preview publication are complete for OliGoss. The remaining account-level steps need WordPress/Gandi access to create a full private backup and export DNS settings, followed by the approved DNS change when the replacement is ready. Do not cancel hosting before the backup and launch checks are complete.
+GitHub publication, private backup and DNS changes are complete. Finish HTTPS provisioning, enable enforcement and verify all four scheme/hostname combinations before treating the domain launch as complete. Email setup is deferred. Do not cancel hosting before the launch checks and overlap period are complete.
