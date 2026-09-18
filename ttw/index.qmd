@@ -35,8 +35,6 @@ The Transatlantic Theory Workshop began in 2008 as a joint programme between the
 </ul>
 ```
 
-The 2026 workshop took place on 9–10 September at Northwestern University's Kellogg School of Management. The programme PDF is a formatted copy of [Kellogg's published agenda](https://kellogg.northwestern.edu/events/conference/transatlantic-theory-workshop).
-
 ## Paris Game Theory Festival
 
 The [Paris Game Theory Festival](https://sites.google.com/view/parisgtfestival/) brings together workshops on game theory, information and language. The June 2026 edition was held at the Institut Henri Poincaré and Université Paris Panthéon-Assas, combining the second Paris Workshop on Game Theory and Information with the fourth Paris Workshop on Game Theory and Language. It was organised by Chantal Marlats, Olivier Gossner and Christina Pawlowitsch.
