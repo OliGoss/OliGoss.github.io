@@ -2,7 +2,7 @@
 
 A first working template for gossner.me, prepared on 17 September 2026. It contains 48 research records: the original 29 entries, three recent arXiv preprints, 13 additional journal articles, one chapter, one editorial and one archived working paper. It also includes teaching notes, the workshop archive, selected media and the linked CV. The design is editable and the collection still needs the content review described in `migration/CONTENT-REVIEW.md`.
 
-This folder is a standalone Quarto website. It is not yet connected to a GitHub account, and the live domain has not been changed.
+This standalone Quarto website is published at https://oligoss.github.io/ from the public repository https://github.com/OliGoss/OliGoss.github.io. GitHub Actions builds and publishes updates to the main branch. The preview profile requests no indexing. The custom domain gossner.me still uses the existing Gandi website.
 
 ## Everyday editing in your browser
 
@@ -39,7 +39,7 @@ The research index reads the paper files automatically; there is no second list 
 
 The initial paper files retain the website's abstract text, including the explicitly labelled older working-paper abstract for the insurance-accounting paper. The regression paper now has its correct abstract, checked against the archived author manuscript. The bibliography additions and citation corrections were checked on 18 September 2026; provenance is recorded in `migration/bibliography-additions-2026-09-18.json`.
 
-## GitHub setup — one time
+## GitHub setup — completed 18 September 2026
 
 1. Use your own GitHub account so you retain ownership.
 2. Create a public repository named **OliGoss.github.io**. Public source is required for GitHub Pages on the free plan. Only this website folder belongs there: do not upload private documents, billing information, passwords, or the surrounding workspace.

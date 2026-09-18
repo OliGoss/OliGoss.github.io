@@ -1,6 +1,6 @@
 # Transition from WordPress to Quarto
 
-Updated 18 September 2026. This plan is staged so that the current website remains available while the replacement is reviewed. No GitHub repository, Gandi setting, domain registration or subscription has been changed.
+Updated 18 September 2026. This plan is staged so that the current website remains available while the replacement is reviewed. The GitHub preview is published at https://oligoss.github.io/ from https://github.com/OliGoss/OliGoss.github.io using GitHub Actions. The repository variable SITE_PROFILE is preview. No Gandi setting, domain registration or subscription has been changed.
 
 ## Recommended sequence
 
@@ -94,4 +94,4 @@ Do the registrar transfer after the website move has settled so that two indepen
 
 ## Access needed for the live stages
 
-The next account-level steps need Olivier's GitHub identity and a way to authorize repository setup, followed by Gandi/DNS access or user-driven changes in the account. The local template and migration preparation can be reviewed before any of those steps.
+GitHub account setup and preview publication are complete for OliGoss. The remaining account-level steps need WordPress/Gandi access to create a full private backup and export DNS settings, followed by the approved DNS change when the replacement is ready. Do not cancel hosting before the backup and launch checks are complete.
