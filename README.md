@@ -1,6 +1,6 @@
 # Olivier Gossner's Quarto website
 
-A first working template for gossner.me, prepared on 17 September 2026. It contains 49 research records: 39 publications, five current working papers, three earlier working papers, one chapter and one editorial. It also includes teaching notes, the workshop archive, selected media and the linked CV. The design is editable and the collection still needs the content review described in `migration/CONTENT-REVIEW.md`.
+A first working template for gossner.me, prepared on 17 September 2026. It contains 50 research records: 40 publications, five current working papers, three earlier working papers, one chapter and one editorial. It also includes teaching notes, the workshop archive, selected media and the linked CV. The design is editable and the collection still needs the content review described in `migration/CONTENT-REVIEW.md`.
 
 This standalone Quarto website is published by GitHub Pages from https://github.com/OliGoss/OliGoss.github.io. On 18 September 2026, gossner.me was connected to GitHub and the production profile was deployed. HTTP serving and domain checks pass; HTTPS certificate issuance is still pending. GitHub Actions builds and publishes updates to the main branch.
 
@@ -15,7 +15,7 @@ You can do small edits without FTP, a terminal, or installing Quarto.
 | Teaching notes and links | `teaching-material/index.qmd` |
 | Workshop programmes | `ttw/index.qmd` |
 | Media contributions | `press/index.qmd` |
-| SInfoNiA introduction | `sinfonia/index.qmd` |
+| SInfoNiA overview, team and workshops | `sinfonia/index.qmd` |
 | CV download | Replace `cv.pdf`, then update its displayed date in `cv/index.qmd` |
 
 Open a file, click the pencil icon, change the text, and choose **Commit changes** to save. A successful build publishes the change. A failed check prevents the new version from replacing the working website.
@@ -36,6 +36,8 @@ For a draft paper set `status: "working"`; for a published paper use `status: "p
 For papers hosted on arXiv, `pdf` may be an arXiv PDF URL and `arxiv-url` the abstract-page URL. These PDF links follow the latest version on arXiv, avoiding a second copy to maintain. Titles and abstracts in this site remain editable snapshots.
 
 The research index reads the paper files automatically; there is no second list to edit.
+
+For a paper acknowledging SInfoNiA support, set `sinfonia: true` in its top block. It will also appear automatically on the project page. Check the acknowledgement in the relevant version before setting this field. Edit the team and festival workshops in `sinfonia/index.qmd`.
 
 The initial paper files retain the website's abstract text, including the explicitly labelled older working-paper abstract for the insurance-accounting paper. The regression paper now has its correct abstract, checked against the archived author manuscript. The bibliography additions and citation corrections were checked on 18 September 2026; provenance is recorded in `migration/bibliography-additions-2026-09-18.json`.
 

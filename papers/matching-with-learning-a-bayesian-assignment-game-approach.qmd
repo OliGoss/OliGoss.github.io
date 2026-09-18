@@ -6,6 +6,7 @@ year: 2026
 publication: "Mathematical Social Sciences, 102583 (2026), available online"
 status: "published"
 paper-record: true
+sinfonia: true
 featured: false
 publisher-url: "https://doi.org/10.1016/j.mathsocsci.2026.102583"
 body-classes: "paper-page"

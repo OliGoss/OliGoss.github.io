@@ -6,6 +6,7 @@ year: 2026
 publication: "The Geneva Risk and Insurance Review, 51, 41–65 (2026)"
 status: "published"
 paper-record: true
+sinfonia: true
 featured: 1
 pdf: "/wp-content/uploads/2023/01/management_costs_WP.pdf"
 pdf-label: "Working paper PDF"

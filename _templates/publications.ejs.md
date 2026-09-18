@@ -4,7 +4,8 @@
   if (!item['paper-record']) continue;
   const mode = templateParams.mode;
   if (mode === 'selected' && !item.featured) continue;
-  if (mode !== 'selected' && item.status !== mode) continue;
+  if (mode === 'sinfonia' && !item.sinfonia) continue;
+  if (mode !== 'selected' && mode !== 'sinfonia' && item.status !== mode) continue;
 %>
 <article class="publication-row">
   <div class="publication-year"><%- item.year %></div>

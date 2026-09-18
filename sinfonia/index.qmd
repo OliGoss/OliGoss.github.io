@@ -1,6 +1,14 @@
 ---
 title: SInfoNiA
 description: "SInfoNiA, Olivier Gossner's project awarded an ERC Advanced Grant in 2024 and funded by UKRI."
+listing:
+  - id: project-papers
+    contents: "../papers/*.qmd"
+    template: ../_templates/publications.ejs.md
+    template-params:
+      mode: sinfonia
+    sort: "year desc"
+    max-items: 100
 ---
 
 **SInfoNiA — Strategic Information: New Directions and Applications** was awarded an ERC Advanced Grant in 2024 and is funded by UK Research and Innovation (UKRI).
@@ -8,3 +16,35 @@ description: "SInfoNiA, Olivier Gossner's project awarded an ERC Advanced Grant 
 The project studies how information shapes strategic interaction, developing foundations for the analysis of information in games and applications to coordination, financial stability and the design of incentives.
 
 [Project website at CREST](https://crest.science/erc-grants/sinfonia/)
+
+## Team
+
+- [Olivier Gossner](../index.qmd) — Principal investigator, CNRS–CREST and LSE.
+- [Satvik Sharma](https://www.lse.ac.uk/people/satvik-sharma) — PhD student, LSE.
+- [Davide Bordoli](https://davidebordoli.github.io/) — Postdoctoral researcher, CREST.
+
+## Papers
+
+Publications and working papers acknowledging support from SInfoNiA.
+
+::: {#project-papers}
+:::
+
+## Workshops
+
+SInfoNiA funds workshops within the recurring [Paris Game Theory Festival](https://sites.google.com/view/parisgtfestival/), which brings together researchers in game theory, information and language at the Institut Henri Poincaré and Université Paris Panthéon-Assas.
+
+### 2027 — forthcoming
+
+- [3rd Paris Workshop on Game Theory and Information](https://sites.google.com/view/parisgtfestival/2027), 7–9 June, Institut Henri Poincaré.
+- [5th Paris Workshop on Game Theory and Language](https://sites.google.com/view/parisgtfestival/2027/5th-language-workshop), 10–11 June, Université Paris Panthéon-Assas.
+
+### 2026
+
+- [2nd Paris Workshop on Game Theory and Information](https://sites.google.com/view/parisgtfestival/2026/program), 8–10 June, Institut Henri Poincaré.
+- [4th Paris Workshop on Game Theory and Language](https://sites.google.com/view/parisgtfestival/2026/4th-language-workshop), 11–12 June, Université Paris Panthéon-Assas. This edition marked the fiftieth anniversary of “Agreeing to Disagree”, with Robert Aumann.
+
+### 2025
+
+- [Paris Workshop on Game Theory and Information](https://sites.google.com/view/parisgtfestival/2025/interactive-beliefs), 2–4 June, Institut Henri Poincaré.
+- [3rd Paris Workshop on Game Theory and Language](https://sites.google.com/view/parisgtfestival/2025/3rd-language-workshop), 5–7 June, Université Paris Panthéon-Assas.

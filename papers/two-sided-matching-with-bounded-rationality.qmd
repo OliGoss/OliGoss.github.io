@@ -1,0 +1,27 @@
+---
+title: "Two-Sided Matching with Bounded Rationality: A Stochastic Framework for Personnel Selection"
+author: ["Saeed Najafi-Zangeneh", "Naser Shams-Gharneh", "Olivier Gossner"]
+byline: "Saeed Najafi-Zangeneh, Naser Shams-Gharneh and Olivier Gossner"
+year: 2025
+publication: "Mathematics, 13(19), 3173 (2025)"
+status: "published"
+paper-record: true
+featured: false
+sinfonia: true
+pdf: "https://eprints.lse.ac.uk/129899/1/mathematics-13-03173-v2.pdf"
+pdf-label: "Published paper PDF"
+publisher-url: "https://doi.org/10.3390/math13193173"
+body-classes: "paper-page"
+google-scholar: true
+citation: {"type": "article-journal", "issued": {"year": 2025}, "container-title": "Mathematics", "volume": "13", "issue": "19", "page": "3173", "doi": "10.3390/math13193173"}
+description: "Two-Sided Matching with Bounded Rationality: A Stochastic Framework for Personnel Selection — Mathematics, 13(19), 3173 (2025)."
+---
+
+[← All research](index.qmd){.back-link}
+
+{{< meta publication >}}
+
+::: {.paper-downloads}
+[{{< meta pdf-label >}}]({{< meta pdf >}}){.btn .btn-primary}
+[Published version]({{< meta publisher-url >}}){.btn .btn-outline-primary}
+:::

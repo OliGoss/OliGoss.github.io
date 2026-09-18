@@ -6,6 +6,7 @@ year: 2026
 publication: "arXiv:2606.08297, 2026"
 status: "working"
 paper-record: true
+sinfonia: true
 featured: false
 pdf: "https://arxiv.org/pdf/2606.08297"
 pdf-label: "PDF"

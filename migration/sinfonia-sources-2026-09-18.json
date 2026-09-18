@@ -1,0 +1,62 @@
+{
+  "checked": "2026-09-18",
+  "papers": [
+    {
+      "file": "papers/comparative-statics-of-information-acquisition-and-risk-aversion.qmd",
+      "source": "https://arxiv.org/html/2609.12149v1",
+      "evidence": "Opening acknowledgement names UKRI (SInfoNiA)."
+    },
+    {
+      "file": "papers/direct-representations-for-interim-correlated-rationalizability.qmd",
+      "source": "https://arxiv.org/html/2607.21851v2",
+      "evidence": "Opening acknowledgement names UKRI (SInfoNiA)."
+    },
+    {
+      "file": "papers/strategic-type-spaces.qmd",
+      "source": "https://arxiv.org/html/2606.08297v2",
+      "evidence": "Opening acknowledgement names SInfoNiA and grant 101142530."
+    },
+    {
+      "file": "papers/matching-with-learning-a-bayesian-assignment-game-approach.qmd",
+      "source": "https://www.sciencedirect.com/science/article/pii/S0165489626000909",
+      "evidence": "Funding section names SInfoNiA and grant 101142530."
+    },
+    {
+      "file": "papers/market-equilibrium-with-management-costs-and-implications-for-insurance-accounting.qmd",
+      "source": "https://link.springer.com/article/10.1057/s10713-024-00107-7",
+      "evidence": "Published article funding section names SInfoNiA and grant 101142530. The older local working paper predates this acknowledgement."
+    },
+    {
+      "file": "papers/two-sided-matching-with-bounded-rationality.qmd",
+      "source": "https://www.mdpi.com/2227-7390/13/19/3173",
+      "evidence": "Funding section names SInfoNiA and grant 101142530; also verified in LSE repository PDF, page 24."
+    }
+  ],
+  "search_scope": "Checked recent research records, arXiv versions, publisher funding sections, CORDIS results, searches for the project name and grant identifiers, and the text of existing local paper PDFs. Six papers with explicit project acknowledgements were identified. Indexing may omit other outputs.",
+  "team": [
+    {
+      "name": "Satvik Sharma",
+      "url": "https://www.lse.ac.uk/people/satvik-sharma",
+      "note": "LSE research-student profile; game theory, games of incomplete information; supervisors Olivier Gossner and Galit Ashkenazi-Golan."
+    },
+    {
+      "name": "Davide Bordoli",
+      "url": "https://davidebordoli.github.io/",
+      "note": "Personal academic website; CREST postdoctoral position from autumn 2026. Role confirmed by user."
+    }
+  ],
+  "workshops": {
+    "source_pages": [
+      "https://sites.google.com/view/parisgtfestival/2025",
+      "https://sites.google.com/view/parisgtfestival/2026",
+      "https://sites.google.com/view/parisgtfestival/2027"
+    ],
+    "funding": "User confirms festival workshops are funded by SInfoNiA; official edition pages also display the project name.",
+    "notes": [
+      "Use the dated edition URLs because the festival homepage changes.",
+      "2026 component workshops end on 12 June, confirmed by the language workshop page; the edition landing page header says 13 June.",
+      "2027 is forthcoming. Its information-workshop link still points to the previous edition, so link to the 2027 festival page instead."
+    ]
+  },
+  "funding_wording": "Retain ERC Advanced Grant award in 2024 and current UKRI funding as instructed by project principal investigator. Historical papers have varying acknowledgement wording; do not rewrite their texts."
+}
