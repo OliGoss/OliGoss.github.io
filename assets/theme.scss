@@ -72,7 +72,7 @@ p { margin-bottom: 1.15rem; }
 .resource-list { list-style: none; padding: 0; }
 .resource-list li { padding: .85rem 0; border-bottom: 1px solid var(--rule); }
 .resource-list small { display: block; color: var(--muted); font-size: .78rem; }
-.workshop-list { columns: 2; column-gap: 3rem; list-style: none; padding-left: 0; max-width: 830px; }
+.workshop-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 3rem; list-style: none; padding-left: 0; max-width: 830px; }
 .workshop-list li { break-inside: avoid; padding: .7rem 0; border-bottom: 1px solid var(--rule); }
 .workshop-list strong { display: inline-block; min-width: 65px; font-weight: 500; color: var(--muted); }
 .paper-page #quarto-document-content { max-width: 850px; }
@@ -98,7 +98,7 @@ p { margin-bottom: 1.15rem; }
   .publication-row { grid-template-columns: 40px minmax(0,1fr); gap: 12px; padding: 1.3rem 0; }
   .publication-content h3 { font-size: 1.2rem; }
   .publication-year { font-size: .76rem; }
-  .workshop-list { columns: 1; }
+  .workshop-list { grid-template-columns: minmax(0, 1fr); }
   .nav-footer { margin: 0 22px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto !important; } }

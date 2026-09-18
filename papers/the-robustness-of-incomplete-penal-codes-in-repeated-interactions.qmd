@@ -4,7 +4,7 @@ author: ["Olivier Gossner"]
 byline: "Olivier Gossner"
 year: 2020
 publication: "CREST Working Paper, 2020"
-status: "working"
+status: "archived"
 paper-record: true
 featured: false
 pdf: "/wp-content/uploads/2022/12/robust.pdf"

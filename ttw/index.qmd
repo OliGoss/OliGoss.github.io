@@ -1,38 +1,42 @@
 ---
-title: Transatlantic Theory Workshop
-description: "The Transatlantic Theory Workshop in game theory and economic theory. Programmes and past editions."
+title: Workshops
+description: "The Transatlantic Theory Workshop and the Paris Game Theory Festival. Programmes, past editions and event information."
 ---
 
-::: {.page-intro}
+## Transatlantic Theory Workshop
+
 A workshop in game theory and economic theory, connecting researchers across the Atlantic.
-:::
 
 The Transatlantic Theory Workshop began in 2008 as a joint programme between the Kellogg School of Management at Northwestern University and institutions in the Paris area. Oxford joined in 2010, and Bocconi in 2024.
 
-## Editions & programmes
+### Editions & programmes
 
 ```{=html}
 <ul class="workshop-list">
-<li><strong>2008</strong> <a href="/wp-content/uploads/2023/06/TTW2008.pdf">Paris — programme</a></li>
-<li><strong>2009</strong> <a href="/wp-content/uploads/2026/02/TTW2009.pdf">Evanston — programme</a></li>
-<li><strong>2010</strong> <a href="/wp-content/uploads/2026/02/TTW2010.pdf">Oxford — programme</a></li>
-<li><strong>2011</strong> <a href="/wp-content/uploads/2026/02/TTW2011.pdf">Paris — programme</a></li>
-<li><strong>2012</strong> <a href="/wp-content/uploads/2026/02/TTW2012.pdf">Evanston — programme</a></li>
-<li><strong>2013</strong> <a href="/wp-content/uploads/2026/02/TTW2013.pdf">Oxford — programme</a></li>
-<li><strong>2014</strong> <a href="/wp-content/uploads/2026/02/TTW2014.pdf">Paris — programme</a></li>
-<li><strong>2015</strong> <a href="/wp-content/uploads/2026/02/TTW2015.pdf">Evanston — programme</a></li>
-<li><strong>2016</strong> <a href="/wp-content/uploads/2026/02/TTW2016.pdf">Oxford — programme</a></li>
-<li><strong>2017</strong> <a href="/wp-content/uploads/2026/02/TTW2017.pdf">Paris — programme</a></li>
-<li><strong>2018</strong> <a href="/wp-content/uploads/2026/02/TTW2018.pdf">Evanston — programme</a></li>
-<li><strong>2019</strong> <a href="/wp-content/uploads/2026/02/TTW2019.pdf">Oxford — programme</a></li>
+<li><strong>2008</strong> <a href="/wp-content/uploads/2023/06/TTW2008.pdf">Paris</a></li>
+<li><strong>2009</strong> <a href="/wp-content/uploads/2026/02/TTW2009.pdf">Evanston</a></li>
+<li><strong>2010</strong> <a href="/wp-content/uploads/2026/02/TTW2010.pdf">Oxford</a></li>
+<li><strong>2011</strong> <a href="/wp-content/uploads/2026/02/TTW2011.pdf">Paris</a></li>
+<li><strong>2012</strong> <a href="/wp-content/uploads/2026/02/TTW2012.pdf">Evanston</a></li>
+<li><strong>2013</strong> <a href="/wp-content/uploads/2026/02/TTW2013.pdf">Oxford</a></li>
+<li><strong>2014</strong> <a href="/wp-content/uploads/2026/02/TTW2014.pdf">Paris</a></li>
+<li><strong>2015</strong> <a href="/wp-content/uploads/2026/02/TTW2015.pdf">Evanston</a></li>
+<li><strong>2016</strong> <a href="/wp-content/uploads/2026/02/TTW2016.pdf">Oxford</a></li>
+<li><strong>2017</strong> <a href="/wp-content/uploads/2026/02/TTW2017.pdf">Paris</a></li>
+<li><strong>2018</strong> <a href="/wp-content/uploads/2026/02/TTW2018.pdf">Evanston</a></li>
+<li><strong>2019</strong> <a href="/wp-content/uploads/2026/02/TTW2019.pdf">Oxford</a></li>
 <li><strong>2020</strong> No workshop</li>
-<li><strong>2021</strong> <a href="/wp-content/uploads/2026/02/TTW2021.pdf">Paris — programme</a></li>
-<li><strong>2022</strong> <a href="/wp-content/uploads/2026/02/TTW2022.pdf">Evanston — programme</a></li>
-<li><strong>2023</strong> <a href="/wp-content/uploads/2023/08/Program-for-Transatlantic-Theory-Workshop-2023.pdf">Oxford — programme</a></li>
-<li><strong>2024</strong> <a href="/wp-content/uploads/2026/02/TTW2024.pdf">Paris — programme</a></li>
-<li><strong>2025</strong> <a href="/wp-content/uploads/2026/02/transatlantic-workshop1-2.09.2025.pdf">Milan — programme</a></li>
-<li><strong>2026</strong> Evanston</li>
+<li><strong>2021</strong> <a href="/wp-content/uploads/2026/02/TTW2021.pdf">Paris</a></li>
+<li><strong>2022</strong> <a href="/wp-content/uploads/2026/02/TTW2022.pdf">Evanston</a></li>
+<li><strong>2023</strong> <a href="/wp-content/uploads/2023/08/Program-for-Transatlantic-Theory-Workshop-2023.pdf">Oxford</a></li>
+<li><strong>2024</strong> <a href="/wp-content/uploads/2026/02/TTW2024.pdf">Paris</a></li>
+<li><strong>2025</strong> <a href="/wp-content/uploads/2026/02/transatlantic-workshop1-2.09.2025.pdf">Milan</a></li>
+<li><strong>2026</strong> <a href="/assets/workshops/ttw-2026-programme.pdf">Evanston</a></li>
 </ul>
 ```
 
-For workshop enquiries, please [contact me](../index.qmd#contact).
+The 2026 workshop took place on 9–10 September at Northwestern University's Kellogg School of Management. The programme PDF is a formatted copy of [Kellogg's published agenda](https://kellogg.northwestern.edu/events/conference/transatlantic-theory-workshop).
+
+## Paris Game Theory Festival
+
+The [Paris Game Theory Festival](https://sites.google.com/view/parisgtfestival/) brings together workshops on game theory, information and language. The June 2026 edition was held at the Institut Henri Poincaré and Université Paris Panthéon-Assas, combining the second Paris Workshop on Game Theory and Information with the fourth Paris Workshop on Game Theory and Language. It was organised by Chantal Marlats, Olivier Gossner and Christina Pawlowitsch.

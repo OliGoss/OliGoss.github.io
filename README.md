@@ -1,6 +1,6 @@
 # Olivier Gossner's Quarto website
 
-A first working template for gossner.me, prepared on 17 September 2026. It contains 48 research records: the original 29 entries, three recent arXiv preprints, 13 additional journal articles, one chapter, one editorial and one archived working paper. It also includes teaching notes, the workshop archive, selected media and the linked CV. The design is editable and the collection still needs the content review described in `migration/CONTENT-REVIEW.md`.
+A first working template for gossner.me, prepared on 17 September 2026. It contains 49 research records: 39 publications, five current working papers, three earlier working papers, one chapter and one editorial. It also includes teaching notes, the workshop archive, selected media and the linked CV. The design is editable and the collection still needs the content review described in `migration/CONTENT-REVIEW.md`.
 
 This standalone Quarto website is published by GitHub Pages from https://github.com/OliGoss/OliGoss.github.io. On 18 September 2026, gossner.me was connected to GitHub and the production profile was deployed. HTTP serving and domain checks pass; HTTPS certificate issuance is still pending. GitHub Actions builds and publishes updates to the main branch.
 

@@ -4,7 +4,7 @@ author: ["Olivier Gossner", "Jean-François Mertens"]
 byline: "Olivier Gossner and Jean-François Mertens"
 year: 2020
 publication: "Working paper, June 2020 version"
-status: "working"
+status: "archived"
 paper-record: true
 featured: false
 pdf: "/wp-content/uploads/2022/12/ValueofInfo2020.pdf"

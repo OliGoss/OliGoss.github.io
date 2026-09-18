@@ -17,7 +17,7 @@ Steps 1 and 2 can be prepared independently. Both must be complete before step 3
 
 ## What is ready locally
 
-- A working Quarto website with 48 research records, including the three recent arXiv papers and the verified bibliography additions.
+- A working Quarto website with 49 research records, including the three recent arXiv papers and the verified bibliography additions.
 - 58 PDFs and the portrait copied locally; originals are preserved at their existing upload paths. The archive totals about 56 MiB.
 - 36 legacy page routes mapped to the new pages, including misleading old article slugs and research pagination paths.
 - Public numeric WordPress post IDs mapped to new pages where verified.

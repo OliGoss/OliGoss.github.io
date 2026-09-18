@@ -1,8 +1,10 @@
 ---
 title: SInfoNiA
-description: "SInfoNiA, Olivier Gossner's ERC Advanced Grant project, awarded in 2024."
+description: "SInfoNiA, Olivier Gossner's project awarded an ERC Advanced Grant in 2024 and funded by UKRI."
 ---
 
-SInfoNiA is an ERC Advanced Grant project, awarded in 2024.
+**SInfoNiA — Strategic Information: New Directions and Applications** was awarded an ERC Advanced Grant in 2024 and is funded by UK Research and Innovation (UKRI).
+
+The project studies how information shapes strategic interaction, developing foundations for the analysis of information in games and applications to coordination, financial stability and the design of incentives.
 
 [Project website at CREST](https://crest.science/erc-grants/sinfonia/)

@@ -1,0 +1,33 @@
+{
+  "date": "2026-09-18",
+  "changes": {
+    "earlier_working_papers": [
+      "the-robustness-of-incomplete-penal-codes-in-repeated-interactions",
+      "the-value-of-information-in-zero-sum-games"
+    ],
+    "new_publication": {
+      "title": "Matching with Learning: A Bayesian Assignment Game Approach",
+      "authors": [
+        "Saeed Najafi-Zangeneh",
+        "Olivier Gossner"
+      ],
+      "doi": "10.1016/j.mathsocsci.2026.102583",
+      "source": "https://www.sciencedirect.com/science/article/pii/S0165489626000909",
+      "online_date": "2026-09-08",
+      "status": "Journal pre-proof; volume and issue not yet assigned",
+      "note": "Summary paraphrased from publisher; no publisher PDF republished."
+    },
+    "funding": {
+      "wording": "Awarded an ERC Advanced Grant in 2024; funded by UKRI.",
+      "source": "https://crest.science/erc-grants/",
+      "confirmed_by": "Olivier Gossner"
+    },
+    "festival_source": "https://sites.google.com/view/parisgtfestival/",
+    "ttw_2026": {
+      "source": "https://kellogg.northwestern.edu/events/conference/transatlantic-theory-workshop",
+      "local_pdf": "/assets/workshops/ttw-2026-programme.pdf",
+      "sha256": "698b1bf5bd15eb1485bddbd4859a96e1871f9d69b88b031045173a0bbf83f9b5",
+      "note": "Locally formatted, two-page copy of the official HTML agenda, preserving all 28 entries; not a publisher-supplied PDF."
+    }
+  }
+}

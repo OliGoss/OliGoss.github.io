@@ -30,10 +30,10 @@ Game theory and the economics of information, including repeated games, bounded 
 
 [Working papers and publications](papers/index.qmd)
 
-[SInfoNiA](sinfonia/index.qmd) — ERC Advanced Grant, awarded in 2024.
+[SInfoNiA](sinfonia/index.qmd) — awarded an ERC Advanced Grant in 2024; funded by UKRI.
 
 ## Contact {#contact}
 
 [ogossner@gmail.com](mailto:ogossner@gmail.com)
 
-[ORCID](https://orcid.org/0000-0003-3950-0208) · [RePEc](https://ideas.repec.org/e/pgo39.html) · [Mastodon](https://econtwitter.net/@o)
+[ORCID](https://orcid.org/0000-0003-3950-0208) · [RePEc](https://ideas.repec.org/e/pgo39.html)

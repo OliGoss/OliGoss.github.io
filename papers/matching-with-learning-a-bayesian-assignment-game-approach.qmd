@@ -1,0 +1,29 @@
+---
+title: "Matching with Learning: A Bayesian Assignment Game Approach"
+author: ["Saeed Najafi-Zangeneh", "Olivier Gossner"]
+byline: "Saeed Najafi-Zangeneh and Olivier Gossner"
+year: 2026
+publication: "Mathematical Social Sciences, 102583 (2026), available online"
+status: "published"
+paper-record: true
+featured: false
+publisher-url: "https://doi.org/10.1016/j.mathsocsci.2026.102583"
+body-classes: "paper-page"
+google-scholar: true
+citation: {"type": "article-journal", "issued": {"year": 2026}, "container-title": "Mathematical Social Sciences", "page": "102583", "doi": "10.1016/j.mathsocsci.2026.102583"}
+description: "Matching with Learning: A Bayesian Assignment Game Approach — Saeed Najafi-Zangeneh and Olivier Gossner, Mathematical Social Sciences (2026)."
+---
+
+[← All research](index.qmd){.back-link}
+
+{{< meta publication >}}
+
+::: {.paper-downloads}
+[Published version]({{< meta publisher-url >}}){.btn .btn-primary}
+:::
+
+Available online 8 September 2026. Article 102583; journal pre-proof.
+
+## Summary
+
+The paper examines matching between workers and firms when the surplus from a match is learned through public signals. Posterior beliefs define an assignment game at each date, allowing the analysis of stable allocations as information accumulates. Under a condition ensuring a unique efficient matching, the surplus-maximising matching eventually becomes efficient almost surely, with an exponential bound on the probability of an inefficient match. The analysis also considers how signal precision and industry-specific comparative advantage affect outcomes.

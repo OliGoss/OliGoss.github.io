@@ -13,6 +13,7 @@ project:
     - assets/
     - wp-content/uploads/
     - cv.pdf
+    - favicon.ico
     - .nojekyll
     - "!_site/**"
     - "!.quarto/**"
@@ -22,7 +23,7 @@ project:
 website:
   title: Olivier Gossner
   description: "Game theory and the economics of information. Research, publications and teaching by Olivier Gossner."
-  favicon: assets/favicon.svg
+  favicon: assets/academic-icon.svg
   search: false
   navbar:
     title: Olivier Gossner
