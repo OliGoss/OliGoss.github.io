@@ -12,6 +12,8 @@ google-scholar: true
 citation: {"issued": {"year": 2001}, "type": "article-journal", "container-title": "International Journal of Game Theory", "volume": "30", "issue": "1", "page": "41–60", "doi": "10.1007/s001820100063"}
 description: "Repeated Communication through the Mechanism “and” — International Journal of Game Theory 30(1), 41–60 (2001)"
 publisher-url: "https://doi.org/10.1007/s001820100063"
+pdf: "/wp-content/uploads/2017/01/and.pdf"
+pdf-label: "Paper PDF"
 ---
 
 [← All research](index.qmd){.back-link}
@@ -19,5 +21,6 @@ publisher-url: "https://doi.org/10.1007/s001820100063"
 {{< meta publication >}}
 
 ::: {.paper-downloads}
+[{{< meta pdf-label >}}]({{< meta pdf >}}){.btn .btn-primary}
 [Published version]({{< meta publisher-url >}}){.btn .btn-outline-primary}
 :::

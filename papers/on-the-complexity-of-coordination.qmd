@@ -12,6 +12,8 @@ google-scholar: true
 citation: {"issued": {"year": 2003}, "type": "article-journal", "container-title": "Mathematics of Operations Research", "volume": "28", "issue": "1", "page": "127–140", "doi": "10.1287/moor.28.1.127.14257"}
 description: "On the Complexity of Coordination — Mathematics of Operations Research 28(1), 127–140 (2003)"
 publisher-url: "https://doi.org/10.1287/moor.28.1.127.14257"
+pdf: "/wp-content/uploads/2017/01/OntheComplexityofCoordination.pdf"
+pdf-label: "Paper PDF"
 ---
 
 [← All research](index.qmd){.back-link}
@@ -19,5 +21,6 @@ publisher-url: "https://doi.org/10.1287/moor.28.1.127.14257"
 {{< meta publication >}}
 
 ::: {.paper-downloads}
+[{{< meta pdf-label >}}]({{< meta pdf >}}){.btn .btn-primary}
 [Published version]({{< meta publisher-url >}}){.btn .btn-outline-primary}
 :::

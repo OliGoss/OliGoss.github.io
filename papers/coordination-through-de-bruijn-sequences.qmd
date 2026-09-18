@@ -12,6 +12,8 @@ google-scholar: true
 citation: {"issued": {"year": 2006}, "type": "article-journal", "container-title": "Operations Research Letters", "volume": "34", "issue": "1", "page": "17–21", "doi": "10.1016/j.orl.2005.01.006"}
 description: "Coordination through De Bruijn Sequences — Operations Research Letters 34(1), 17–21 (2006)"
 publisher-url: "https://doi.org/10.1016/j.orl.2005.01.006"
+pdf: "/wp-content/uploads/2017/01/CoordinationDeBruijn.pdf"
+pdf-label: "Paper PDF"
 ---
 
 [← All research](index.qmd){.back-link}
@@ -19,5 +21,6 @@ publisher-url: "https://doi.org/10.1016/j.orl.2005.01.006"
 {{< meta publication >}}
 
 ::: {.paper-downloads}
+[{{< meta pdf-label >}}]({{< meta pdf >}}){.btn .btn-primary}
 [Published version]({{< meta publisher-url >}}){.btn .btn-outline-primary}
 :::

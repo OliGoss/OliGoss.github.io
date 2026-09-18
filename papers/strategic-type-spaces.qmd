@@ -8,7 +8,7 @@ status: "working"
 paper-record: true
 sinfonia: true
 featured: false
-pdf: "https://arxiv.org/pdf/2606.08297"
+pdf: "/assets/papers/strategic-type-spaces.pdf"
 pdf-label: "PDF"
 arxiv-url: "https://arxiv.org/abs/2606.08297"
 body-classes: "paper-page"

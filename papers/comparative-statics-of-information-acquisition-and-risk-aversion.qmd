@@ -8,7 +8,7 @@ status: "working"
 paper-record: true
 sinfonia: true
 featured: false
-pdf: "https://arxiv.org/pdf/2609.12149"
+pdf: "/assets/papers/comparative-statics-of-information-acquisition-and-risk-aversion.pdf"
 pdf-label: "PDF"
 arxiv-url: "https://arxiv.org/abs/2609.12149"
 body-classes: "paper-page"

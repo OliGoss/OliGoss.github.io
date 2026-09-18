@@ -12,6 +12,8 @@ google-scholar: true
 citation: {"issued": {"year": 2011}, "type": "report", "url": "https://gsbpreserve.stanford.edu/view/36215/efficiency-in-the-repeated-prisoners-dilemma-with-imperfect-private-monitoring"}
 description: "Efficiency in the Repeated Prisoner’s Dilemma with Imperfect Private Monitoring — Working paper, 2011. Stanford Graduate School of Business archive."
 record-url: "https://gsbpreserve.stanford.edu/view/36215/efficiency-in-the-repeated-prisoners-dilemma-with-imperfect-private-monitoring"
+pdf: "/assets/papers/efficiency-private-monitoring.pdf"
+pdf-label: "Paper PDF"
 ---
 
 [← All research](index.qmd){.back-link}
@@ -19,6 +21,7 @@ record-url: "https://gsbpreserve.stanford.edu/view/36215/efficiency-in-the-repea
 {{< meta publication >}}
 
 ::: {.paper-downloads}
+[{{< meta pdf-label >}}]({{< meta pdf >}}){.btn .btn-primary}
 [Archive record]({{< meta record-url >}}){.btn .btn-outline-primary}
 :::
 

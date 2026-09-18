@@ -40,7 +40,7 @@ listing:
 ---
 
 ::: {.research-jump}
-[Working papers](#working-papers-section) · [Publications](#publications-section) · [Chapters](#chapters-section) · [Editorial work](#editorial-section) · [Earlier working papers](#earlier-working-papers-section)
+[Working papers](#working-papers-section) · [Publications](#publications-section) · [Chapters](#chapters-section) · [Editorial work](#editorial-section) · [Unpublished work](#earlier-working-papers-section)
 :::
 
 ## Working papers {#working-papers-section}
@@ -63,7 +63,7 @@ listing:
 ::: {#editorial-work}
 :::
 
-## Earlier working papers {#earlier-working-papers-section}
+## Unpublished work {#earlier-working-papers-section}
 
 ::: {#earlier-working-papers}
 :::

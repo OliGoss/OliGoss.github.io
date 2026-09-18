@@ -13,6 +13,8 @@ body-classes: "paper-page"
 google-scholar: true
 citation: {"type": "article-journal", "issued": {"year": 2026}, "container-title": "Mathematical Social Sciences", "page": "102583", "doi": "10.1016/j.mathsocsci.2026.102583"}
 description: "Matching with Learning: A Bayesian Assignment Game Approach — Saeed Najafi-Zangeneh and Olivier Gossner, Mathematical Social Sciences (2026)."
+pdf: "/assets/papers/matching-with-learning.pdf"
+pdf-label: "Paper PDF"
 ---
 
 [← All research](index.qmd){.back-link}
@@ -20,6 +22,7 @@ description: "Matching with Learning: A Bayesian Assignment Game Approach — Sa
 {{< meta publication >}}
 
 ::: {.paper-downloads}
+[{{< meta pdf-label >}}]({{< meta pdf >}}){.btn .btn-primary}
 [Published version]({{< meta publisher-url >}}){.btn .btn-primary}
 :::
 

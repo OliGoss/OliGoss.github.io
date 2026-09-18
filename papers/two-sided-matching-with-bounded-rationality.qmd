@@ -8,7 +8,7 @@ status: "published"
 paper-record: true
 featured: false
 sinfonia: true
-pdf: "https://eprints.lse.ac.uk/129899/1/mathematics-13-03173-v2.pdf"
+pdf: "/assets/papers/two-sided-matching-with-bounded-rationality.pdf"
 pdf-label: "Published paper PDF"
 publisher-url: "https://doi.org/10.3390/math13193173"
 body-classes: "paper-page"

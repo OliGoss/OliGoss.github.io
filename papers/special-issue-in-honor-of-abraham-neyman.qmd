@@ -12,6 +12,8 @@ google-scholar: true
 citation: {"issued": {"year": 2016}, "type": "article-journal", "container-title": "International Journal of Game Theory", "volume": "45", "issue": "1–2", "page": "3–9", "doi": "10.1007/s00182-015-0518-2"}
 description: "Special issue in honor of Abraham Neyman — International Journal of Game Theory 45(1–2), 3–9 (2016). Editorial."
 publisher-url: "https://doi.org/10.1007/s00182-015-0518-2"
+pdf: "/assets/papers/special-issue-in-honor-of-abraham-neyman.pdf"
+pdf-label: "Paper PDF"
 ---
 
 [← All research](index.qmd){.back-link}
@@ -19,5 +21,6 @@ publisher-url: "https://doi.org/10.1007/s00182-015-0518-2"
 {{< meta publication >}}
 
 ::: {.paper-downloads}
+[{{< meta pdf-label >}}]({{< meta pdf >}}){.btn .btn-primary}
 [Published version]({{< meta publisher-url >}}){.btn .btn-outline-primary}
 :::

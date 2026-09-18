@@ -8,7 +8,7 @@ status: "working"
 paper-record: true
 sinfonia: true
 featured: false
-pdf: "https://arxiv.org/pdf/2607.21851"
+pdf: "/assets/papers/direct-representations-for-interim-correlated-rationalizability.pdf"
 pdf-label: "PDF"
 arxiv-url: "https://arxiv.org/abs/2607.21851"
 body-classes: "paper-page"
