@@ -13,9 +13,19 @@ listing:
 
 **SInfoNiA — Strategic Information: New Directions and Applications** was awarded an ERC Advanced Grant in 2024 and is funded by UK Research and Innovation (UKRI).
 
-The project studies how information shapes strategic interaction, developing foundations for the analysis of information in games and applications to coordination, financial stability and the design of incentives.
+SInfoNiA studies how information coordinates economic activity and shapes strategic interaction. It develops a theory of strategic types that describes information through its relevance to a given game, with applications to financial stability, robust economic predictions and social norms.
 
-[Project website at CREST](https://crest.science/erc-grants/sinfonia/)
+The research is organised into seven work packages:
+
+- **WP1 — Strategic types:** develop a framework applicable to a broad range of games.
+- **WP2 — Measuring and valuing information:** develop new ways to quantify information and assess its economic value.
+- **WP3 — Connections with global games:** bring strategic types and global-games information structures into a unified framework.
+- **WP4 — Algorithms:** develop computational methods that make the theory widely usable.
+- **WP5 — Financial stability:** extend global-games analysis to new models of financial stability.
+- **WP6 — Robustness:** examine how robust economic outcomes are, including in trade and financial networks.
+- **WP7 — Information and incentive design:** jointly design information and incentives to achieve desirable outcomes, including interventions to change social norms and address gender inequality.
+
+[ERC project description (CORDIS)](https://cordis.europa.eu/project/id/101142530) · [Project website at CREST](https://crest.science/erc-grants/sinfonia/)
 
 ## Team
 

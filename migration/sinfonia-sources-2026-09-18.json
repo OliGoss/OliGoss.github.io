@@ -58,5 +58,10 @@
       "2027 is forthcoming. Its information-workshop link still points to the previous edition, so link to the 2027 festival page instead."
     ]
   },
-  "funding_wording": "Retain ERC Advanced Grant award in 2024 and current UKRI funding as instructed by project principal investigator. Historical papers have varying acknowledgement wording; do not rewrite their texts."
+  "funding_wording": "Retain ERC Advanced Grant award in 2024 and current UKRI funding as instructed by project principal investigator. Historical papers have varying acknowledgement wording; do not rewrite their texts.",
+  "project_description": {
+    "source": "https://cordis.europa.eu/project/id/101142530",
+    "section": "Objective",
+    "note": "Concise paraphrase of the official ERC project objective, covering all seven numbered scientific work packages in the published order. Short descriptive labels are editorial summaries, not claimed as formal package titles. Current UKRI funding wording retained."
+  }
 }
