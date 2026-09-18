@@ -4,10 +4,6 @@ description: "Curriculum vitae and institutional profiles of Olivier Gossner."
 ---
 
 ::: {.article-body}
-::: {.page-intro}
-Academic appointments, publications, teaching, and service.
-:::
-
 [Download CV](/cv.pdf){.btn .btn-primary}
 
 [Current document: January 2024 · PDF]{.cv-date}
