@@ -25,7 +25,7 @@ The project studies how information shapes strategic interaction, developing fou
 
 ## Papers
 
-Publications and working papers acknowledging support from SInfoNiA.
+Publications of the SInfoNiA project.
 
 ::: {#project-papers}
 :::
