@@ -28,6 +28,16 @@
       "local_pdf": "/assets/workshops/ttw-2026-programme.pdf",
       "sha256": "698b1bf5bd15eb1485bddbd4859a96e1871f9d69b88b031045173a0bbf83f9b5",
       "note": "Locally formatted, two-page copy of the official HTML agenda, preserving all 28 entries; not a publisher-supplied PDF."
+    },
+    "festival_history": {
+      "first_edition": 2025,
+      "second_edition": 2026,
+      "sources": [
+        "https://gametheorysociety.org/conferences/paris-gt-festival/",
+        "https://signaling.u-paris2.fr/Pawlowitsch/2026-CV-Christina-Katt-Pawlowitsch.pdf",
+        "https://sites.google.com/view/parisgtfestival/"
+      ],
+      "note": "Earlier Game Theory and Language workshops in 2023 and 2024 preceded the combined festival; not presented as festival editions. The former 2025 Google Sites address requires sign-in, so the public Society record is linked."
     }
   }
 }

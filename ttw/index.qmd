@@ -37,4 +37,6 @@ The Transatlantic Theory Workshop began in 2008 as a joint programme between the
 
 ## Paris Game Theory Festival
 
-The [Paris Game Theory Festival](https://sites.google.com/view/parisgtfestival/) brings together workshops on game theory, information and language. The June 2026 edition was held at the Institut Henri Poincaré and Université Paris Panthéon-Assas, combining the second Paris Workshop on Game Theory and Information with the fourth Paris Workshop on Game Theory and Language. It was organised by Chantal Marlats, Olivier Gossner and Christina Pawlowitsch.
+The [Paris Game Theory Festival](https://sites.google.com/view/parisgtfestival/) is a recurring event, launched in 2025, bringing together workshops on game theory, information and language. It is organised by Chantal Marlats, Olivier Gossner and Christina Pawlowitsch, with meetings at the Institut Henri Poincaré and Université Paris Panthéon-Assas.
+
+Editions: [2025](https://gametheorysociety.org/conferences/paris-gt-festival/) · [2026](https://sites.google.com/view/parisgtfestival/)
