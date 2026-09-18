@@ -42,11 +42,11 @@ The initial paper files retain the website's abstract text, including the explic
 ## GitHub setup — one time
 
 1. Use your own GitHub account so you retain ownership.
-2. Create a public repository named **YOUR-USERNAME.github.io**. Public source is required for GitHub Pages on the free plan. Only this website folder belongs there: do not upload private documents, billing information, passwords, or the surrounding workspace.
+2. Create a public repository named **OliGoss.github.io**. Public source is required for GitHub Pages on the free plan. Only this website folder belongs there: do not upload private documents, billing information, passwords, or the surrounding workspace.
 3. Add the contents of this folder, including `.github/workflows/publish.yml` and `.nojekyll`. The initial bulk upload and hidden files are easiest for me or another helper to handle; the browser workflow above is for subsequent everyday edits. Do not upload `_site` or `.quarto`.
 4. In repository **Settings → Pages**, choose **GitHub Actions** as the publishing source.
 5. In **Settings → Secrets and variables → Actions → Variables**, set `SITE_PROFILE` to `preview` (this is also the default).
-6. Run **Build and publish website** from the Actions tab. The result should appear at `https://YOUR-USERNAME.github.io/`. Review it there before setting any custom domain.
+6. Run **Build and publish website** from the Actions tab. The result should appear at `https://OliGoss.github.io/`. Review it there before setting any custom domain.
 
 The initial preview requests search engines not to index it. This is not privacy protection: the preview and the repository are public. The workflow deliberately expects a root website, rather than a `/repository-name/` subdirectory, so existing document addresses remain valid.
 
