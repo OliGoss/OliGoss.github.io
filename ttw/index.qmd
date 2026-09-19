@@ -5,9 +5,9 @@ description: "The Transatlantic Theory Workshop and the Paris Game Theory Festiv
 
 ## Transatlantic Theory Workshop
 
-A workshop in game theory and economic theory, connecting researchers across the Atlantic.
+Co-founder and co-organizer since 2008.
 
-The Transatlantic Theory Workshop began in 2008 as a joint programme between the Kellogg School of Management at Northwestern University and institutions in the Paris area. Oxford joined in 2010, and Bocconi in 2024.
+A recurring workshop in game theory and economic theory, bringing together researchers from Paris, Northwestern, Oxford and Bocconi.
 
 ### Editions & programmes
 
@@ -37,6 +37,8 @@ The Transatlantic Theory Workshop began in 2008 as a joint programme between the
 
 ## Paris Game Theory Festival
 
-The [Paris Game Theory Festival](https://sites.google.com/view/parisgtfestival/) is a recurring event, launched in 2025, bringing together workshops on game theory, information and language. It is organised by Chantal Marlats, Olivier Gossner and Christina Pawlowitsch, with meetings at the Institut Henri Poincaré and Université Paris Panthéon-Assas.
+Co-founder and co-organizer since 2025.
+
+The [Paris Game Theory Festival](https://sites.google.com/view/parisgtfestival/) brings together recurring workshops on game theory, information and language.
 
 Editions: [2025](https://sites.google.com/view/parisgtfestival/2025) · [2026](https://sites.google.com/view/parisgtfestival/2026) · [2027 (forthcoming)](https://sites.google.com/view/parisgtfestival/2027)

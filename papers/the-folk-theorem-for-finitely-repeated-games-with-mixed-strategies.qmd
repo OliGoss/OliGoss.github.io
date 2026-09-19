@@ -1,15 +1,15 @@
 ---
-title: "The Folk Theorem for Finitely Repeated Games with Mixed Strategies"
+title: "The folk theorem for finitely repeated games with mixed strategies"
 author: ["Olivier Gossner"]
 byline: "Olivier Gossner"
 year: 1995
-publication: "International Journal of Game Theory 24(1), 95–107 (1995)"
+publication: "International Journal of Game Theory, 24(1), 95–107 (1995)"
 status: "published"
 paper-record: true
 featured: false
 body-classes: "paper-page"
 google-scholar: true
-citation: {"issued": {"year": 1995}, "type": "article-journal", "container-title": "International Journal of Game Theory", "volume": "24", "issue": "1", "page": "95–107", "doi": "10.1007/BF01258206"}
+citation: {"issued": {"year": 1995}, "type": "article-journal", "container-title": "International Journal of Game Theory", "volume": "24", "issue": "1", "page": "95-107", "doi": "10.1007/BF01258206"}
 description: "The Folk Theorem for Finitely Repeated Games with Mixed Strategies — International Journal of Game Theory 24(1), 95–107 (1995)"
 publisher-url: "https://doi.org/10.1007/BF01258206"
 pdf: "/wp-content/uploads/2017/01/IJGT_Folk_Theorem_Finitely_Repeated_Games_Gossner.pdf"

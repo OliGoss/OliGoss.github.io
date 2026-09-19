@@ -11,9 +11,9 @@ body-classes: home-page
 # Olivier Gossner
 
 ::: {.affiliations}
-[CNRS · CREST](https://crest.science/user/olivier-gossner/)  
-[École polytechnique](https://www.polytechnique.edu/annuaire/gossner-olivier)  
-[London School of Economics](https://www.lse.ac.uk/people/olivier-gossner)
+CNRS Research Director, [CREST](https://crest.science/user/olivier-gossner/)\
+Professor, [École polytechnique](https://www.polytechnique.edu/annuaire/gossner-olivier)\
+Professor, [London School of Economics](https://www.lse.ac.uk/people/olivier-gossner)
 :::
 
 [Curriculum vitae](cv/index.qmd)
@@ -26,7 +26,7 @@ body-classes: home-page
 
 ## Research
 
-Game theory and the economics of information, including repeated games, bounded rationality, and applications to finance and insurance.
+Game theory; modelling, value, and strategic use of information; bounded rationality and complexity; finance and insurance.
 
 [Working papers and publications](papers/index.qmd)
 

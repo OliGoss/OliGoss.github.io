@@ -1,9 +1,9 @@
 ---
-title: "Matching with Learning: A Bayesian Assignment Game Approach"
+title: "Matching with learning: a Bayesian assignment game approach"
 author: ["Saeed Najafi-Zangeneh", "Olivier Gossner"]
 byline: "Saeed Najafi-Zangeneh and Olivier Gossner"
 year: 2026
-publication: "Mathematical Social Sciences, 102583 (2026), available online"
+publication: "Mathematical Social Sciences, 144, 102583 (2026) (available online)"
 status: "published"
 paper-record: true
 sinfonia: true
@@ -11,7 +11,7 @@ featured: false
 publisher-url: "https://doi.org/10.1016/j.mathsocsci.2026.102583"
 body-classes: "paper-page"
 google-scholar: true
-citation: {"type": "article-journal", "issued": {"year": 2026}, "container-title": "Mathematical Social Sciences", "page": "102583", "doi": "10.1016/j.mathsocsci.2026.102583"}
+citation: {"type": "article-journal", "issued": {"year": 2026}, "container-title": "Mathematical Social Sciences", "page": "102583", "doi": "10.1016/j.mathsocsci.2026.102583", "volume": "144"}
 description: "Matching with Learning: A Bayesian Assignment Game Approach — Saeed Najafi-Zangeneh and Olivier Gossner, Mathematical Social Sciences (2026)."
 pdf: "/assets/papers/matching-with-learning.pdf"
 pdf-label: "Paper PDF"
@@ -26,7 +26,7 @@ pdf-label: "Paper PDF"
 [Published version]({{< meta publisher-url >}}){.btn .btn-primary}
 :::
 
-Available online 8 September 2026. Article 102583; journal pre-proof.
+Available online 8 September 2026. Volume 144, article 102583; journal pre-proof.
 
 ## Summary
 

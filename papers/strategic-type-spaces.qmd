@@ -1,5 +1,5 @@
 ---
-title: "Strategic Type Spaces"
+title: "Strategic type spaces"
 author: ["Olivier Gossner", "Rafael Veiel"]
 byline: "Olivier Gossner and Rafael Veiel"
 year: 2026

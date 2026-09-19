@@ -1,15 +1,15 @@
 ---
-title: "Simple Bounds on the Value of a Reputation"
+title: "Simple bounds on the value of a reputation"
 author: ["Olivier Gossner"]
 byline: "Olivier Gossner"
 year: 2011
-publication: "Econometrica 79(5), 1627–1641 (2011)"
+publication: "Econometrica, 79(5), 1627–1641 (2011)"
 status: "published"
 paper-record: true
 featured: false
 body-classes: "paper-page"
 google-scholar: true
-citation: {"issued": {"year": 2011}, "type": "article-journal", "container-title": "Econometrica", "volume": "79", "issue": "5", "page": "1627–1641", "doi": "10.3982/ECTA9385"}
+citation: {"issued": {"year": 2011}, "type": "article-journal", "container-title": "Econometrica", "volume": "79", "issue": "5", "page": "1627-1641", "doi": "10.3982/ECTA9385"}
 description: "Simple Bounds on the Value of a Reputation — Econometrica 79(5), 1627–1641 (2011)"
 publisher-url: "https://doi.org/10.3982/ECTA9385"
 pdf: "/wp-content/uploads/2017/01/SimpleBounds.pdf"

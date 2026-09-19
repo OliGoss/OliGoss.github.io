@@ -12,7 +12,9 @@ Lecture notes in economics and game theory, for undergraduate and graduate study
 
 École polytechnique · ECO361 · French
 
-Course notes written with Jean-Baptiste Michau and Vincent Rollet.
+With Jean-Baptiste Michau and Vincent Rollet.
+
+The textbook [*Introduction aux sciences économiques*](https://www.economica.fr/introduction-aux-sciences-economiques-c2x40926832) was published by Economica in 2024. Course notes are also available below.
 
 [Download course notes](/wp-content/uploads/2023/08/ECO361-3.pdf){.btn .btn-primary}
 :::

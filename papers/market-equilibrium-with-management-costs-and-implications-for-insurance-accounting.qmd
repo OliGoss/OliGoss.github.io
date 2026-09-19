@@ -3,7 +3,7 @@ title: "Market equilibrium with management costs and implications for insurance 
 author: ["Michael Florig", "Olivier Gossner"]
 byline: "Michael Florig and Olivier Gossner"
 year: 2026
-publication: "The Geneva Risk and Insurance Review, 51, 41–65 (2026)"
+publication: "The Geneva Risk and Insurance Review, 51(1), 41–65 (2026) (first published online in 2024)"
 status: "published"
 paper-record: true
 sinfonia: true
@@ -13,7 +13,7 @@ pdf-label: "Working paper PDF"
 publisher-url: "https://doi.org/10.1057/s10713-024-00107-7"
 body-classes: "paper-page"
 google-scholar: true
-citation: {"type": "article-journal", "issued": {"year": 2026}, "container-title": "The Geneva Risk and Insurance Review", "volume": "51", "page": "41-65", "doi": "10.1057/s10713-024-00107-7"}
+citation: {"type": "article-journal", "issued": {"year": 2026}, "container-title": "The Geneva Risk and Insurance Review", "volume": "51", "page": "41-65", "doi": "10.1057/s10713-024-00107-7", "issue": "1"}
 description: "Market equilibrium with management costs and implications for insurance accounting — The Geneva Risk and Insurance Review, 51, 41–65 (2026)"
 abstract: |
   We study a general equilibrium model with uncertainty where agents incur costs for managing a risky assets. The equilibrium price, as characterized via a (risk neutral) probability measure on the state space is employed for valuation in several regulatory accounting regimes such as Solvency II for the European Economic Area, SST for Switzerland, BSCR for Bermuda and going forward under IFRS17.

@@ -1,15 +1,15 @@
 ---
-title: "Secure Protocols or How Communication Generates Correlation"
+title: "Secure protocols or how communication generates correlation"
 author: ["Olivier Gossner"]
 byline: "Olivier Gossner"
 year: 1998
-publication: "Journal of Economic Theory 83(1), 69–89 (1998)"
+publication: "Journal of Economic Theory, 83(1), 69–89 (1998)"
 status: "published"
 paper-record: true
 featured: false
 body-classes: "paper-page"
 google-scholar: true
-citation: {"issued": {"year": 1998}, "type": "article-journal", "container-title": "Journal of Economic Theory", "volume": "83", "issue": "1", "page": "69–89", "doi": "10.1006/jeth.1998.2444"}
+citation: {"issued": {"year": 1998}, "type": "article-journal", "container-title": "Journal of Economic Theory", "volume": "83", "issue": "1", "page": "69-89", "doi": "10.1006/jeth.1998.2444"}
 description: "Secure Protocols or How Communication Generates Correlation — Journal of Economic Theory 83(1), 69–89 (1998)"
 publisher-url: "https://doi.org/10.1006/jeth.1998.2444"
 pdf: "/wp-content/uploads/2017/01/SecureProtocols.pdf"

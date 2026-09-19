@@ -3,7 +3,7 @@ title: "High-sensitivity SARS-CoV-2 group testing by digital PCR among symptomat
 author: ["Alexandra Martin", "Alexandre Storto", "Quentin Le Hingrat", "Gilles Collin", "Barbara André", "Allison Mallory", "Rémi Dangla", "Diane Descamps", "Benoit Visseaux", "Olivier Gossner"]
 byline: "Alexandra Martin, Alexandre Storto, Quentin Le Hingrat, Gilles Collin, Barbara André, Allison Mallory, Rémi Dangla, Diane Descamps, Benoit Visseaux and Olivier Gossner"
 year: 2021
-publication: "Journal of Clinical Virology 141, 104895 (2021)"
+publication: "Journal of Clinical Virology, 141, 104895 (2021)"
 status: "published"
 paper-record: true
 featured: false

@@ -3,7 +3,7 @@ title: "Reasoning-based introspection"
 author: ["Olivier Gossner", "Elias Tsakas"]
 byline: "Olivier Gossner and Elias Tsakas"
 year: 2012
-publication: "Theory and Decision, 73: 513-523, 2012"
+publication: "Theory and Decision, 73(4), 513–523 (2012)"
 status: "published"
 paper-record: true
 featured: false
@@ -12,7 +12,7 @@ pdf-label: "Paper PDF"
 publisher-url: ""
 body-classes: "paper-page"
 google-scholar: true
-citation: {"type": "article-journal", "issued": {"year": 2012}, "container-title": "Theory and Decision"}
+citation: {"type": "article-journal", "issued": {"year": 2012}, "container-title": "Theory and Decision", "volume": "73", "page": "513-523", "issue": "4"}
 description: "Reasoning-based introspection — Theory and Decision, 73: 513-523, 2012"
 abstract: |
   We show that if an agent reasons according to standard inference rules, the axioms of truth and introspection extend from the set of non-epistemic propositions to the whole set of propositions. This implies that the usual axiomatization of the partitional possibility correspondence, which describes an agent who processes information rationally, is redundant.

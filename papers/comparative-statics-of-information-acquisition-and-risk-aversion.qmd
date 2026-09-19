@@ -1,5 +1,5 @@
 ---
-title: "Comparative Statics of Information Acquisition and Risk Aversion"
+title: "Comparative statics of information acquisition and risk aversion"
 author: ["Antonio Cabrales", "Gregorio Curello", "Olivier Gossner", "Roberto Serrano"]
 byline: "Antonio Cabrales, Gregorio Curello, Olivier Gossner and Roberto Serrano"
 year: 2026

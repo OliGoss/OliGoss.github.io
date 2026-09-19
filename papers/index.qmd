@@ -40,7 +40,7 @@ listing:
 ---
 
 ::: {.research-jump}
-[Working papers](#working-papers-section) · [Publications](#publications-section) · [Chapters](#chapters-section) · [Editorial work](#editorial-section) · [Unpublished work](#earlier-working-papers-section)
+[Working papers](#working-papers-section) · [Publications](#publications-section) · [Book](#book-section) · [Chapters](#chapters-section) · [Editorial work](#editorial-section) · [Unpublished work](#earlier-working-papers-section)
 :::
 
 ## Working papers {#working-papers-section}
@@ -52,6 +52,19 @@ listing:
 
 ::: {#publications}
 :::
+
+## Book {#book-section}
+
+```{=html}
+<article class="publication-row">
+  <div class="publication-year">2024</div>
+  <div class="publication-content">
+    <h3><a href="https://www.economica.fr/introduction-aux-sciences-economiques-c2x40926832">Introduction aux sciences économiques</a></h3>
+    <p class="publication-authors">Olivier Gossner, Jean-Baptiste Michau and Vincent Rollet</p>
+    <p class="publication-venue">Economica, 2024</p>
+  </div>
+</article>
+```
 
 ## Chapters {#chapters-section}
 

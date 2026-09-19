@@ -3,13 +3,13 @@ title: "Special issue in honor of Abraham Neyman"
 author: ["Olivier Gossner", "Ori Haimanko", "Eilon Solan"]
 byline: "Olivier Gossner, Ori Haimanko and Eilon Solan"
 year: 2016
-publication: "International Journal of Game Theory 45(1–2), 3–9 (2016). Editorial."
+publication: "International Journal of Game Theory, 45(1–2), 3–9 (2016) (editorial)"
 status: "editorial"
 paper-record: true
 featured: false
 body-classes: "paper-page"
 google-scholar: true
-citation: {"issued": {"year": 2016}, "type": "article-journal", "container-title": "International Journal of Game Theory", "volume": "45", "issue": "1–2", "page": "3–9", "doi": "10.1007/s00182-015-0518-2"}
+citation: {"issued": {"year": 2016}, "type": "article-journal", "container-title": "International Journal of Game Theory", "volume": "45", "issue": "1-2", "page": "3-9", "doi": "10.1007/s00182-015-0518-2"}
 description: "Special issue in honor of Abraham Neyman — International Journal of Game Theory 45(1–2), 3–9 (2016). Editorial."
 publisher-url: "https://doi.org/10.1007/s00182-015-0518-2"
 pdf: "/assets/papers/special-issue-in-honor-of-abraham-neyman.pdf"

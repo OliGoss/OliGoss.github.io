@@ -1,5 +1,5 @@
 ---
-title: "Repeated Games with Complete Information"
+title: "Repeated games with complete information"
 author: ["Olivier Gossner", "Tristan Tomala"]
 byline: "Olivier Gossner and Tristan Tomala"
 year: 2009

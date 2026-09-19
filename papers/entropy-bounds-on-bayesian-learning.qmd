@@ -3,7 +3,7 @@ title: "Entropy bounds on Bayesian learning"
 author: ["Olivier Gossner", "Tristan Tomala"]
 byline: "Olivier Gossner, Tristan Tomala"
 year: 2008
-publication: "Journal of Mathematical Economics, 44: 24-32, 2008"
+publication: "Journal of Mathematical Economics, 44(1), 24–32 (2008)"
 status: "published"
 paper-record: true
 featured: false
@@ -12,7 +12,7 @@ pdf-label: "Paper PDF"
 publisher-url: ""
 body-classes: "paper-page"
 google-scholar: true
-citation: {"type": "article-journal", "issued": {"year": 2008}, "container-title": "Journal of Mathematical Economics"}
+citation: {"type": "article-journal", "issued": {"year": 2008}, "container-title": "Journal of Mathematical Economics", "volume": "44", "page": "24-32", "issue": "1"}
 description: "Entropy bounds on Bayesian learning — Journal of Mathematical Economics, 44: 24-32, 2008"
 abstract: |
   An observer of a process (x_t) believes the process is governed by Q whereas the true law is P. We bound the expected average distance between P(x_t|x1,…,x_{t−1}) and Q(x_t|x_1,…,x_{t−1}) for t = 1,…,n by a function of the relative entropy between the marginals of P and Q on the n first realizations. We apply this bound to the cost of learning in sequential decision problems and to the merging of Q to P.

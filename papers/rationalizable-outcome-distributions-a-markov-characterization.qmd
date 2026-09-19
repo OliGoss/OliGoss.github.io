@@ -1,5 +1,5 @@
 ---
-title: "Rationalizable Outcome Distributions: A Markov Characterization"
+title: "Rationalizable outcome distributions: a Markov characterization"
 author: ["Olivier Gossner", "Rafael Veiel"]
 byline: "Olivier Gossner and Rafael Veiel"
 year: 2022

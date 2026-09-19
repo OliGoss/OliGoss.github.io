@@ -1,15 +1,15 @@
 ---
-title: "Overlapping Generations Games with Mixed Strategies"
+title: "Overlapping generations games with mixed strategies"
 author: ["Olivier Gossner"]
 byline: "Olivier Gossner"
 year: 1996
-publication: "Mathematics of Operations Research 21(2), 477–486 (1996)"
+publication: "Mathematics of Operations Research, 21(2), 477–486 (1996)"
 status: "published"
 paper-record: true
 featured: false
 body-classes: "paper-page"
 google-scholar: true
-citation: {"issued": {"year": 1996}, "type": "article-journal", "container-title": "Mathematics of Operations Research", "volume": "21", "issue": "2", "page": "477–486", "doi": "10.1287/moor.21.2.477"}
+citation: {"issued": {"year": 1996}, "type": "article-journal", "container-title": "Mathematics of Operations Research", "volume": "21", "issue": "2", "page": "477-486", "doi": "10.1287/moor.21.2.477"}
 description: "Overlapping Generations Games with Mixed Strategies — Mathematics of Operations Research 21(2), 477–486 (1996)"
 publisher-url: "https://doi.org/10.1287/moor.21.2.477"
 pdf: "/wp-content/uploads/2017/01/OverlappingGenerations.pdf"

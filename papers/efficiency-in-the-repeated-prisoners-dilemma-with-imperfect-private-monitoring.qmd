@@ -1,5 +1,5 @@
 ---
-title: "Efficiency in the Repeated Prisoner’s Dilemma with Imperfect Private Monitoring"
+title: "Efficiency in the repeated prisoner's dilemma with imperfect private monitoring"
 author: ["Kyna Fong", "Olivier Gossner", "Johannes Hörner", "Yuliy Sannikov"]
 byline: "Kyna Fong, Olivier Gossner, Johannes Hörner and Yuliy Sannikov"
 year: 2011

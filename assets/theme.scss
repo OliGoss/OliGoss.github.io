@@ -56,7 +56,7 @@ p { margin-bottom: 1.15rem; }
 .section-heading h2 { margin: 0 0 1.25rem; }
 .section-heading p { margin: 0; }
 .section-link { font-size: .86rem; white-space: nowrap; }
-.publication-row { display: grid; grid-template-columns: 65px minmax(0, 1fr); gap: 22px; padding: 1.55rem 0; border-bottom: 1px solid var(--rule); }
+.publication-row { display: grid; grid-template-columns: 65px minmax(0, 1fr); gap: 22px; padding: 1.2rem 0; border-bottom: 1px solid var(--rule); }
 .publication-year { color: var(--muted); font-size: .81rem; padding-top: .3rem; font-variant-numeric: tabular-nums; }
 .publication-content h3 { margin: 0 0 .5rem; font-family: Georgia, serif; font-size: 1.33rem; line-height: 1.35; font-weight: 400; }
 .publication-content h3 a { color: var(--ink); text-decoration: none; }
@@ -88,6 +88,7 @@ p { margin-bottom: 1.15rem; }
   .navbar-collapse { padding: .9rem 0; }
 }
 @media (max-width: 640px) {
+  .navbar-brand { font-size: 1.2rem; }
   .navbar > .container-fluid { padding: 0 22px; }
   #quarto-content.page-columns { padding-left: 22px; padding-right: 22px; }
   #quarto-document-content { padding-top: 1.7rem; }
@@ -95,7 +96,7 @@ p { margin-bottom: 1.15rem; }
   .academic-profile h1 { font-size: 2.35rem; }
   .profile-portrait { display: none; }
   .section-heading h2 { font-size: 1.65rem; }
-  .publication-row { grid-template-columns: 40px minmax(0,1fr); gap: 12px; padding: 1.3rem 0; }
+  .publication-row { grid-template-columns: 40px minmax(0,1fr); gap: 12px; padding: 1.15rem 0; }
   .publication-content h3 { font-size: 1.2rem; }
   .publication-year { font-size: .76rem; }
   .workshop-list { grid-template-columns: minmax(0, 1fr); }

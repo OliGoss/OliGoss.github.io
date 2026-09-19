@@ -3,13 +3,13 @@ title: "Protocoles de communication robustes"
 author: ["Olivier Gossner"]
 byline: "Olivier Gossner"
 year: 1997
-publication: "Revue économique 48(3), 685–695 (1997)"
+publication: "Revue économique, 48(3), 685–695 (1997)"
 status: "published"
 paper-record: true
 featured: false
 body-classes: "paper-page"
 google-scholar: true
-citation: {"issued": {"year": 1997}, "type": "article-journal", "container-title": "Revue économique", "volume": "48", "issue": "3", "page": "685–695", "doi": "10.3406/reco.1997.409907"}
+citation: {"issued": {"year": 1997}, "type": "article-journal", "container-title": "Revue économique", "volume": "48", "issue": "3", "page": "685-695", "doi": "10.3406/reco.1997.409907"}
 description: "Protocoles de communication robustes — Revue économique 48(3), 685–695 (1997)"
 publisher-url: "https://doi.org/10.3406/reco.1997.409907"
 pdf: "/wp-content/uploads/2017/01/ProtocolesRobustes.pdf"

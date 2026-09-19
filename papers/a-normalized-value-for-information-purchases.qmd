@@ -3,7 +3,7 @@ title: "A normalized value for information purchases"
 author: ["Antonio Cabrales", "Olivier Gossner", "Roberto Serrano"]
 byline: "Antonio Cabrales, Olivier Gossner and Roberto Serrano"
 year: 2017
-publication: "Journal of Economic Theory, 170: 266-288, 2017"
+publication: "Journal of Economic Theory, 170, 266–288 (2017)"
 status: "published"
 paper-record: true
 featured: false
@@ -12,7 +12,7 @@ pdf-label: "Paper PDF"
 publisher-url: ""
 body-classes: "paper-page"
 google-scholar: true
-citation: {"type": "article-journal", "issued": {"year": 2017}, "container-title": "Journal of Economic Theory"}
+citation: {"type": "article-journal", "issued": {"year": 2017}, "container-title": "Journal of Economic Theory", "volume": "170", "page": "266-288"}
 description: "A normalized value for information purchases — Journal of Economic Theory, 170: 266-288, 2017"
 abstract: |
   Consider agents who are heterogeneous in their preferences and wealth levels. These agents may acquire information prior to choosing an investment that has a property of no-arbitrage, and each piece of information bears a corresponding cost. We associate a numeric index to each information purchase (information-cost pair). This index describes the normalized value of the information purchase: it is the risk-aversion level of the unique CARA agent who is indifferent between accepting and rejecting the purchase, and it is characterized by a “duality” principle that states that agents with a stronger preference for information should engage more often in information purchases. No agent more risk-averse than the index finds it profitable to acquire the information, whereas all agents less risk-averse than the index do. Given an empirically measured range of degrees of risk aversion in a competitive economy with no-arbitrage investments, our model therefore comes close to describing an inverse demand for information, by predicting what pieces of information are acquired by agents and which ones are not. Among several desirable properties, the normalized value formula induces a complete ranking of information structures that extends Blackwell’s classic ordering.

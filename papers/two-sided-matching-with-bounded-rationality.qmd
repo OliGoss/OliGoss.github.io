@@ -1,5 +1,5 @@
 ---
-title: "Two-Sided Matching with Bounded Rationality: A Stochastic Framework for Personnel Selection"
+title: "Two-sided matching with bounded rationality: a stochastic framework for personnel selection"
 author: ["Saeed Najafi-Zangeneh", "Naser Shams-Gharneh", "Olivier Gossner"]
 byline: "Saeed Najafi-Zangeneh, Naser Shams-Gharneh and Olivier Gossner"
 year: 2025

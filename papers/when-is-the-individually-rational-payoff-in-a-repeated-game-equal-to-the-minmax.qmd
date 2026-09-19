@@ -3,7 +3,7 @@ title: "When is the lowest equilibrium payoff in a repeated game equal to the mi
 author: ["Olivier Gossner", "Johannes Hörner"]
 byline: "Olivier Gossner and Johannes Hörner"
 year: 2010
-publication: "Journal of Economic Theory 145(1), 63–84 (2010)"
+publication: "Journal of Economic Theory, 145(1), 63–84 (2010)"
 status: "published"
 paper-record: true
 featured: false
@@ -12,7 +12,7 @@ pdf-label: "Paper PDF"
 publisher-url: "https://doi.org/10.1016/j.jet.2009.07.002"
 body-classes: "paper-page"
 google-scholar: true
-citation: {"type": "article-journal", "issued": {"year": 2010}, "container-title": "Journal of Economic Theory", "volume": "145", "page": "63–84", "doi": "10.1016/j.jet.2009.07.002", "issue": "1"}
+citation: {"type": "article-journal", "issued": {"year": 2010}, "container-title": "Journal of Economic Theory", "volume": "145", "page": "63-84", "doi": "10.1016/j.jet.2009.07.002", "issue": "1"}
 description: "When is the lowest equilibrium payoff in a repeated game equal to the minmax payoff? — Journal of Economic Theory 145(1), 63–84 (2010)"
 abstract: |
   We study the relationship between a player’s lowest equilibrium payoff in a repeated game with imperfect monitoring and this player’s min max payoff in the corresponding one-shot game. We characterize the signal structures under which these two payoffs coincide for any payoff matrix. Under an identifiability assumption, we further show that, if the monitoring structure of an infinitely repeated game “nearly” satisfies this condition, then these two payoffs are approximately equal, independently of the discount factor. This provides conditions under which existing folk theorems exactly characterize the limiting payoff set.

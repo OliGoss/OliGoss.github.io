@@ -1,9 +1,9 @@
 ---
-title: "On the consequences of behavioural adaptations in the cost-benefits analysis of road safety measures"
+title: "On the consequences of behavioral adaptations in the cost-benefit analysis of road safety measures"
 author: ["Olivier Gossner", "Pierre Picard"]
 byline: "Olivier Gossner and Pierre Picard"
 year: 2005
-publication: "Journal of Risk and Insurance, 72: 577-599, 2005"
+publication: "Journal of Risk and Insurance, 72(4), 577–599 (2005)"
 status: "published"
 paper-record: true
 featured: false
@@ -12,7 +12,7 @@ pdf-label: "Paper PDF"
 publisher-url: ""
 body-classes: "paper-page"
 google-scholar: true
-citation: {"type": "article-journal", "issued": {"year": 2005}, "container-title": "Journal of Risk and Insurance"}
+citation: {"type": "article-journal", "issued": {"year": 2005}, "container-title": "Journal of Risk and Insurance", "volume": "72", "page": "577-599", "issue": "4"}
 description: "On the consequences of behavioural adaptations in the cost-benefits analysis of road safety measures — Journal of Risk and Insurance, 72: 577-599, 2005"
 abstract: |
   It is sometimes argued that road safety measures or automobile safety standards fail to save lives because safer highways or safer cars induce more dangerous driving. A similar but less extreme view is that ignoring the behavioral adaptation of drivers would bias the cost–benefit analysis of a traffic safety measure. This article derives cost–benefit rules for automobile safety regulation when drivers may adapt their risk-taking behavior in response to changes in the quality of the road network. The focus is on the financial externalities induced by accidents because of the insurance system as well as on the consequences of drivers’ risk aversion. We establish that road safety measures are Pareto improving if their monetary cost is lower than the difference between their (adjusted for risk aversion) direct welfare gain with unchanged behavior and the induced variation in insured losses due to drivers’ behavioral adaptation. The article also shows how this rule can be extended to take other accident external costs into account.

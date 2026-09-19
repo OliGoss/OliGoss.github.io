@@ -1,15 +1,15 @@
 ---
-title: "Ability and Knowledge"
+title: "Ability and knowledge"
 author: ["Olivier Gossner"]
 byline: "Olivier Gossner"
 year: 2010
-publication: "Games and Economic Behavior 69(1), 95–106 (2010)"
+publication: "Games and Economic Behavior, 69(1), 95–106 (2010)"
 status: "published"
 paper-record: true
 featured: false
 body-classes: "paper-page"
 google-scholar: true
-citation: {"issued": {"year": 2010}, "type": "article-journal", "container-title": "Games and Economic Behavior", "volume": "69", "issue": "1", "page": "95–106", "doi": "10.1016/j.geb.2009.10.011"}
+citation: {"issued": {"year": 2010}, "type": "article-journal", "container-title": "Games and Economic Behavior", "volume": "69", "issue": "1", "page": "95-106", "doi": "10.1016/j.geb.2009.10.011"}
 description: "Ability and Knowledge — Games and Economic Behavior 69(1), 95–106 (2010)"
 publisher-url: "https://doi.org/10.1016/j.geb.2009.10.011"
 pdf: "/wp-content/uploads/2017/01/AbilKnow4.pdf"
