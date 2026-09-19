@@ -6,7 +6,7 @@ description: "Curriculum vitae and institutional profiles of Olivier Gossner."
 ::: {.article-body}
 [Download CV](/cv.pdf){.btn .btn-primary}
 
-[Current document: January 2024 · PDF]{.cv-date}
+[Current document: September 2026 · PDF]{.cv-date}
 
 ## Institutional profiles
 
