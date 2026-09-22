@@ -19,11 +19,16 @@
   document.querySelectorAll('a[href]').forEach((link) => {
     try {
       const target = new URL(link.href, document.baseURI);
-      if (!downloadable.test(target.pathname)) return;
+      const arxivPdf = /(^|\.)arxiv\.org$/i.test(target.hostname) &&
+        /^\/pdf\//i.test(target.pathname);
+      if (!downloadable.test(target.pathname) && !arxivPdf) return;
 
       const filename = target.pathname.split('/').pop() || target.pathname;
-      link.dataset.goatcounterClick = `download:${target.pathname}`;
-      link.dataset.goatcounterTitle = `Download: ${filename}`;
+      const destination = target.hostname === window.location.hostname
+        ? target.pathname
+        : `${target.hostname}${target.pathname}`;
+      link.dataset.goatcounterClick = `download:${destination}`;
+      link.dataset.goatcounterTitle = `Download: ${filename} (${target.hostname})`;
       link.dataset.goatcounterReferrer = window.location.pathname;
       link.dataset.goatcounterNoSession = '1';
     } catch (_) {
