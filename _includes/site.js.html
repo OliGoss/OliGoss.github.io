@@ -9,3 +9,28 @@
   }).catch(() => {});
 })();
 </script>
+
+<script>
+// Record clicks on downloadable files as GoatCounter events. The event name
+// retains the file path, while the referrer identifies the page containing it.
+(function () {
+  const downloadable = /\.(?:csv|docx?|epub|pdf|pptx?|tex|xlsx?|zip)$/i;
+
+  document.querySelectorAll('a[href]').forEach((link) => {
+    try {
+      const target = new URL(link.href, document.baseURI);
+      if (!downloadable.test(target.pathname)) return;
+
+      const filename = target.pathname.split('/').pop() || target.pathname;
+      link.dataset.goatcounterClick = `download:${target.pathname}`;
+      link.dataset.goatcounterTitle = `Download: ${filename}`;
+      link.dataset.goatcounterReferrer = window.location.pathname;
+      link.dataset.goatcounterNoSession = '1';
+    } catch (_) {
+      // Ignore malformed links rather than interfering with navigation.
+    }
+  });
+})();
+</script>
+<script data-goatcounter="https://gossnero.goatcounter.com/count"
+        async src="https://gc.zgo.at/count.js"></script>
