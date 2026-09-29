@@ -1,0 +1,23 @@
+---
+title: "Pour la Patrie, les Sciences et la Gloire. L’École polytechnique et ses transformations récentes"
+author: ["Pierre Picard", "Olivier Gossner"]
+byline: "Interview with Pierre Picard and Olivier Gossner"
+year: 2026
+publication: "In Robert Gary-Bobo (ed.), Universités et grandes écoles : deux modèles sous tension. Manuel de bon gouvernement, Hermann, pp. 485–546 (2026)"
+status: "chapter"
+paper-record: true
+featured: false
+publisher-url: "https://www.editions-hermann.fr/livre/universites-et-grandes-ecoles-deux-modeles-sous-tension-robert-gary-bobo"
+body-classes: "paper-page"
+google-scholar: true
+citation: {"type": "chapter", "issued": {"year": 2026}, "author": [{"literal": "Pierre Picard"}, {"literal": "Olivier Gossner"}], "editor": [{"literal": "Robert Gary-Bobo"}], "container-title": "Universités et grandes écoles : deux modèles sous tension. Manuel de bon gouvernement", "publisher": "Hermann", "page": "485-546", "ISBN": "979-10-370-5078-6"}
+description: "Pour la Patrie, les Sciences et la Gloire — interview with Pierre Picard and Olivier Gossner in Universités et grandes écoles : deux modèles sous tension (Hermann, 2026)"
+---
+
+[← All research](index.qmd){.back-link}
+
+{{< meta publication >}}
+
+An interview with Pierre Picard and Olivier Gossner on the École polytechnique and its recent transformations.
+
+[Publisher’s book page]({{< meta publisher-url >}})
