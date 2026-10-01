@@ -27,6 +27,7 @@ Graduate lecture notes · English
 ```{=html}
 <ul class="resource-list">
   <li><a href="/assets/teaching/advanced-game-theory-lecture-1.pdf">Lecture 1: Knowledge and agreement</a><small>Lecture slides · PDF</small></li>
+  <li><a href="/assets/teaching/advanced-game-theory-lecture-2.pdf">Lecture 2: Information and rational behavior</a><small>Lecture slides · PDF</small></li>
   <li><a href="/assets/teaching/advanced-game-theory-chapter-1.pdf">Chapter 1: Modeling information and knowledge</a><small>Lecture notes · PDF</small></li>
   <li><a href="/assets/teaching/advanced-game-theory-chapter-2.pdf">Chapter 2: Solution concepts</a><small>Lecture notes · PDF</small></li>
   <li><a href="/assets/teaching/advanced-game-theory-chapters-3-4.pdf">Chapters 3–4: Value of information</a><small>Lecture notes · PDF</small></li>
