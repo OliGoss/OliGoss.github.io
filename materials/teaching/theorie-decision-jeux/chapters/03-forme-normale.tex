@@ -1,0 +1,686 @@
+\chapter{Jeux sous forme normale}
+La théorie de la décision --par exemple du consommateur-- permet
+de relier les choix d'un agent avec ses préférences. Un agent
+rationnel est un agent qui cherche à maximiser son utilité
+(espérée). Un ``bon'' choix, ou choix rationnel, est un choix
+maximisateur d'utilité.
+
+Nous allons introduire la théorie des jeux, que l'on pourrait
+aussi appeler théorie de la décision interactive, en modélisant et
+en étudiant des situations dans lesquelles plusieurs agents sont en
+situations de choix, les choix des uns affectant l'utilité des
+autres. Le ``bon'' choix pour un agent dépend maintenant des choix
+des autres agents.
+
+\section{Description d'un jeu sous forme normale}
+\begin{exemple}
+Amanda et Bertrand veulent se rencontrer à NY, mais n'ont pas
+décidé d'un lieu de rendez-vous. Ils peuvent chacun se rendre soit
+à l'Empire State Building, soit à Central Park.
+
+Le but de chacun est de rencontrer l'autre, peu importe où. Les
+préférences de chacun sur quel lieu o\`u aller dépendent donc de
+ce que fait l'autre.
+
+On peut donc décrire la situation par les éléments suivants :
+\begin{itemize}
+\item 2 joueurs, Amanda et Bertrand %
+\item 2 décisions possibles pour chacun d'entre eux. (ESB, CP).%
+\item L'utilité de chaque joueur en fonction de son choix et de celui
+de l'autre joueur.
+\end{itemize}
+\end{exemple}
+
+En général, un jeu sous forme normale est donné par
+\begin{itemize}
+\item  Une liste d'agents (ou joueurs) $I$; %
+\item  Un ensemble de stratégies $S_i$ pour chaque agent $i$;%
+\item  L'issue du jeu $s$ correspond au vecteur $(s_i)$ de
+stratégies choisi; %
+\item Des préférences pour les joueurs sur $S$,
+représentées par une fonction $g_i \colon \Pi_i S_i\to \reals$.
+\end{itemize}
+
+\begin{exemple} Pour le jeu de rendez-vous à New-York,
+\begin{itemize}
+\item  $I=\{\mbox{Amanda},\mbox{ Bernard}\}$; %
+\item  $S_i = \{E, C\}$; %
+\item  $S = \{(E,C), (E,E), (C,C),
+(C,E)\}$; %
+\item $g_i(s_1, s_2) = 1$ si $s_1 = s_2$, $0$ sinon.
+\end{itemize}
+On représente le jeu par la matrice suivante : Amanda choisit la
+ligne, et Bernard choisit la colonne. La paire de paiements pour
+Amanda et pour Bernard est inscrite dans la case.
+
+
+\begin{center}
+\begin{game}{2}{2}
+    &  $E$  &  $C$    \\
+$E$ & $1,1$ & $0,0$   \\
+$C$ & $0,0$ & $1,1$   \\
+\end{game}\hspace*{20mm}%
+\end{center}
+
+\end{exemple}
+
+\begin{definition}
+Un jeu $G$ sous forme normale est donné par :
+\begin{itemize}
+\item Un ensemble fini de joueurs $I$ ; %
+\item Des ensembles de
+stratégies $S_i$ ; %
+\item Des fonctions de paiement $g_i\colon
+\Pi_i S_i\to \reals$.
+\end{itemize}
+On utilise les notations :\\
+$S=\Pi_i S_i$ \\
+$S_{-i} = \Pi_{j\neq i}S_j$.
+\end{definition}
+
+Nous passons maintenant en revue quelques jeux ou classes de jeux
+particulièrement importants.
+
+\subsection{Jeux à intérêts communs}
+Ce sont des jeux dans lesquels tous les joueurs ont les mêmes
+intérêts, ou préférences. On a donc $g_i = g_j$ pour tous joueurs
+$i,j$. On peut voir ces jeux comme une généralisation des
+problèmes à un agent.
+
+Par exemple, le jeu de rendez-vous à New-York fait partie de cette
+catégorie.
+
+\subsection{Jeux à somme nulle}
+Ce sont des jeux à deux joueurs dans lesquels les intérêts sont
+parfaitement antagonistes. Ces jeux sont à l'opposé des jeux à
+intérêts communs. Ce qui est gagné par un joueur est perdu par
+l'autre. La somme des fonctions d'utilité est donc $0$. C'est à
+dire que $g_i = -g_j$.
+
+\begin{exemple} Jeux de pile ou face. Deux joueurs annoncent
+Pile (P) ou face (F). Le joueurs 2 paie 1 \euro\ à 1 si les deux
+choisissent la même chose, sinon le joueur 1 paie 1 \euro\ au
+joueur 2.\\
+\begin{center}
+\begin{game}{2}{2}
+    &  $P$  &  $F$    \\
+$P$ & $1,-1$ & $-1,1$   \\
+$F$ & $-1,1$ & $1,-1$   \\
+\end{game}\hspace*{20mm}%
+\end{center}
+Chaque case représente l'utilité du joueur 1, suivie par celle du
+joueur~2.
+\end{exemple}
+
+\subsection{La bataille des sexes}
+Certains jeux font intervenir une part de coordination et une part de conflit entre
+les agents. C'est le cas du jeu de la bataille des sexes suivant.\\
+
+
+\begin{exemple}
+Un couple veut décider d'une sortie.\\
+L'homme préfère aller à l'Opéra, et
+la femme préfère assister à un match de foot.\\
+Pour chacun, être avec l'autre est plus important que le lieu.\\
+\begin{center}
+\begin{game}{2}{2}
+    &  $F$  &  $O$    \\
+$F$ & $2,1$ & $0,0$   \\
+$O$ & $0,0$ & $1,2$   \\
+\end{game}\hspace*{20mm}%
+\end{center}
+\end{exemple}
+
+\subsection{La fureur de vivre} Deux adolescents en voiture foncent
+l'un vers l'autre sur une route étroite. Personne ne veut sortir
+de la route. Si les deux sortent, aucun n'est vraiment satisfait,
+ni mécontent. Les choix pour chacun sont $F$ (faucon, rester sur
+la route), ou $C$ (colombe, sortir de la route).
+\begin{center}
+\begin{game}{2}{2}
+    &  $F$  &  $C$    \\
+$F$ & $-1,-1$ & $10,0$   \\
+$C$ & $0,10$ & $5,5$   \\
+\end{game}\hspace*{20mm}%
+\end{center}
+
+\subsection{Dilemme du prisonnier} Deux prisonniers complices sont
+interrogés séparément. Chacun peut trahir son partenaire en le
+dénonçant ($T$), ou bien rester silencieux ($S$). Si les deux
+trahissent, ils vont en prison pour 5 ans chacun. Si l'un trahit
+et pas l'autre celui qui trahit sort libre et l'autre va en prison
+pour 10 ans. Si personne ne trahit, ils vont en prison pour 3 ans
+tous deux.
+\begin{center}
+\begin{game}{2}{2}
+    &  $S$  &  $T$    \\
+$S$ & $-3,-3$ & $-10,0$   \\
+$T$ & $0,-10$ & $-5,-5$   \\
+\end{game}\hspace*{20mm}%
+\end{center}
+
+Le jeu du dilemme du prisonnier est un exemple fondamental en
+économie. Ce jeu est important car il fait ressortir une tension
+entre l'intérêt individuel et l'intérêt collectif. De nombreuses
+situations présentent une structure similaire à celle du dilemme
+du prisonnier
+\begin{itemize}
+\item Achat par internet ; Un acheteur et un vendeur se sont mis
+d'accord sur internet. Chacun a le choix entre envoyer le colis
+(ou bien l'argent), et ne pas l'envoyer. Chacun préfère que
+l'autre l'envoie et préférerait ne pas envoyer sa part. Cependant,
+les deux sont plus satisfaits si chacun respecte sa
+part du contrat plutôt que si aucun ne le fait.%
+\item Course aux armements ; Chaque pays peut décider de s'armer,
+ou non. L'intérêt des deux pays est qu'aucun ne dépense de
+resources pour s'armer, mais à stratégie fixée de l'autre, chacun
+préfère s'armer.%
+\item Achat d'un 4x4 ; Un 4x4 est avantageux pour celui qui l'a car on peut impressionner
+les autres voitures, et on se sent plus en sécurité. Mais ceci est au détriment des autres voitures. %
+\item Collusion et la commission européenne ; La commission
+européenne cherche à lutter contre les ententes secrètes des
+industries. Le problème étant que personne ne veut dénoncer ces
+ententes. La règle est que celui qui dénonce une entente ne se
+verra pas poursuivi. Chacun a donc intérêt à dénoncer plutôt qu'à
+être dénoncé.
+\end{itemize}
+
+
+\subsection{Compétition en quantités dite de Cournot}
+Deux firmes, 1 et 2, produisent des biens identiques.\\
+Chacune décide d'un niveau de production $q_i$, à un co\^ut
+$c_i(q_i)$. Le prix résultant de la loi de l'offre et de la
+demande est $p(q_1+q_2)$.
+\begin{eqnarray*}
+I   &=& \{1,2\}\\
+S_i &=& \reals_+ \\
+g_1(q_1,q_2) &=& q_1 p(q_1+q_2)-c_1(q_1)\\
+g_2(q_1,q_2) &=& q_2 p(q_1+q_2)-c_2(q_2)
+\end{eqnarray*}
+
+\subsection{Compétition en prix dite de Bertrand}
+Il s'agit d'un modèle de compétition par les prix. Chaque firme
+décide d'un prix de vente du bien, et les consommateurs (une unité
+en tout) achètent à la firme au prix le plus bas.
+\begin{eqnarray*}
+I   &=& \{1,2\}\\
+S_i &=& [0,M] \\
+\end{eqnarray*}
+$$
+g_i(p_i,p_j)=\begin{cases}
+  p_i &\mbox{si }\;\; p_i < p_j\\
+  0 &\mbox{si }\;\; p_i > p_j\\
+  p_i/2 &\mbox{si }\;\; p_i = p_j
+\end{cases}$$\\
+
+\section{Stratégies dominantes et dominées}
+Nous commençons maintenant l'étude des prédictions des issues des
+jeux sous forme normale. Étant donné un jeu, et en supposant les
+joueurs rationnels, que peut-on prédire qu'ils vont jouer, ou que
+peut-on prédire qu'ils ne vont pas jouer ? Si nous devions jouer
+dans un tel jeu, quel choix ferions-nous ?
+
+Une stratégie dominée est une stratégie qui donne un paiement
+strictement moins bon que celui d'une autre stratégie donnée, ceci
+pour tout choix possible des adversaires.
+
+\begin{definition}
+Une stratégie $s_i$ est (strictement) dominée s'il existe $s'_i$
+telle que
+$$
+\forall s_{-i}\in S_{-i},\, g_i(s'_i,s_{-i}) > g_i(s_i,s_{-i})
+$$
+On dit alors que $s'_i$ domine (strictement) $s_i$.
+\end{definition}
+
+Un joueur ``rationnel'' ne devrait jamais jouer une stratégie
+dominée. En effet, il a la possibilité d'une autre stratégie dont
+il sait qu'elle peut lui donner un meilleur gain, indépendamment
+des choix des autres joueurs.
+
+Une stratégie dominante donne un meilleur paiement que toute autre
+stratégie, pour tous les choix des autres joueurs.
+
+\begin{definition}
+Une stratégie $s_i$ est (strictement) dominante si pour toute
+autre stratégie $s'_i$.
+$$
+\forall s_{-i}\in S_{-i},\, g_i(s_i,s_{-i}) > g_i(s'_i,s_{-i})
+$$
+\end{definition}
+
+La définition se réécrit :
+\begin{proposition} Une stratégie $s_i$ est dominante si et seulement si elle domine toute stratégie
+$s'_i\neq s_i$.
+\end{proposition}
+
+Une conséquence quasi-immédiate de la définition est : %
+\begin{proposition}
+Si une stratégie $s_i$ est dominante, alors elle est unique à
+avoir cette propriété.
+\end{proposition}
+
+Si un joueur a une stratégie dominante, on peut alors penser que
+cette stratégie constitue un bon choix. Pour chaque choix des
+autres, elle donne le meilleur paiement possible.
+
+Nous pouvons maintenant construire un raisonnement en se basant
+sur le fait que si aucun joueur ne choisit de stratégie dominée,
+alors les autres joueurs peuvent anticiper ce phénomène.
+
+\begin{exemple}
+Considérons le jeu suivant :
+\begin{center}
+\begin{game}{2}{2}
+    &  $S$  &  $T$    \\
+$S$ & $0,-2$ & $-10,-1$   \\
+$T$ & $-1,-10$ & $-5,-5$   \\
+\end{game}\hspace*{20mm}%
+\end{center}
+
+Que devrait jouer le joueur 1 s'il sait que le joueur 2 est
+rationnel ?
+\end{exemple}
+
+\begin{exemple}
+Considérons le jeu suivant :
+\begin{center}
+\begin{game}{2}{3}
+    &  $G$  &  $M$   & $D$    \\
+$H$ & $2,2$ & $1,1$  & $4,0$  \\
+$B$ & $1,2$ & $4,1$  & $3,5$  \\
+\end{game}\hspace*{20mm}%
+\end{center}
+
+\begin{itemize}
+\item Que devrait jouer le joueur 1 s'il sait que le joueur 2 est rationnel ?\\
+\item Que devrait jouer le joueur 2 s'il sait que le joueur 1 sait qu'il est rationnel ?\\
+\end{itemize}
+
+\end{exemple}
+
+Ceci nous amène à définir le processus d'élimination itérée des stratégies dominées.
+
+\begin{definition} La procédure d'élimination itérée des
+stratégies dominées est la suivante :
+\begin{itemize}
+\item {\bf \'Etape 1 :} $S_i^0 = S_i$.%
+\item {\bf \'Etape 2 :} $S_i^1 = \{$ stratégies non dominées
+de $i$ $\}$.%
+\item {\bf \'Etape $k+1$ :} $$S_i^{k+1} = \{s_i \in S_i^k,
+\not\exists s'_i \in S^{k}_i, \forall s_{-i}\in
+S^{k}_{-i}, g_i(s'_i,s_{-i})>g_i(s_i,s_{-i})\}$$%
+Stratégies non dominées {\em face aux stratégies de } $S^k_i$%
+\item {\bf \'Etape $\infty$ :} $S_i^{\infty} = \cap_k S^k_i$.
+\end{itemize}
+\end{definition}
+
+Pour certains jeux, cette définition nous conduit à une prédiction
+unique des stratégies suivies par les joueurs.
+
+\begin{definition}
+Un jeu $G$ est résoluble par élimination itérée de stratégies
+dominées si pour tout $i$, $S_i^{\infty}$ est un singleton.
+\end{definition}
+
+\begin{exemple}
+Que dit la procédure d'élimination de stratégies dominées dans le
+jeu suivant ?
+\begin{center}
+\begin{game}{4}{4}
+    &  $A$  &  $B$   & $C$   & $D$  \\
+$A$ & $5,2$ & $2,6$  & $1,4$ & $0,4$\\
+$B$ & $0,0$ & $3,2$  & $2,1$ & $1,1$\\
+$C$ & $7,0$ & $2,2$  & $1,5$ & $5,1$\\
+$D$ & $9,5$ & $1,3$  & $0,2$ & $4,8$\\
+\end{game}\hspace*{20mm}%
+\end{center}
+\end{exemple}
+
+
+Passons maintenant à l'exemple suivant.
+\begin{exemple}~\\
+\begin{center}
+\begin{game}{2}{2}
+    &  $G$  &  $D$\\
+$H$ & $2,2$ & $4,4$\\
+$B$ & $3,1$ & $4,1$\\
+\end{game}\hspace*{20mm}%
+\end{center}
+Quelles sont les stratégies dominées, dominantes ?\\
+Quelles stratégies paraissent ``raisonnables'' ?%
+\end{exemple}
+
+Dans l'exemple précédent, il n'y a pas de stratégies (strictement)
+dominantes, ni dominées. Cependant, le choix de la stratégie $B$
+pour le joueur 1, et $D$ pour le joueur 2, semble un bon choix,
+car ces stratégies ne peuvent donner qu'un meilleur paiement que
+l'autre, et jamais un paiement moins bon. Ceci nous conduit à la
+définition d'une stratégie faiblement dominée.
+
+\begin{definition} Une stratégie $s_i$ est faiblement
+dominée s'il existe $s'_i$ telle que:
+\begin{eqnarray*}
+\forall s_{-i}, g_i(s'_i,s_{-i}) &\geq& g_i(s_i,s_{-i})\\
+\exists s_{-i}, g_i(s'_i,s_{-i}) &>& g_i(s_i,s_{-i})
+\end{eqnarray*}
+On dit dans ce cas que $s'_i$ domine faiblement $s_i$.
+\end{definition}
+
+Dans le jeu précédent, $H$ est faiblement dominée pour le joueur
+1, et $G$ est faiblement dominée pour le joueur 2.
+
+\begin{definition}
+Une stratégie $s_i$ est faiblement dominante si pour toute autre
+stratégie $s'_i$.
+\begin{eqnarray*}
+\forall s_{-i}\in S_{-i},\, g_i(s_i,s_{-i}) &\geq &g_i(s'_i,s_{-i})\\
+\exists s_{-i}\in S_{-i},\, g_i(s_i,s_{-i}) &> &g_i(s'_i,s_{-i})
+\end{eqnarray*}
+\end{definition}
+
+Si une telle stratégie existe, elle est unique. Elle semble
+représenter un choix ``raisonnable'', car on ne peut jamais le
+regretter.
+
+La définition se réécrit :
+\begin{proposition} Une stratégie $s_i$ est faiblement dominante si et seulement
+si elle domine faiblement toute stratégie $s'_i\neq s_i$.
+\end{proposition}
+
+Une conséquence quasi-immédiate de la définition est : %
+\begin{proposition}
+Si une stratégie $s_i$ est faiblement dominante, alors elle est
+unique à avoir cette propriété.
+\end{proposition}
+
+\begin{exemple}
+Un groupe de joueurs $I$ participe à une enchère pour un objet. La
+valeur de cet objet est $v_i$ pour le joueur $i$. Si chaque joueur
+$i$ met une enchère de $e_i$, l'objet est attribué à celui qui met
+l'enchère la plus haute, à un prix correspondant à la seconde
+enchère la plus haute.
+
+On demande de montrer comme exercice que pour le joueur $i$, jouer
+$e_i = v_i$ est une stratégie faiblement dominante.
+\end{exemple}
+
+Lorsqu'un joueur possède une stratégie dominante, on peut penser
+que cette stratégie constitue un ``bon'' choix. En revanche, une
+stratégie dominée (même faiblement) ne semble pas constituer un
+bon choix. Nous sommes tentés de généraliser la procédure de
+suppression itérée de stratégies dominées aux stratégies
+faiblement dominées. Voyons ce que l'on obtient dans l'exemple
+suivant :
+
+\begin{exemple} Soit le jeux donné par la matrice de paiements
+
+\begin{center}
+\begin{game}{3}{2}
+    &  $G$  &  $D$\\
+$H$ & $1,1$ & $0,0$\\
+$M$ & $1,1$ & $2,1$\\
+$B$ & $0,0$ & $2,1$\\
+\end{game}\hspace*{20mm}%
+\end{center}
+
+La procédure d'élimination des stratégies faiblement dominées nous
+permet d'éliminer $T$, puis $L$. Cette procédure pourrait aussi
+bien nous conduire à éliminer $B$, puis $R$.  Ces deux ordres de
+suppression de stratégies dominées nous conduit à des résultats
+différents. La méthode n'est donc pas concluante.
+\end{exemple}
+
+On demande de montrer en exercice que l'ordre de suppression des
+stratégies strictement dominées n'a pas d'influence sur le
+résultat final.
+
+En conclusion : Si on supprime de manière itérée les stratégies
+{\bf faiblement} dominées, le résultat peut dépendre de l'ordre
+des itérations. Ce n'est donc pas une bonne procédure. En
+revanche, nous n'avons pas ces difficultés avec la suppression
+itérée de stratégies strictement dominées.
+
+\begin{exemple}
+Considérons le jeu de compétition de Cournot suivant :
+\begin{itemize}
+\item $c_i(q_i) = c q_i$. \item $p = \alpha - \beta(q_1+q_2)$.
+\end{itemize}
+Si $i$ croit que $j$ va choisir $q_j$, alors la meilleure réponse
+(la stratégie qui maximise le paiement de $i$ à stratégie de $j$
+fixée) est :
+$$
+MR_i(q_j)=
+\begin{cases}
+  \frac{\alpha-c}{2\beta} - \frac{q_j}2 &\mbox{si }\;\; q_i \leq\frac{\alpha-c}{\beta}\\
+   0 &\mbox{sinon }
+\end{cases}$$\\
+Les joueurs choisissent dans $S^0=\reals$.\\
+Toutes les stratégies hors de $S^1=[0,\frac{\alpha-c}{2\beta}]$
+sont dominées
+(par 0).\\
+Ensuite, toutes les stratégies hors de
+$S^2=[MR(\frac{\alpha-c}{2\beta}), MR(0)]$ sont dominées (par
+$MR(\frac{\alpha-c}{2\beta})$). En itérant, on démontre que le jeu
+est résoluble par élimination itérée de stratégies dominées et
+que, $S_i^{\infty}=\{\frac{\alpha-c}{3\beta}\}$.
+\end{exemple}
+
+\section{\'Equilibre de Nash}
+La suppression itérée de stratégies dominées est attractive car
+elle repose sur l'idée de rationalité (et sur la connaissance par
+les joueurs de la rationalité des autres, etc...). Cependant, peu
+de jeux sont résolubles par élimination itérée de stratégies
+dominées. Nous introduisons un concept qui s'applique à une plus
+grande gamme de jeux : l'équilibre de Nash.
+
+L'équilibre de Nash peut être compris comme une convention sociale
+stable. C'est une règle collective de laquelle aucun individu n'a
+intérêt à s'écarter pourvu que les autres individus respectent eux
+aussi la règle.
+
+\begin{definition} Un profil de stratégies $s^*=(s_i)_i$ est
+un équilibre de Nash (en stratégies pures) si :
+$$
+\forall i, \forall s'_i\in S_i, g_i(s_i,s_{-i})\geq
+g_i(s'_i,s_{-i})
+$$
+\end{definition}
+
+La notion suivante d'équilibre de Nash strict est plus forte. Elle
+suppose que les joueurs préfèrent tous strictement jouer
+l'équilibre de Nash plutôt qu'une autre stratégie si les autres
+joueurs suivent l'équilibre de Nash.
+\begin{definition}  Un profil de stratégies $s^*\in S$ est un
+équilibre de Nash {\em strict} (en stratégies pures) si
+$$
+\forall i, \forall s'_i \in S_i, g_i(s^*_i,s^*_{-i})>
+g_i(s'_i,s^*_{-i})
+$$
+\end{definition}
+
+
+En particulier, un équilibre de Nash strict est un équilibre de
+Nash.
+
+\begin{exemple} Dilemme du prisonnier
+\begin{center}
+\begin{game}{2}{2}
+    &  $S$  &  $T$\\
+$S$ & $-3,-3$ & $-10,-10$\\
+$T$ & $0,-10$ & $-5,-5$\\
+\end{game}\hspace*{20mm}%
+\end{center}
+Seul équilibre de Nash: $(T,T)$.
+\end{exemple}
+
+\begin{exemple} Soit le jeu
+\begin{center}
+\begin{game}{2}{3}
+    &  $G$  &  $M$  &  $D$\\
+$H$ & $2,2$ & $1,1$ & $4,0$\\
+$B$ & $1,2$ & $4,1$ & $3,5$\\
+\end{game}\hspace*{20mm}%
+\end{center}
+Unique équilibre de Nash : $(H,G)$.
+\end{exemple}
+
+Le jeu du dilemme du prisonnier est résoluble en stratégies
+dominées, et l'équilibre de Nash est compatible avec cette
+prédiction.
+
+Le jeu précédent n'est pas résoluble en stratégies dominées, et
+cependant l'équilibre de Nash nous donne une prédiction.
+
+A l'équilibre de Nash, aucune stratégie dominée n'est jouée. Plus
+généralement, toutes les stratégies des équilibres de Nash
+survivent à l'élimination itérée des stratégies dominées.
+
+\begin{proposition}
+Si $s^*$ est un équilibre de Nash, alors pour tout $i$, $s^*_i\in
+S^\infty_i$.
+\end{proposition}
+{\em Démonstration :} Supposons $s\in \Pi_i S^k_i$, $s_i\not\in
+S^{k+1}_i$. Alors il existe $s'_i$ meilleur pour $i$ que $s_i$
+contre tous $s_{-i}\in \Pi_{j\neq i} S^k_j$, donc en particulier
+contre $s^*_{-i}$. Contradiction.
+
+Si on a un profil de stratégies dominantes, ce profil constitue un
+équilibre de Nash:
+\begin{proposition}
+Si $s^*$ est un profil de stratégies faiblement dominantes, $s^*$
+est un équilibre de Nash. Si $s^*$ est un profil de strictement
+dominantes alors $s^*$ est l'unique
+équilibre de Nash. %
+\end{proposition}
+
+\begin{exemple} Le jeu suivant est-il résoluble
+par élimination itérée de stratégies dominées ?\\
+Quels sont ses équilibres de Nash ?
+
+\begin{center}
+\begin{game}{3}{3}
+    &  $G$  &  $M$  &  $D$ \\
+$h$ & $5,3$ & $0,4$ & $3,5$\\
+$m$ & $4,0$ & $5,5$ & $4,0$\\
+$b$ & $3,5$ & $0,4$ & $5,3$\\
+\end{game}\hspace*{20mm}%
+\end{center}
+\end{exemple}
+
+\begin{exemple}
+Reprenons le jeu de compétition de Cournot donné par :
+\begin{itemize}
+\item $c_i(q_i) = c q_i$. \item $p = \alpha - \beta(q_1+q_2)$.
+\end{itemize}
+Quels sont les équilibres de Nash ?
+\end{exemple}
+
+\begin{exemple}
+Deux firmes, 1, 2. Firme $i$ décide d'un prix $p_i$. Le co\^ut
+marginal de production est $c$. La demande est donnée par $D(p)$,
+tous les acheteurs achêtent au meilleur prix.
+$$
+D_i(p_1,p_2)=
+\begin{cases}
+  D(p_i)   &\mbox{si }\;\; p_i < p_j\\
+  D(p_i)/2 &\mbox{si }\;\; p_i = p_j\\
+  0        &\mbox{si }\;\; p_i > p_j
+\end{cases}$$\\
+On suppose $D$ décroissante, et $D(c)>0$.\\
+
+Quels sont les équilibres de Nash ?
+\end{exemple}
+
+\begin{exemple}
+Modèle de compétition spatiale, appelée aussi compétition de Hotelling.\\
+Deux vendeurs de glace sur une plage linéaire ([0,1]).\\
+Chacun choisit un emplacement $x_i\in [0,1]$. Les consommateurs
+sont uniforméments répartis sur la plage,
+et achètent au vendeur le plus proche.\\
+Chaque vendeur veut maximiser ses ventes.\\
+Représentation en jeux ?\\
+\'Equilibres de Nash ?
+
+\end{exemple}
+
+Un jeu peut avoir plusieurs équilibres de
+Nash.
+
+\begin{exemple} Quels sont les équilibres de Nash en stratégies pures
+du jeu du RdV à NY ?\\
+\begin{center}
+\begin{game}{2}{2}
+    &  $E$  &  $C$  \\
+$E$ & $1,1$ & $0,0$ \\
+$C$ & $0,0$ & $1,1$ \\
+\end{game}\hspace*{20mm}%
+\end{center}
+\end{exemple}
+
+On peut aussi ne pas avoir d'équilibres. Voir le jeu suivant.
+\begin{exemple}
+Quels sont les équilibres de Nash en stratégies pures
+du jeu suivant à somme nulle ?\\
+\begin{center}
+\begin{game}{2}{2}
+    &  $P$  &  $F$  \\
+$P$ & $-1,1$ & $1,-1$\\
+$F$ & $1,-1$ & $-1,1$\\
+\end{game}\hspace*{20mm}%
+\end{center}
+\end{exemple}
+
+On peut avoir plusieurs équilibres de Nash, et cependant en
+préférer un plutôt qu'un autre pour des raisons liées au
+``risque'' pris en jouant les stratégies.
+
+\begin{exemple}
+Quels sont les équilibres de Nash en stratégies pures du jeu
+suivant ?\\ Quelle stratégie choisiriez-vous ?
+\begin{center}
+\begin{game}{2}{2}
+    &  $A$  &  $B$  \\
+$A$ & $9,9$ & $-15,8$\\
+$B$ & $8,-15$ & $7,7$\\
+\end{game}\hspace*{20mm}%
+\end{center}
+\end{exemple}
+
+Certaines stratégies faiblement dominées peuvent être jouées à
+l'équilibre de Nash.
+
+\begin{exemple}
+Quels sont les équilibres de Nash en stratégies pures du jeu
+suivant ?\\ Quelle stratégie choisiriez-vous ?
+\begin{center}
+\begin{game}{2}{2}
+    &  $A$  &  $B$  \\
+$A$ & $2,2$ & $1,2$\\
+$B$ & $2,1$ & $1,1$\\
+\end{game}\hspace*{20mm}%
+\end{center}
+\end{exemple}
+
+\subsection{Interprétations de l'\'Equilibre de Nash}
+La notion d'équilibre de Nash est centrale en théorie des jeux et
+en microéconomie. Elle est aussi appliquée en informatique,
+biologie, en sociologie... Les interprétations de cette notion
+sont diverses. On peut citer les justifications suivantes :
+\begin{itemize} %
+\item Prescriptions. Un individu extérieur
+propose un profil de stratégies. Si ce profil est un équilibre
+de Nash, personne n'a intérêt à dévier.%
+\item Communication. Les joueurs se mettent d'accord à l'avance
+sur quel profil jouer. Les EN sont des accords viables.%
+\item Introspection. Un joueur analyse le jeu et se convainc que
+seul l'EN est possible. Valable uniquement si unique EN. %
+\item Norme sociale. Dans certains pays, nous conduisons à
+droite de la route, dans d'autres à gauche. C'est la norme sociale
+qui dicte une règle. EN est nécessaire pour que cette
+règle soit suivie.%
+\item Apprentissage. Les joueurs découvrent les stratégies
+suivies par les autres au cours d'un processus d'apprentissage.%
+\item Evolution.  Si chaque espèce évolue de fa\c{c}on
+adaptée aux autres espèces, la résultante est un EN.
+\end{itemize}

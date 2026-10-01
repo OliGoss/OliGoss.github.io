@@ -8,6 +8,17 @@ Lecture notes in economics and game theory, for undergraduate and graduate study
 :::
 
 ::: {.course-section}
+## Théorie de la décision et théorie des jeux
+
+École nationale des ponts et chaussées · French
+
+An introductory course on preferences and expected utility, risk aversion, dynamic choice, normal-form and extensive-form games, mixed strategies, and Nash equilibrium. The five original handouts have been cleaned up and consolidated into a single edition.
+
+[Course description](theorie-decision-jeux.qmd){.btn .btn-outline-primary}
+[Download the notes](/assets/teaching/theorie-decision-et-theorie-des-jeux.pdf){.btn .btn-primary}
+:::
+
+::: {.course-section}
 ## Introduction aux sciences économiques
 
 École polytechnique · ECO361 · French

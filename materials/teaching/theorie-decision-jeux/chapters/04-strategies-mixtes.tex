@@ -1,0 +1,487 @@
+\chapter{Stratégies mixtes}
+Un des problèmes inhérents au concept d'équilibre de Nash en
+stratégies pures est que pour certains jeux, de tels équilibres
+n'existent pas. P.ex.\,le jeu de ``Pierre, Papier, Ciseaux" :
+\begin{center}
+\begin{game}[Pierre, Papier, Ciseaux]{3}{3}
+     &  $Pi$    &  $Pa$  & $Ci$\\
+$Pi$ & $0,0$    & $-1,1$ & $1,-1$\\
+$Pa$ & $1,-1$   & $0,0$  & $-1,1$\\
+$Ci$ & $-1,1$   & $1,-1$ & $0,0$\\
+\end{game}\hspace*{20mm}%
+\end{center}
+n'admet pas d'équilibre de Nash.
+
+La raison pour laquelle on n'a pas d'équilibres est la suivante :
+la notion d'équilibre de Nash en stratégies pures suppose que
+chaque joueur connaît les stratégies des autres joueurs. Or, nous
+sommes dans des jeux ou chaque joueur a intérêt à cacher sa
+stratégie, ou a bluffer. En effet, dans les jeux ``pile ou face"
+ou ``tirer un penalty", ou ``bluff au poker", on n'utilise pas
+toujours la même stratégie, et on ne connaît pas non plus à
+l'avance celle de l'adversaire.
+\begin{center}
+\begin{game}[Pile ou face]{2}{2}
+     &  $Pi$  &  $Fa$\\
+$Pi$ & $1,-1$ & $-1,1$\\
+$Fa$ & $-1,1$ & $1,-1$
+\end{game}\hspace*{20mm}%
+\end{center}
+
+Les stratégies mixtes, ou aléatoires, vont permettre de
+représenter ces possibilités de bluff, ou de jouer aléatoirement.
+
+\section{Définition des concepts}
+Nous allons définir les stratégies mixtes, puis les jeux dans
+lesquels les joueurs ont la possibilité de jouer des stratégies
+mixtes, et enfin définir un équilibre de Nash en stratégies mixtes
+comme un équilibre de Nash d'un tel jeu.
+
+\subsection{Stratégies mixtes}
+Nous commençons par définir le concept de stratégies mixtes. Soit
+donc $G = (I, (S_i)_i, (g_i)_i)$ un jeu sous forme normale
+
+\begin{definition} Une strat\'egie mixte pour le joueur
+$i$ est une loi de probabilit\'es sur $S_i$. $\Sigma_i
+=\Delta(S_i)$ repr\'esente l'ensemble des strat\'egies
+mixtes du joueur $i$. %
+\end{definition}
+
+On utilisera les notations : $\Sigma = \Pi_i \Sigma_i$,
+$\Sigma_{-i} = \Pi_{j\neq i} \Sigma_j$.
+
+Par opposition aux stratégies mixtes, on appelle les éléments de
+$S_i$ {\bf stratégies pures}. Ce sont des stratégies
+déterministes.
+
+On utilisera selon les cas différentes notations pour une
+stratégie mixte.
+\begin{enumerate}
+\item Notation fonction. $\sigma_i$ est l'application de $S_i$
+vers $\reals$ qui associe à la stratégie pure $s_i$ sa probabilité
+d'être jouée. Exemple: $S_1=\{H,B\}$,
+$\sigma_1(H)=\sigma_1(B)=\frac12$%
+\item Vecteur. On écrit $\sigma_i$ comme un vecteur de
+probabilités. Si $S_i= \{s_{i,1},\ldots,s_{i,n_i}\}$, on
+$\sigma_i$ se représente comme
+$(\sigma_i(s_{i,1}),\ldots,\sigma_i(s_{i,n_i}))$. Exemple :
+$\sigma_1=(\frac12,\frac12)$. %
+\item Combinaison convexe de stratégies pures : $\frac12H +
+\frac12B$.
+\end{enumerate}
+
+Il y a plusieurs interprétations possibles des stratégies mixtes,
+parmi elles, les plus courantes sont les suivantes :
+\begin{itemize}
+\item Possibilit\'e ``mat\'erielle'' de jouer al\'eatoirement.
+Rien ne s'oppose à priori à ce qu'un joueur décide aléatoirement
+quelle stratégie pure utiliser. La stratégie mixte est un choix
+aléatoire d'une stratégie pure.%
+\item Bluff, et part d'incertitude que chacun laisse sur sa
+strat\'egie. Ici, une stratégie mixte représente plutôt une
+croyance que chaque joueur a sur les manières de jouer des autres
+joueurs. Même si je décide si je vais bluffer ou non, de manière
+pas forcément aléatoire, je ne souhaite surtout pas que les
+autres joueurs connaissent mon choix !%
+\item Dans une population de joueurs, une strat\'egie
+correspond à une proportion dans laquelle une stratégie pure est
+jouée dans la population. Par exemple, si dans la ville de New
+Delhi 30\% des piétons cherchent à se ranger à gauche
+(systématiquement) lorsqu'ils croisent un autre piéton, et 70\% à
+droite, à chaque fois que je croise un piéton dans cette ville je
+joue face à la stratégie mixte $(30\%,70\%)$.%%
+\item Incertitude sur les paiements. (Harsanyi). Supposons que
+selon mon ``humeur'' du moment, j'aie une faible préférence pour
+bluffer, ou pour ne pas bluffer, et que les autres joueurs ne
+connaissent pas mes préférences. Dans ce cas, je joue la stratégie
+que je préfère, donc pas aléatoirement, mais les autres joueurs
+ont l'impression que je joue aléatoirement, et se représentent mon
+comportement par une stratégie mixte.
+\end{itemize}
+
+\begin{proposition}
+L'ensemble $\Sigma_i$ des stratégies mixtes du joueur $i$ est
+convexe. Ses points extr\^emaux sont les stratégies qui mettent
+probabilité 1 sur
+un seul point de $S_i$. %
+\end{proposition}
+
+Remarquons qu'un strat\'egie pure $s_i$ correspond \`a la
+strat\'egie mixte qui joue $s_i$ avec probabilit\'e~1. On
+considère donc $S_i$ comme sous-ensemble de $\Sigma_i$. Par
+conséquent, toute stratégie pure est vue comme une stratégie
+mixte. En considérant l'ensemble des stratégies mixtes, on étend
+les ensembles des stratégies des joueurs.
+
+\subsection{Extension mixte d'un jeu}
+
+Si chaque joueur $j$ joue la strat\'egie $\sigma_j$, la
+probabilité que $(s_j)_j$ soit le profil d'actions effectivement
+joué est $\Pi_i \sigma_i(s_i)$. Par conséquence, le paiement
+esp\'er\'e du joueur $i$ est :
+$$
+\sum_{(s_j)\in \prod_j S_j} \Pi_j \sigma_j(s_j) g_i((s_j)_j)
+$$
+Remarque : On suppose que les fonctions de gain $g_i\colon
+S\to\reals$ sont des fonctions d'utilité de von Neumann et
+Morgenstern, l'utilité pour l'aléa est l'espérance de l'utilité
+obtenue.
+
+La relation précédente définit des fonctions de paiement
+$g_i\colon\Sigma\to\reals$. On utilise donc la même notation pour
+l'application de $S$ vers $\reals$ et pour son extension de
+$\Sigma$ vers $\reals$.
+
+\begin{definition}
+{\em L'extension mixte} du jeu sous forme normale $(I,
+(S_i),(g_i)_i)$ est le jeu sous forme normale
+$(I,(\Sigma_i)_i,(g_i)_i)$.%
+\end{definition}
+
+Dans l'extension mixte :
+\begin{itemize}%
+\item L'ensemble des joueurs est $I$.%
+\item Chaque joueur choisit une stratégie mixte $\sigma_i\in
+\Sigma_i$. %
+\item Le paiement de $i$ est $g_i(\sigma)$.%
+\end{itemize}%
+
+
+\begin{proposition} L'application $g\colon\Sigma\to\reals$ est multilin\'eaire,
+c.a.d.\, elle est lin\'eaire sur chaque coordonn\'ee $\Sigma_i$.
+\end{proposition}
+{\bf Preuve :} il faut montrer que pour
+$\sigma_{-j}\in\Sigma_{-j}$, $\sigma_j, \sigma'_j \in \Sigma_j$ et
+$\lambda\in[0,1]$, et $\sigma''_j=\lambda \sigma_j + (1-\lambda)
+\sigma'_j$:
+$$
+g(\sigma_{-j},\sigma''_{j}) = \lambda g(\sigma_{-j},\sigma_{j}) +
+(1-\lambda)g(\sigma_{-j},\sigma'_{j})
+$$
+En particulier on a :
+$$
+g(\sigma_{-j},\sigma_{j}) = \sum_{s_j\in S_j}
+\sigma_j(s_j)g(\sigma_{-j},s_j)
+$$
+
+\subsection{Équilibre de Nash en stratégies mixtes}
+
+\begin{definition}
+ Un \'equilibre de Nash en strat\'egies mixtes
+de $G$ est un \'equilibre de Nash du jeu avec ensembles de
+strat\'egies $\Sigma_i$ et fonction de paiements $g_i$.
+\end{definition}
+
+Un équilibre de Nash en stratégies mixtes est donc un profil de
+strat\'egies mixtes $\sigma\in\Sigma$ tel que $\forall i$,
+$\forall \sigma'_i\in \Sigma_i$,
+$$
+g_i(\sigma_{-i},\sigma_{i})\geq g_i(\sigma_{-i},\sigma'_{i})
+$$
+
+\section{Etude de l'équilibre de Nash en stratégies mixtes}
+Nous allons nous poser (et y répondre) les questions suivantes sur
+les EN en stratégies mixtes.\\%
+\begin{enumerate}
+\item Quel rapport existe-t-il entre les EN en stratégies et en stratégies pures ? %
+\item Comment calculer les EN en stratégies mixtes ? %
+\item Quel est le rapport entre les EN en stratégies mixtes et l'élimination itérée de stratégies dominées ?%
+\item Existence des EN en stratégies mixtes ?
+\end{enumerate}%
+
+\subsection{Équilibres de Nash en stratégies pures et mixtes}
+
+\begin{proposition} $\sigma$ est un \'equilibre de Nash en
+strat\'egies mixtes si et seulement si :
+$$
+\forall i,~~\forall s_i\in S_i~~~~~~~
+g_i(\sigma_{-i},\sigma_{i})\geq g_i(\sigma_{-i},s_{i})
+$$
+\end{proposition} La partie ``seulement si'' provient du fait
+qu'une strat\'egie pure est aussi une strat\'egie mixte, la partie
+``si'' de la lin\'earit\'e de $g_i$ en $\sigma_i$.
+
+\begin{exemple} Chercher un \'equilibre de Nash du jeu de Pile ou Face, puis
+du jeu de ``Pierre, Papier, Ciseaux". %
+\end{exemple}
+
+\begin{proposition} Tout EN en strat\'egies pures est aussi un EN
+en strat\'egies mixtes.
+\end{proposition}
+{\bf Preuve }: Corollaire de la proposition pr\'ec\'edente.
+
+Par conséquent, considérer les stratégies mixtes nous donne plus
+d'équilibres qu'avec les stratégies pures. Pour les équilibres ne
+faisant intervenir que des stratégies pures, on parle d'équilibres
+de Nash en stratégies pures.
+
+\subsection{Recherche des équilibres en stratégies mixtes}
+\begin{definition}
+Dans un jeu fini, le support de $\sigma_i\in \Sigma_i$ est
+$$
+supp(\sigma_i)=\{s_i\in S_i, \sigma_i(s_i)>0\}
+$$
+\end{definition}
+
+\begin{proposition}(indifférence sur le support)
+Si $\sigma$ est un \'equilibre de Nash en strat\'egies mixtes,
+$$
+\forall i, ~~\forall s_i,s'_i\in
+supp(\sigma_i)~~~~~g_i(\sigma_{-i},s_{i})= g_i(\sigma_{-i},s'_{i})
+$$
+\end{proposition}
+En effet, si une stratégie du support donnait un meilleur paiement
+que $\sigma_i$, elle constituerait une déviation profitable. Elles
+donnent donc toutes un paiement inférieur ou égal à celui de
+$\sigma_i$. Mais alors, si une d'entre elles donnait un paiement
+strictement inférieur à celui de $\sigma_i$, on obtient une
+contradiction (utiliser le fait que cette stratégie est jouée avec
+probabilité $> 0$ sous $\sigma_i$ et la linéarité de $g_i$ en
+$\sigma_i$).
+
+\begin{proposition} $\sigma$ est un \'equilibre de Nash en
+strat\'egies mixtes si et seulement si pour tout $i$, %
+\begin{itemize}%
+\item $\forall s_i\in supp(\sigma_i)$
+$$
+g_i(\sigma_{-i},s_{i})= g_i(\sigma_{-i},\sigma_{i})
+$$
+\item $\forall s_i\not\in supp(\sigma_i)$
+$$
+g_i(\sigma_{-i},s_{i})\leq g_i(\sigma_{-i},\sigma_{i})
+$$
+\end{itemize}%
+\end{proposition}
+Conséquence des résultats précédents.
+
+Ceci fournit une proc\'edure de recherche des \'equilibres :
+\begin{enumerate}
+\item essayer tous les supports possibles ;%
+\item résoudre les probabilités rendant chaque joueur
+indifférent sur son
+support ;%
+\item vérifier que les stratégies hors du support ne donnent pas
+un paiement supérieur.
+\end{enumerate}
+
+{\bf Exemple} : Quels sont les équilibres de Nash  en stratégies
+pures et mixtes du jeu suivant ?
+\begin{center}
+\begin{game}{2}{2}
+     &  $G$    &  $D$ \\
+$H$ & $1,1$    & $0,4$\\
+$B$ & $0,2$    & $2,1$\\
+\end{game}\hspace*{20mm}%
+\end{center}
+Même question avec le jeu de "Pierre, Papier, Ciseaux".
+
+\subsection{Stratégies mixtes et dominées}
+
+Nous commençons par étendre la relation de domination stricte aux
+stratégies mixtes.
+\begin{definition}
+On dit que  $\sigma_i$ domine $\sigma'_i$ (strictement) lorsque
+pour toute $\sigma_{-i}$,
+$$
+g_i(\sigma_i,\sigma_{-i}) > g_i(\sigma'_i,\sigma_{-i})
+$$
+\end{definition}
+
+Pour vérifier qu'une stratégie en domine une autre, il suffit de
+le vérifier face à tout profil de stratégies pures.
+\begin{proposition}
+$\sigma_i$ domine $\sigma'_i$ si et seulement si pour tout
+$s_{-i}$,
+$$
+g_i(\sigma_i,s_{-i}) > g_i(\sigma'_i,s_{-i})
+$$
+\end{proposition}
+La condition nécessaire est évidente. Pour la condition
+suffisante, utiliser la linéarité.
+
+
+Une strat\'egie non domin\'ee par une strat\'egie pure peut \^etre
+domin\'ee par une strat\'egie mixte.
+
+\begin{exemple}
+Dans le jeu suivant :
+\begin{center}
+\begin{game}{3}{3}
+     &  $G$  &  $M$  & $D$\\
+$h$ & $1,1$  & $0,2$ & $0,4$\\
+$m$ & $0,2$  & $5,0$ & $1,6$\\
+$b$ & $0,2$  & $1,1$ & $2,1$\\
+\end{game}\hspace*{20mm}%
+\end{center}
+$M$ est strictement domin\'e par $\frac12G+\frac12D$.%
+\end{exemple}
+
+Nous pouvons redéfinir la procédure d'élimination itérée de
+stratégies dominées en prenant en compte les stratégies dominées
+par des stratégies mixtes.
+\begin{itemize}
+\item {\bf \'Etape 1 :} $S_i^0 = S_i$.%
+\item {\bf \'Etape 2 :} %
+$$
+S_i^1 = \{\mbox{elts.\,de $S_i$ non dominés par des elts.\,de
+$\Sigma_i$}\}
+$$%
+$$
+\Sigma_i^1 = \{\mbox{stratégies mixtes à support dans $S_i^1$}\}
+$$
+\item {\bf \'Etape $k+1$ :}%
+$$%
+S_i^{k+1} = \{s_i \in S_i^k, \not\exists\sigma_i \in \Sigma^{k}_i,
+\forall s_{-i}\in
+S^{k}_{-i}, g_i(\sigma_i,s_{-i})>g_i(s_i,s_{-i})\}$$%
+Stratégies non dominées {\em face aux stratégies de } $S^k_i$%
+$$
+\Sigma_i^k = \{\mbox{stratégies mixtes à support dans $S_i^k$}\}
+$$
+\item {\bf \'Etape $\infty$ :} $S_i^{\infty} = \cap_k S^k_i$.
+\end{itemize}
+
+Les équilibres de Nash en stratégies mixtes résistent à la
+procédure d'élimination itérée de stratégies (strictement)
+dominées.
+
+\begin{proposition}
+Si $\sigma$ est un EN en stratégies mixtes:
+$$
+\forall i\ \  supp(\sigma_i) \in S_i^\infty
+$$
+\end{proposition}
+Pour la démonstration, suivre le même raisonnement que pour
+l'élimination des stratégies dominées par des stratégies pures.
+Plus généralement:
+\begin{proposition}
+Les EN en stratégies mixtes d'un jeu sont les mêmes que celui du
+jeu duquel on a éliminé les stratégies strictement
+dominées.
+\end{proposition}
+
+{\bf Exemple} : r\'esoudre le jeu pr\'ec\'edent.
+
+\subsection{Existence des équilibres de Nash en stratégies mixtes}
+On a un équilibre de Nash lorsque chaque joueur joue optimalement
+face aux stratégies des autres joueurs.  Pour caractériser ces
+équilibres, nous sommes intéressés par l'application qui associe à
+chaque $\sigma_{-i}$ l'ensemble des stratégies $\sigma_i$ qui
+donnent le meilleur paiement face à $\sigma_{-i}$. Cette
+correspondance s'appelle la correspondance de meilleures réponses.
+
+\begin{definition}
+Une correspondance de $A$ vers $B$ est une application de $A$ vers
+les parties de $B$.%
+\end{definition}
+
+\begin{definition}
+ La correspondance de meilleure r\'eponse du joueur $i$ est la correspondance de
+$\Sigma_{-i}$ vers $\Sigma_i$ donnée par :
+$$
+MR_i(\sigma_{-i})=\arg\max_{\sigma_i\in
+\Sigma_i}g_i(\sigma_{-i},\sigma_i)
+$$
+La correspondance de meilleures réponses du jeu $G$ est la
+correspondance de $\Sigma$ vers $\Sigma$ donnée par
+$$
+MR(\sigma) = \Pi_i MR_i(\sigma_{-i})
+$$
+\end{definition}
+Les meilleures réponses permettent de caractériser les équilibres
+de Nash :
+
+\begin{proposition}
+$\sigma$ est un EN si et seulement si :
+$$
+\forall i\ \  \sigma_i \in MR_i(\sigma_{-i})
+$$
+i.e.
+$$
+\sigma \in MR(\sigma)
+$$
+\end{proposition}
+
+On a les propriétés suivantes de la correspondance de meilleures
+réponses :
+
+\begin{proposition}
+\begin{itemize}
+\item Pour tout $\sigma$, $MR(\sigma)$ est non vide%
+\item Pour tout $\sigma$, $MR(\sigma)$ est convexe%
+\item Si tous les $S_i$ sont finis, le graphe de $MR$ est fermé,
+i.e.\,si $\sigma_n\to \sigma$, $\tau_n\to \tau$ et $\tau_n\in
+MR(\sigma_n)$ alors $\tau\in MR(\sigma)$.%
+\end{itemize}
+\end{proposition}
+
+On rappelle le théorème d'existence de point fixe d'une
+correspondance de Kakutani :
+\begin{theoreme}[de Kakutani] Soit $X$
+un compact convexe non vide de $\reals^n$, et $F$ une
+correspondance de $X$ vers $X$ telle que :
+\begin{itemize}
+\item $\forall x\in X$, $F(x)$ est convexe et non vide ; \item Le
+graphe de $F$ est ferm\'e.
+\end{itemize}
+Alors $F$ admet un point fixe, i.e.\, il existe $x\in X$ tel que
+$x\in F(x)$. %
+\end{theoreme}
+
+{\bf Exercice} Montrer que les hypothèses
+\begin{itemize}
+\item $X$ compact ;%
+\item $X$ convexe ; \item $F(x)$ non vide pour
+tout $x$ ;%
+\item $F(x)$ convexe pour tout $x$ ;%
+\item le graphe de $F$ est ferm\'e
+\end{itemize}
+sont nécessaires.
+
+En corollaire du théorème précédent, on a le théorème d'existence
+d'équilibres de Nash en stratégies mixtes :
+
+
+\begin{theoreme}[Glicksberg, Nash] Tout jeu fini admet un
+équilibre de Nash en stratégies mixtes.
+\end{theoreme}
+
+\section{Le jeu de p\'enalties}
+
+Un joueur d\'ecide de tirer soit \`a droite, soit \`a gauche du
+gardien. Le gardien peut plonger soit \`a droite, soit \`a gauche.
+Le tir peut \^etre bien tir\'e ou sortir complètement (avec
+probabilit\'e $p_D$ pour un tir \`a droite, $p_G$ \`a gauche). Le
+gardien arr\^ete toujours la balle s'il plonge du bon c\^ot\'e. Il
+y a donc but si :
+\begin{enumerate}
+\item La balle est bien tir\'ee ; %
+\item Le gardien plonge du mauvais c\^ot\'e.
+\end{enumerate}
+
+On demande de résoudre les questions suivantes : L'objectif du
+joueur est de maximiser les possibilit\'es de marquer but, et le
+gardien veut minimiser ces possibilit\'es.
+\begin{itemize}
+\item Repr\'esenter le jeu sous forme normale. %
+\item Quels sont les \'equilibres de Nash ? %
+\item Un droitier tire-t-il plus souvent \`a gauche ou \`a droite
+? %
+\item Face \`a un droitier, le gardien plonge-t-il plus souvent
+\`a gauche ou \`a droite ?
+\end{itemize}
+Indice : Pour un droitier, $p_G > p_D$.
+
+\section{Course au brevet} Deux entreprises se lancent dans une course au
+brevet. Chacune investit un montant positif dans la recherche et
+celui qui investit le plus reçoit une subvention $V>0$. En cas
+d'\'egalit\'e, chacun reçoit $V/2$. On prend l'intervalle $\lbrack
+0,V\rbrack$ comme ensemble de strat\'egies pour chaque joueur.
+
+\begin{enumerate}
+\item Montrer que ce jeu n'a pas d'\'equilibre (en strat\'egies
+pures). %
+\item Montrer qu'il existe un \'equilibre en strat\'egies mixtes
+dans lequel joue une loi \`a support ``plein'' $\lbrack
+0,V\rbrack$.\
+\end{enumerate}

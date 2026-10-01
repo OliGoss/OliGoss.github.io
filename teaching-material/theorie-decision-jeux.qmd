@@ -1,0 +1,26 @@
+---
+title: "Théorie de la décision et théorie des jeux"
+description: "Notes de cours en français d'Olivier Gossner : choix et préférences, utilité espérée, risque, décision dynamique et théorie des jeux."
+lang: fr
+---
+
+::: {.page-intro}
+Notes de cours en français sur la décision individuelle et stratégique.
+:::
+
+Ces notes ont été préparées pour un cours enseigné à l'École nationale des ponts et chaussées entre 2002 et 2004. L'édition 2026 réunit les cinq polycopiés auparavant diffusés séparément, corrige diverses erreurs typographiques et modernise leur présentation. Le contenu scientifique reste celui du cours initial.
+
+[Télécharger les notes complètes](/assets/teaching/theorie-decision-et-theorie-des-jeux.pdf){.btn .btn-primary}
+
+## Contenu
+
+1. **Théorie de la décision** : choix et préférences, représentation ordinale, utilité espérée et croyances subjectives.
+2. **Aversion au risque** : risque absolu, risque relatif et applications.
+3. **Théorie de la décision dynamique** : information parfaite et imparfaite, induction à rebours.
+4. **Jeux sous forme normale** : stratégies dominantes, équilibre de Nash et exemples classiques.
+5. **Stratégies mixtes** : définition, calcul et existence des équilibres.
+6. **Jeux sous forme extensive** : information, stratégies de comportement, théorème de Kuhn et équilibre parfait dans les sous-jeux.
+
+## Référence
+
+Olivier Gossner (2026), *Théorie de la décision et théorie des jeux*, notes de cours, édition remise en forme.

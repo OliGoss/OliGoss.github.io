@@ -1,0 +1,556 @@
+\chapter{Aversion au risque}
+
+La théorie de l'utilité de von Neumann et Morgenstern nous dit que
+l'utilité associée à une loterie donnant un gain monétaire $x$
+avec probabilité $\frac12$ et $y$ avec probabilité $\frac12$ est
+la moyenne entre les utilités de $x$ et de $y$. Ce que la théorie
+de von Neumann et Morgenstern ne nous dit pas, c'est comment se
+comparent cette utilité avec celle du gain monétaire de $\frac12 x
++ \frac12 y$. C'est ce que nous étudions dans ce chapitre, qui
+concerne les préférences de l'agent face au risque.
+
+Les objectifs de ce chapitre sont :%
+\begin{itemize}
+\item D\'efinir un agent averse au risque ou qui aime le risque
+\item Caractériser les fonctions d'utilité correspondantes. %
+\item Étudier l'évolution du comportement face au risque avec la
+richesse.
+\item Mesurer cette aversion au risque ou cet amour du risque %
+\end{itemize}
+
+\section{Risque et utilités}
+
+Les gains et les pertes sont mesurés de manière monétaire. On
+considère donc des loteries à valeurs dans $\reals$, et soit $P=
+\{$ loteries sur $\reals$ \`a support fini $\}$. En particulier,
+pour $z\in \reals$, $\delta_z\in P$ représente la loterie qui
+donne $z$ avec probabilité 1. Pour $z\in P$, $e(z)=\sum_x z(x).x$
+est l'espérance de $p$. Pour $f\colon \reals\to\reals$, et $p\in
+P$, $\E_p f$ est l'esp\'erance de $f$ sous $p$.
+
+On se dote d'une relation de pr\'ef\'erences rationnelle $\succ$
+sur $P$ repr\'esent\'ee par une fonction d'utilit\'e de von
+Neumann--Morgenstern $u$.
+
+On caractérise d'abord la croissance de l'utilité avec l'argent.
+\begin{proposition}
+$u$ est strictement croissante si et seulement si:
+$$
+\delta_z \succ \delta_{z'} \Leftrightarrow z > z'
+$$
+\end{proposition}
+
+On supposera par la suite $u$ strictement croissante.
+
+\begin{definition}~
+\begin{itemize}
+\item[$\bullet$] $\succ$ est {\bf averse au risque} si
+$\delta_{e(p)}\succcurlyeq p$ pour tout $p\in P$.%
+\item[$\bullet$] $\succ$ est {\bf strictement averse au risque} si
+$\delta_{e(p)}\succ p$ pour tout $p\in P$.%
+\item[$\bullet$] $\succ$ est {\bf neutre au risque} si
+$\delta_{e(p)}\sim p$ pour tout $p\in P$.%
+\item[$\bullet$] $\succ$ {\bf aime le risque} si
+$\delta_{e(p)}\preccurlyeq p$ pour tout $p\in P$ %
+\item[$\bullet$] $\succ$ {\bf aime strictement le risque} si
+$\delta_{e(p)}\prec p$ pour tout $p\in P$.
+\end{itemize}
+\end{definition}
+On a les caractérisations suivantes en termes de fonctions
+d'utilité.
+\begin{proposition}~
+\begin{itemize}
+\item[$\bullet$] $\succ$ est averse au risque si et seulement si
+$u$ est
+concave.%
+\item[$\bullet$] $\succ$ est strictement averse au risque si et
+seulement si
+$u$ est strictement concave.%
+\item[$\bullet$] $\succ$ est neutre au risque si $u$ est affine. %
+\item[$\bullet$] $\succ$ aime le risque si $u$ est convexe. %
+\item[$\bullet$] $\succ$ aime strictement le risque si $u$ est
+strictement convexe.
+\end{itemize}
+\end{proposition}
+
+\section{Risque et richesse}
+Un agent aimera-t-il plus ou moins le risque lorsque sa richess
+augmente ? Deux d\'efinitions sont possibles :
+\begin{itemize}
+\item Un m\^eme risque (en valeurs {\em absolues}) sera-t-il pris
+par un agent plus riche, moins riche ?%
+\item Un m\^eme risque (en valeurs {\em relatives}) sera-t-il pris
+par un agent plus riche, moins riche ?
+\end{itemize}
+
+\subsection{Risque absolu}
+On définit l'aversion au risque absolu en termes de préférences
+avant de la caractériser en termes d'utilités.
+
+\begin{definition}
+$u$ (ou $\succ$) pr\'esente une {\em aversion au risque (absolu)
+d\'ecroissante} [resp.\, croissante, resp.\, constante] si
+$\forall$ $q\in P$, $z,w,w' \in \reals$ t.q.\, $w'>w$:
+\begin{eqnarray*}
+\E_{w+q}u>u(w+z) &\Rightarrow& \E_{w'+q}u>u(w'+z)\\
+\mbox{resp.\,} &\Leftarrow& \\
+\mbox{resp.\,} &\Leftrightarrow&
+\end{eqnarray*}
+\end{definition}
+
+Dans le premier cas, si la loterie $q$ est pr\'ef\'er\'ee \`a la
+somme $z$ s\^ure lorsque la richesse est $w$, elle l'est aussi si
+la richesse est $w'>w$.
+
+
+\begin{proposition} Supposons $u$ deux fois diff\'erentiable.
+Alors $u$ pr\'esente une aversion au risque d\'ecroissante
+[resp.\, croissante, resp.\, constante] si et seulement si la
+fonction:
+$$
+\lambda = - \frac{u''}{u'}
+$$
+est d\'ecroissante [resp.\, d\'ecroissante, resp.\, constante]. \\
+\end{proposition}
+
+$\lambda$ s'appelle le {\bf coefficient d'aversion au risque de
+Arrow-Pratt}. Il s'agit de la courbure de $u$ normalis\'ee par la
+d\'eriv\'ee.
+
+
+La proposition suivante caractérise l'aversion pour le risque
+absolu constante:
+
+\begin{proposition} Supposons $u$ deux fois diff\'erentiable. Alors
+$u$ pr\'esente une aversion au risque constante si et seulement si
+il existe $a>0$ et $b$ tels que:
+$$
+u(z)=
+\begin{cases}
+  az+b &\mbox{si }\;\; \lambda(z)\equiv0\cr
+  -ae^{-\lambda z}+b  &\mbox{si }\;\; \lambda(z)\equiv\lambda>0
+\end{cases}
+$$
+\end{proposition}
+
+C'est-à-dire que les préférences sont représentables par une
+fonction d'utilité $u$ qui peut être de deux types :
+$$
+u(z)=
+\begin{cases}
+  z &\mbox{si }\;\; \lambda(z)\equiv0\cr
+  -e^{-\lambda z}  &\mbox{si }\;\; \lambda(z)\equiv\lambda>0
+\end{cases}
+$$
+
+\subsection{Risque relatif}
+
+\begin{definition}
+$u$ (ou $\succ$) pr\'esente une {\em aversion au risque (relatif)
+d\'ecroissante} [resp.\, croissante, resp.\, constante] si
+$\forall$ $q\in P$ t.q.\ $q\geq 0$ avec pba.\, 1, $z>0$ $w'>w$:
+\begin{eqnarray*}
+\E_{wq}u>u(wz) &\Rightarrow& \E_{w'q}u>u(w'z)\\
+\mbox{resp.\,} &\Leftarrow& \\
+\mbox{resp.\,} &\Leftrightarrow&
+\end{eqnarray*}
+\end{definition}
+
+Dans le premier cas, si on pr\'ef\`ere multiplier sa richesse par
+la loterie $q$ plut\^ot que par $z$ lorsque la richesse est $w$,
+on le pr\'ef\`ere aussi si la richesse est $w'>w$.
+
+\begin{proposition} Supposons $u$ deux fois diff\'erentiable. Alors
+$u$ pr\'esente une aversion au risque relatif d\'ecroissante
+[resp.\, constante] si et seulement si la fonction:
+$$
+z\to  - \frac{zu''(z)}{u'(z)}
+$$
+est d\'ecroissante [resp.\, constante].
+\end{proposition}
+
+\begin{proposition} Supposons $u$ deux fois diff\'erentiable.
+Alors $u$ pr\'esente une aversion au risque relatif constante si
+et seulement si il existe $a>0$ et $b$ tels que:
+$$
+u(z)=
+\begin{cases}
+  a\ln(z)+b &\cr
+  a \gamma z^{\gamma}+b  &\mbox{pour un certain }\gamma<1, \gamma\neq 0
+\end{cases}
+$$
+\end{proposition}
+
+C'est-à-dire que les préférences sont représentables par une
+fonction d'utilité $u$ qui est d'un des trois types suivants :
+$$
+u(z)=
+\begin{cases}
+  \ln(z) & \cr
+  - z^{\gamma}  &\mbox{pour un certain }\gamma<0\cr
+    z^{\gamma}  &\mbox{pour un certain } 0<\gamma<1
+\end{cases}
+$$
+
+\section{Application}
+Supposons que vous ayez le choix entre les loteries suivantes:\\
+\begin{minipage}{3.5cm}%
+\begin{tabular}{p{0.4cm}p{0.4cm}p{0.4cm}}
+&\rnode{a}{$\blue\bullet$}&\\[1.5cm]
+\rnode{b}{$\blue\bullet$}&\rnode{c}{$\blue\bullet$}&\rnode{d}{$\blue\bullet$}\\[-0.4cm]
+\red\tiny25\euro&\red\tiny150\euro&\red\tiny600\euro\\
+\ncline[linewidth=1.3pt,linecolor=yellow]{a}{b}\aput[2pt]{0}(0.89){\tiny$0.7$}
+\ncline[linewidth=1.3pt,linecolor=yellow]{a}{c}\aput[2pt]{0}(0.95){\tiny$0.2$}
+\ncline[linewidth=1.3pt,linecolor=yellow]{a}{d}\aput[2pt]{0}(0.99){\tiny$0.1$}
+\end{tabular}%
+\end{minipage}%
+\begin{minipage}{3.5cm}%
+\begin{tabular}{p{0.4cm}p{0.4cm}p{0.4cm}}
+&\rnode{a}{$\blue\bullet$}&\\[1.5cm]
+\rnode{b}{$\blue\bullet$}&\rnode{c}{$\blue\bullet$}&\rnode{d}{$\blue\bullet$}\\[-0.4cm]
+\red\tiny80\euro&\red\tiny90\euro&\red\tiny98\euro\\
+\ncline[linewidth=1.3pt,linecolor=yellow]{a}{b}\aput[2pt]{0}(0.89){\tiny$0.2$}
+\ncline[linewidth=1.3pt,linecolor=yellow]{a}{c}\aput[2pt]{0}(0.95){\tiny$0.58$}
+\ncline[linewidth=1.3pt,linecolor=yellow]{a}{d}\aput[2pt]{0}(0.99){\tiny$0.22$}
+\end{tabular}%
+\end{minipage}%
+\begin{minipage}{3.5cm}%
+\begin{tabular}{p{0.4cm}p{0.4cm}p{0.4cm}}
+&\rnode{a}{$\blue\bullet$}&\\[1.5cm]
+\rnode{b}{$\blue\bullet$}&\rnode{c}{}&\rnode{d}{$\blue\bullet$}\\[-0.4cm]
+\red\tiny2\euro&\red\tiny&\red\tiny105\euro\\
+\ncline[linewidth=1.3pt,linecolor=yellow]{a}{b}\aput[2pt]{0}(0.89){\tiny$0.05$}
+%\ncline[linewidth=1.3pt,linecolor=yellow]{a}{c}\aput[2pt]{0}(0.95){\tiny$0.58$}
+\ncline[linewidth=1.3pt,linecolor=yellow]{a}{d}\aput[2pt]{0}(0.99){\tiny$0.95$}
+\end{tabular}%
+\end{minipage}\\
+A-t-on une mani\`ere objective de choisir entre ces loteries~?
+
+Une m\'ethode possible est de supposer une fonction d'utilité de
+von Neumann et Morgenstern, avec une aversion au risque constante
+{\em pour ces valeurs mon\'etaires}. Il reste \`a déterminer le
+coefficient d'aversion au risque $\lambda$.
+
+On peut déterminer $\lambda$ en répondant à la question suivante :
+Combien donneriez-vous pour une loterie offrant $0$ avec
+probabilit\'e $\frac12$ et $500$\,\euro\ avec probabilit\'e
+$\frac12$ ?
+
+Il est ensuite possible d'évaluer l'utilité pour chacune des
+loteries, et de déterminer celle qui maximise l'utilité.
+
+\chapter{Théorie de la décision dynamique}
+
+\section{Introduction}
+Nous considérons des situations dans lesquelles une suite de
+décisions doit \^etre prise par l'agent. On montre comment décrire
+ces situations par des arbres de décision, et comment décrire un
+comportement de l'agent par une stratégie. On verra aussi comment
+rechercher les stratégies optimales de l'agent, c'est-à-dire
+celles qui maximisent son utilité.
+
+\section{Décision dynamique en information parfaite}
+
+\subsection{Description d'un problème de décision}
+Un probl\`eme de décision dynamique en information parfaite est
+donné par
+\begin{itemize}
+\item $T$ ensemble fini de n{\oe}uds, $Z\subset T$ n{\oe}uds
+terminaux, et pour $t\not\in Z$ :
+\begin{itemize}
+\item  $i(t)\in \{N,J\}$ qui détermine si la nature ($N$) ou le
+joueur ($J$) joue en $t$ ;%
+\item L'ensemble de choix possibles au n{\oe}ud $t$, $A(t)$ ; %
+\item Le n{\oe}ud successeur r\'esultant du choix $a$, $N(t,a)$ ;
+\item Une distribution $D(t)$ sur $A(t)$ si $i(t)= N$.
+\end{itemize}
+\item $u:Z\to\reals$ fonctions d'utilit\'e du joueur ;
+\end{itemize}
+
+On définit ainsi les successeurs d'un n{\oe}ud
+\begin{itemize}
+\item $s(t)=\{N(t,a),a\in A(t)\}$ ensemble des successeurs directs
+de $t$. ($\emptyset$ si $t\in Z$).%
+\item $S(t)= s(t)\cup s(s(t)) \cup s(s(s(t)))...$ tous les
+successeurs de $t$.
+\end{itemize}
+
+On suppose que le problème a une structure d'arbre, c'est à dire :
+
+\begin{itemize}
+\item Il n'y a pas de cycle : $\forall t, t\not\in S(t)$ %
+\item Il existe un  n{\oe}ud initial $\exists\tilde t, S(\tilde
+t)\cup\{\tilde t\}=T$ %
+\item Chaque n{\oe}ud a un unique prédécesseur
+\end{itemize}
+
+\begin{exemple}
+Exemple : casino.\\
+$\bullet$ 1\`ere \'etape : Le joueur peut d\'ecider de jouer ou non.\\
+S'il ne joue pas le jeu s'arr\^ete.\\
+Sinon, la nature tire \`a pile ou face s'il gagne 1 ou perd 2.\\[0.5cm]
+$\bullet$ 2\`eme \'etape : Le joueur peut d\'ecider de jouer ou non.\\
+S'il ne joue pas le jeu s'arr\^ete.\\
+S'il joue, la nature tire \`a pile ou face s'il gagne 3 ou perd 2
+(en plus des gains et pertes de la première étape).
+
+On représente ce jeu par l'arbre suivant :\\[0.5cm]
+\begin{tabular}{p{1cm}p{1cm}p{1cm}p{1cm}p{1cm}p{1cm}}
+&&&\rnode{a}{$\bullet$}&\rnode{c}{$0$}\\[0.7cm]
+&&\rnode{b}{$\blue\diamond$}&&&\\[0.7cm]
+&\rnode{d}{$\bullet$}&&\rnode{e}{$\bullet$}&\\[0.7cm]
+&\rnode{f}{$\blue\diamond$}&\rnode{g}{\small$+1$}&\rnode{h}{$\blue\diamond$}&\rnode{i}{\small$-2$}&\\[0.7cm]
+\rnode{j}{\small$+4$}&\rnode{k}{\small$-1$}&\rnode{l}{\small$+1$}&\rnode{m}{\small$-4$}\\[0.7cm]
+\ncline[linewidth=0.7pt,linecolor=yellow]{-}{a}{b}\bput[1pt]{0}(0.5){\small$J_1$}%
+\ncline[linewidth=0.7pt,linecolor=yellow]{-}{a}{c}\aput[1pt]{0}(0.5){\small$S_1$}%
+\ncline[linewidth=0.7pt,linecolor=yellow]{-}{b}{d}\bput[1pt]{0}(0.5){\small$\frac12$}%
+\ncline[linewidth=0.7pt,linecolor=yellow]{-}{b}{e}\aput[1pt]{0}(0.5){\small$\frac12$}%
+\ncline[linewidth=0.7pt,linecolor=yellow]{-}{d}{f}\bput[1pt]{0}(0.5){\small$J_2$}%
+\ncline[linewidth=0.7pt,linecolor=yellow]{-}{d}{g}\aput[1pt]{0}(0.5){\small$S_2$}%
+\ncline[linewidth=0.7pt,linecolor=yellow]{-}{e}{h}\bput[1pt]{0}(0.5){\small$J_3$}%
+\ncline[linewidth=0.7pt,linecolor=yellow]{-}{e}{i}\aput[1pt]{0}(0.5){\small$S_3$}%
+\ncline[linewidth=0.7pt,linecolor=yellow]{-}{f}{j}\bput[1pt]{0}(0.5){\small$\frac12$}%
+\ncline[linewidth=0.7pt,linecolor=yellow]{-}{f}{k}\aput[1pt]{0}(0.5){\small$\frac12$}%
+\ncline[linewidth=0.7pt,linecolor=yellow]{-}{h}{l}\bput[1pt]{0}(0.5){\small$\frac12$}%
+\ncline[linewidth=0.7pt,linecolor=yellow]{-}{h}{m}\aput[1pt]{0}(0.5){\small$\frac12$}%
+%&\circlenode*{b}{\makebox[0.5cm]{{\red$B^{\blue11}$}}}&\circlenode*{e}{\makebox[0.5cm]{{\red$E^{\blue4}$}}}&&\\[0.1cm]
+%&&&\circlenode*{h}{\makebox[0.5cm]{{\red$H^{\blue3}$}}}&\\[0.1cm]
+%\circlenode*{a}{\makebox[0.5cm]{{\red$A^{\blue11}$}}}&\circlenode*{c}{\makebox[0.5cm]{{\red$C^{\blue7}$}}}%
+\end{tabular}\\
+Les n{\oe}uds $\bullet$ sont ceux où le joueur prend une décision.
+Les décisions possibles au premier  n{\oe}ud de l'agent sont $J_1$
+et $S_1$, $J_2$ et $S_2$ pour le deuxième, et $J_3$ et $S_3$ pour
+le troisième. Les n{\oe}uds $\diamond$ sont ceux où la nature tire
+au hasard. Les branches suivant ces n{\oe}uds sont affectées des
+probabilités que la nature accorde à chacun d'entre eux. Les
+n{\oe}uds affectés de nombres sont les n{\oe}uds terminaux, où
+nous avons représenté le gain monétaire final de l'agent.
+
+\end{exemple}
+
+\subsection{Description d'un comportement : stratégie}
+
+Une stratégie $s$ pour l'agent associe une décision dans $A(t)$ à
+tout n{\oe}ud $t$ tel que $i(t)=J$. C'est donc une application de
+$i^{-1}(J)$ vers $\cup_t A(t)$ telle que $s(t)\in A(t)$ pour tout
+$t$.
+
+A toute stratégie du joueur correspond une probabilité $p(s)$ sur
+les n{\oe}uds terminaux, éléments de $Z$. Pour calculer $p(s)$, on
+part du n{\oe}ud initial, et on descend progressivement d'une
+étape à la fois, pour calculer les probabilités des successeurs,
+en utilisant à un n{\oe}ud $t$ tel que $i(t)=N$ la probabilité
+$D(t)$, et à un n{\oe}ud $t$ tel que $i(t)=J$ la décision $s(t)$.
+
+On a donc une utilité espérée $U(s) = \E_{p(s)} u(z)$ pour chaque
+stratégie. Une stratégie maximisatrice est une stratégie qui
+maximise ce paiement espéré.
+
+\begin{exemple}
+On a dans le problème précédent 3 n{\oe}uds de décision pour
+l'agent, avec à chacun d'entre eux 2 décisions possibles. Par
+conséquent il y a 8 stratégies possibles. $J_1S_2S_3$ joue à la
+première étape et s'arr\^ete ensuite. $J_1S_2J_3$ joue a la
+première étape, puis continue si elle a perdu à la première, et
+arr\^ete sinon. $S_1J_2J_3$ peut s'entendre comme ``ne pas jouer,
+mais si on avait joué à la première étape, on aurait décidé de
+continuer à la seconde''. Ce n'est pas la m\^eme chose que
+$S_1S_2S_3$ qui d'arr\^ete à la première étape, mais décide aussi
+de s'arr\^eter si on lui demande ce qu'elle ferait à la deuxième.
+
+Les gains espérés de ces stratégies sont :
+\begin{itemize}
+\item $J_1S_2S_3$ donne $-\frac12$ %
+\item $J_1S_2J_3$ donne $0$%
+\item $S_1J_2J_3$ et $S_1S_2S_3$ donnent $0$.
+\end{itemize}
+\end{exemple}
+%
+\subsection{Principe d'induction à rebours}
+
+Le principe d'induction à rebours permet de trouver une stratégie
+maximisatrice. On part du bas de l'arbre, et pour les dernières
+décisions de l'agent, on choisit la meilleure action. On remplace
+ensuite le n{\oe}ud correspondant par l'utilité espérée étant
+donnée cette meilleure action. On obtient ainsi un nouveau
+problème de décision dynamique, auquel on applique de nouveau le
+principe, et ainsi de suite... A la fin de la procédure, on aura
+choisi une décision pour chaque n{\oe}ud, on aura donc obtenu une
+stratégie dans le problème de décision. On a le résultat suivant :
+
+\begin{proposition}
+Toute stratégie obtenue par le principe d'induction à rebours est
+maximisatrice.
+\end{proposition}
+
+\begin{exemple}
+Question : Comment maximiser la probabilit\'e de finir avec un
+gain d'au moins 1 dans l'exemple précédent ? Ceci revient à
+chercher une stratégie maximisatrice lorsque l'utilité vaut 1 pour
+les gains de 1 au moins, et 0 sinon. On a alors l'arbre :\\[0.5cm]
+\begin{tabular}{p{1cm}p{1cm}p{1cm}p{1cm}p{1cm}p{1cm}}
+&&&\rnode{a}{$\bullet$}&\rnode{c}{$0$}\\[0.7cm]
+&&\rnode{b}{$\blue\diamond$}&&&\\[0.7cm]
+&\rnode{d}{$\bullet$}&&\rnode{e}{$\bullet$}&\\[0.7cm]
+&\rnode{f}{$\blue\diamond$}&\rnode{g}{\small$+1$}&\rnode{h}{$\blue\diamond$}&\rnode{i}{\small$0$}&\\[0.7cm]
+\rnode{j}{\small$1$}&\rnode{k}{\small$0$}&\rnode{l}{\small$1$}&\rnode{m}{\small$0$}\\[0.7cm]
+\ncline[linewidth=0.7pt,linecolor=yellow]{-}{a}{b}\bput[1pt]{0}(0.5){\small$J_1$}%
+\ncline[linewidth=0.7pt,linecolor=yellow]{-}{a}{c}\aput[1pt]{0}(0.5){\small$S_1$}%
+\ncline[linewidth=0.7pt,linecolor=yellow]{-}{b}{d}\bput[1pt]{0}(0.5){\small$\frac12$}%
+\ncline[linewidth=0.7pt,linecolor=yellow]{-}{b}{e}\aput[1pt]{0}(0.5){\small$\frac12$}%
+\ncline[linewidth=0.7pt,linecolor=yellow]{-}{d}{f}\bput[1pt]{0}(0.5){\small$J_2$}%
+\ncline[linewidth=0.7pt,linecolor=yellow]{-}{d}{g}\aput[1pt]{0}(0.5){\small$S_2$}%
+\ncline[linewidth=0.7pt,linecolor=yellow]{-}{e}{h}\bput[1pt]{0}(0.5){\small$J_3$}%
+\ncline[linewidth=0.7pt,linecolor=yellow]{-}{e}{i}\aput[1pt]{0}(0.5){\small$S_3$}%
+\ncline[linewidth=0.7pt,linecolor=yellow]{-}{f}{j}\bput[1pt]{0}(0.5){\small$\frac12$}%
+\ncline[linewidth=0.7pt,linecolor=yellow]{-}{f}{k}\aput[1pt]{0}(0.5){\small$\frac12$}%
+\ncline[linewidth=0.7pt,linecolor=yellow]{-}{h}{l}\bput[1pt]{0}(0.5){\small$\frac12$}%
+\ncline[linewidth=0.7pt,linecolor=yellow]{-}{h}{m}\aput[1pt]{0}(0.5){\small$\frac12$}%
+%&\circlenode*{b}{\makebox[0.5cm]{{\red$B^{\blue11}$}}}&\circlenode*{e}{\makebox[0.5cm]{{\red$E^{\blue4}$}}}&&\\[0.1cm]
+%&&&\circlenode*{h}{\makebox[0.5cm]{{\red$H^{\blue3}$}}}&\\[0.1cm]
+%\circlenode*{a}{\makebox[0.5cm]{{\red$A^{\blue11}$}}}&\circlenode*{c}{\makebox[0.5cm]{{\red$C^{\blue7}$}}}%
+\end{tabular}
+
+Appliquons le principe d'induction à rebours à cette arbre. On
+voit qu'il faut décider $S_2$ au deuxième n{\oe}ud, et $J_3$ au
+troisième. On obtient l'arbre dans lequel on a remplacé les
+derniers n{\oe}uds de décisions par le gain espéré maximal :\\
+
+\begin{tabular}{p{1cm}p{1cm}p{1cm}p{1cm}p{1cm}p{1cm}}
+&&&\rnode{a}{$\bullet$}&\rnode{c}{$0$}\\[0.7cm]
+&&\rnode{b}{$\blue\diamond$}&&&\\[0.7cm]
+&\rnode{d}{$1$}&&\rnode{e}{$\frac12$}&\\[0.7cm]
+\ncline[linewidth=0.7pt,linecolor=yellow]{-}{a}{b}\bput[1pt]{0}(0.5){\small$J_1$}%
+\ncline[linewidth=0.7pt,linecolor=yellow]{-}{a}{c}\aput[1pt]{0}(0.5){\small$S_2$}%
+\ncline[linewidth=0.7pt,linecolor=yellow]{-}{b}{d}\bput[1pt]{0}(0.5){\small$\frac12$}%
+\ncline[linewidth=0.7pt,linecolor=yellow]{-}{b}{e}\aput[1pt]{0}(0.5){\small$\frac12$}%
+%&\circlenode*{b}{\makebox[0.5cm]{{\red$B^{\blue11}$}}}&\circlenode*{e}{\makebox[0.5cm]{{\red$E^{\blue4}$}}}&&\\[0.1cm]
+%&&&\circlenode*{h}{\makebox[0.5cm]{{\red$H^{\blue3}$}}}&\\[0.1cm]
+%\circlenode*{a}{\makebox[0.5cm]{{\red$A^{\blue11}$}}}&\circlenode*{c}{\makebox[0.5cm]{{\red$C^{\blue7}$}}}%
+\end{tabular}
+
+On voit que dans ce jeu la meilleure décision est de jouer $J_1$
+au premier n{\oe}ud. On a donc obtenu comme stratégie la stratégie
+$J_1S_2J_3$ qui maximise la probabilité de terminer le jeu avec un
+paiement d'au moins~1.
+\end{exemple}
+
+Une remarque importante sur la notion de stratégie et sur le
+principe d'induction à rebours. Le principe d'action à rebours
+indique quelle choix prendre, même aux n{\oe}uds qui ne devraient
+pas être atteints. Par exemple, regardons le jeu suivant~:\\[0.5cm]
+
+\begin{tabular}{p{1cm}p{1cm}p{1cm}p{1cm}p{1cm}p{1cm}}
+&&&\rnode{a}{$\bullet$}&\rnode{c}{$0$}\\[0.7cm]
+&&\rnode{b}{$\bullet$}&&&\\[0.7cm]
+&\rnode{d}{$-1$}&&\rnode{e}{$-2$}&\\[0.7cm]
+\ncline[linewidth=0.7pt,linecolor=yellow]{-}{a}{b}\bput[1pt]{0}(0.5){\small$J_1$}%
+\ncline[linewidth=0.7pt,linecolor=yellow]{-}{a}{c}\aput[1pt]{0}(0.5){\small$S_1$}%
+\ncline[linewidth=0.7pt,linecolor=yellow]{-}{b}{d}\bput[1pt]{0}(0.5){\small$J_2$}%
+\ncline[linewidth=0.7pt,linecolor=yellow]{-}{b}{e}\aput[1pt]{0}(0.5){\small$S_2$}%
+%&\circlenode*{b}{\makebox[0.5cm]{{\red$B^{\blue11}$}}}&\circlenode*{e}{\makebox[0.5cm]{{\red$E^{\blue4}$}}}&&\\[0.1cm]
+%&&&\circlenode*{h}{\makebox[0.5cm]{{\red$H^{\blue3}$}}}&\\[0.1cm]
+%\circlenode*{a}{\makebox[0.5cm]{{\red$A^{\blue11}$}}}&\circlenode*{c}{\makebox[0.5cm]{{\red$C^{\blue7}$}}}%
+\end{tabular}
+
+Le principe d'induction à rebours nous dit tout d'abord qu'il faut
+choisir $J_2$ au deuxième n{\oe}ud, et transforme le problème en :\\[0.5cm]
+
+\begin{tabular}{p{1cm}p{1cm}p{1cm}p{1cm}p{1cm}p{1cm}}
+&&&\rnode{a}{$\bullet$}&\rnode{c}{$0$}\\[0.7cm]
+&&\rnode{b}{$-1$}&&&\\[0.7cm]
+\ncline[linewidth=0.7pt,linecolor=yellow]{-}{a}{b}\bput[1pt]{0}(0.5){\small$J$}%
+\ncline[linewidth=0.7pt,linecolor=yellow]{-}{a}{c}\aput[1pt]{0}(0.5){\small$S$}%
+%&\circlenode*{b}{\makebox[0.5cm]{{\red$B^{\blue11}$}}}&\circlenode*{e}{\makebox[0.5cm]{{\red$E^{\blue4}$}}}&&\\[0.1cm]
+%&&&\circlenode*{h}{\makebox[0.5cm]{{\red$H^{\blue3}$}}}&\\[0.1cm]
+%\circlenode*{a}{\makebox[0.5cm]{{\red$A^{\blue11}$}}}&\circlenode*{c}{\makebox[0.5cm]{{\red$C^{\blue7}$}}}%
+\end{tabular}
+
+On voit donc qu'il faut choisir $S_1$ au premier n{\oe}ud. La
+procédure d'induction à rebours aboutit donc à la stratégie
+$S_1J_2$. C'est parce qu'on a conclut qu'il fallait jouer $J_2$ et
+que le gain correspondant est de $-1$ qu'on a pu ensuite conclure
+qu'il fallait jouer $S_1$.
+
+\section{Décision dynamique en information imparfaite}
+
+On suppose maintenant que l'agent n'est pas complètement informé
+de tous les coups de la nature. Au moment où il effectue ses
+choix, il n'a qu'une information imparfaite sur sa position dans
+l'arbre de décision. Nous commençons par décrire son information
+dans l'arbre à l'aide de la notion d'ensembles d'information.
+
+Un ensemble d'information est une classe d'équivalence sur les
+n{\oe}uds $t$ tels que $i(t)=J$. Soit $h(t)$ la classe
+d'équivalence du n{\oe}ud $t$, c'est-à-dire l'ensemble
+d'information comprenant le n{\oe}ud $t$. Comme $h$ décrit des
+relations d'équivalence on a~:
+$$
+t' \in h(t) \implies t \in h(t')
+$$
+ On suppose que l'agent conna\^it son ensemble de décisions à chaque n{\oe}ud.
+L'ensemble d'information $h(t)$. On a la restriction suivante sur
+la fonction qui à $t$ associe $h(t)$ :
+$$
+t'\in h(t) \implies A(t')=A(t)
+$$
+
+\begin{exemple}
+Reprenons l'exemple du casino en supposant qu'après la première
+étape, le joueur ne sait pas s'il a gagné ou non. On a l'arbre de
+décision suivant :
+
+\begin{tabular}{p{1cm}p{1cm}p{1cm}p{1cm}p{1cm}p{1cm}}
+&&&\rnode{a}{$\bullet$}&\rnode{c}{$0$}\\[0.7cm]
+&&\rnode{b}{$\blue\diamond$}&&&\\[0.7cm]
+&\rnode{d}{$\bullet$}&&\rnode{e}{$\bullet$}&\\[0.7cm]
+&\rnode{f}{$\blue\diamond$}&\rnode{g}{\small$+1$}&\rnode{h}{$\blue\diamond$}&\rnode{i}{\small$-2$}&\\[0.7cm]
+\rnode{j}{\small$+4$}&\rnode{k}{\small$-1$}&\rnode{l}{\small$+1$}&\rnode{m}{\small$-4$}\\[0.7cm]
+\ncline[linewidth=0.7pt,linecolor=yellow]{-}{a}{b}\bput[1pt]{0}(0.5){\small$J$}%
+\ncline[linewidth=0.7pt,linecolor=yellow]{-}{a}{c}\aput[1pt]{0}(0.5){\small$S$}%
+\ncline[linewidth=0.7pt,linecolor=yellow]{-}{b}{d}\bput[1pt]{0}(0.5){\small$\frac12$}%
+\ncline[linewidth=0.7pt,linecolor=yellow]{-}{b}{e}\aput[1pt]{0}(0.5){\small$\frac12$}%
+\ncline[linewidth=0.7pt,linecolor=yellow]{-}{d}{f}\bput[1pt]{0}(0.5){\small$J$}%
+\ncline[linewidth=0.7pt,linecolor=yellow]{-}{d}{g}\aput[1pt]{0}(0.5){\small$S$}%
+\ncline[linewidth=0.7pt,linecolor=yellow]{-}{e}{h}\bput[1pt]{0}(0.5){\small$J$}%
+\ncline[linewidth=0.7pt,linecolor=yellow]{-}{e}{i}\aput[1pt]{0}(0.5){\small$S$}%
+\ncline[linewidth=0.7pt,linecolor=yellow]{-}{f}{j}\bput[1pt]{0}(0.5){\small$\frac12$}%
+\ncline[linewidth=0.7pt,linecolor=yellow]{-}{f}{k}\aput[1pt]{0}(0.5){\small$\frac12$}%
+\ncline[linewidth=0.7pt,linecolor=yellow]{-}{h}{l}\bput[1pt]{0}(0.5){\small$\frac12$}%
+\ncline[linewidth=0.7pt,linecolor=yellow]{-}{h}{m}\aput[1pt]{0}(0.5){\small$\frac12$}%
+\psellipse[linecolor=green](2.9,3.66)(1.8,0.3)
+%&\circlenode*{b}{\makebox[0.5cm]{{\red$B^{\blue11}$}}}&\circlenode*{e}{\makebox[0.5cm]{{\red$E^{\blue4}$}}}&&\\[0.1cm]
+%&&&\circlenode*{h}{\makebox[0.5cm]{{\red$H^{\blue3}$}}}&\\[0.1cm]
+%\circlenode*{a}{\makebox[0.5cm]{{\red$A^{\blue11}$}}}&\circlenode*{c}{\makebox[0.5cm]{{\red$C^{\blue7}$}}}%
+\end{tabular}
+
+Un premier ensemble d'information est donné par le n{\oe}ud au
+début du jeu. Un deuxième contient les deux n{\oe}uds qui suivent
+le choix de la nature après une première décision de jouer.
+\end{exemple}
+
+Une stratégie $s$ est une fonction de l'ensemble des {\em
+ensembles d'information} vers les décisions possibles. On peut
+voir $s$ comme une application de $i^{-1}(J)$ vers $\cup_t A(t)$
+telle que :%
+\begin{itemize}
+\item $s(t)= s(t')$ si $h(t) = h(t')$ ($s(t)$ ne dépend que de
+l'ensemble d'information de $t$)%
+\item $s(t)\in A(t)$ pour tout $t$.
+\end{itemize}
+
+\begin{exemple}
+On a deux ensembles d'information, et deux décisions possibles
+pour chacun d'entre eux, soient 4 stratégies. $JS$, $JJ$, $SJ$ et
+$SS$. Les paiement espérés correspondants sont :
+\begin{itemize}
+\item $JS$ donne $-\frac12$%
+\item $JJ$ donne $0$%
+\item $SJ$ et $SS$ donnent $0$.
+\end{itemize}
+\end{exemple}
+
+\begin{exemple}
+Rechercher les stratégies qui maximisent la probabilité de gagner
+au moins 1 dans ce dernier jeu.
+\end{exemple}

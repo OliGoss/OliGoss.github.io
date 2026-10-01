@@ -1,0 +1,546 @@
+\chapter{Théorie de la d\'ecision}
+
+\section{Introduction}
+La théorie de la décision modélise le comportement d'un agent face
+à des situations de choix. Nous décrivons les choix d'un agent, et
+les relions à une notion de préférences. Nous montrons sous
+quelles conditions les relations de pr\'ef\'erences peuvent \^etre
+repr\'esent\'ees par une fonction d'utilit\'e, et quand elles
+impliquent l'existence de croyances de l'agent sur les
+diff\'erents \'etats du monde, repr\'esentables par des
+probabilit\'es.
+
+\begin{comment}Je crois qu'il serait bien de parler des deux aspects :
+normatif et descriptif, car cela aide bien à comprendre le cours
+par la suite, et est vrai pour toute la théorie des jeux et la
+théorie économique en general.
+\end{comment}
+
+\section{Choix et préférences}
+Nous commençons par décrire des préférences d'un agent, et des
+choix, et établissons un lien naturel entre ces deux notions.
+\subsection{Choix}
+Nous partons d'un ensemble fini $X$ d'alternatives. Un agent peut
+effectuer un choix parmi un sous-ensemble de $X$ d'alternatives
+qui lui sont proposées.  Soit donc $2^X$ l'ensemble des parties
+de~$X$.
+\begin{definition}
+Une fonction de choix est la donnée de $c\colon
+2^X\backslash\{\emptyset\}\to 2^X\backslash\{\emptyset\}$ telle
+que pour tout $A\subset X$, $c(A)\subset A$.
+\end{definition}
+L'interprétation est la suivante : si l'agent a le choix entre les
+éléments de $A$, cet agent dira que tous les éléments de $c(A)$
+conviennent, ou bien choisira indifféremment parmi les éléments de
+$c(A)$.
+
+ Certaines fonctions de choix vérifient des propriétés qui les
+rendent plus ``plausibles'' que d'autres. Nous étudierons plus
+particulièrement l'influence des axiomes suivant, appelés axiomes
+$(\alpha)$ et $(\beta)$ de Sen :
+\begin{itemize}
+\item{\bf $(\alpha)$:} Si $x\in B\subset A$ et $x\in c(A)$, alors
+$x\in c(B)$ %
+\item{\bf $(\beta)$:} Si $x,y\in c(A)$, $A\subseteq B$, et $y\in
+c(B)$, alors $x\in c(B)$.
+\end{itemize}
+On peut traduire ces axiomes en langage courant de la manière
+suivante: Pour l'axiome $(\alpha)$, ``Si le champion du monde d'un
+jeu est pakistanais, alors ce pakistanais doit aussi \^etre
+champion du Pakistan.'' Pour l'axiome $(\beta)$, ``Si le champion
+du monde est pakistanais, alors tous les champions du Pakistan
+sont aussi champions du monde.''
+
+\begin{comment}
+En cours, donner des exemples de fonctions de choix, et montrer
+qu'elles vérifient (ou non) certains des axiomes.
+\end{comment}
+
+\subsection{Préférences}
+
+\begin{definition}
+Une relation de préférences $\succ$ est la donnée d'un ensemble de
+paires d'éléments $(x,y)$ de $X\times X$ pour lesquels nous
+écrivons $x\succ y$. La relation $x\succ y$ est interprétée par :
+``l'agent préf\`ere strictement $x$ à~$y$''.
+\end{definition}
+
+Voici une liste d'axiomes sur les relations de préférences:
+\begin{itemize}
+\item[\bf Asymétrie] $x\succ y\implies \neg y\succ x$. Si $x$ est
+strictement préféré à $y$, alors $y$ n'est pas strictement préféré
+à $x$. %
+\item[\bf Transitivité] $(x\succ y\mbox{ et }y\succ z)\implies
+x\succ z$. %
+\item[\bf Irreflexivité] $\neg x\succ x$. Il n'existe pas de $x$
+strictement préféré à lui-m\^eme.%
+\item[\bf Transitivité négative] $(\neg x\succ y \mbox{ et }\neg
+y\succ z)\implies \neg x\succ z$.%
+\item[\bf Acyclicité] $x_1\succ x_2\succ\ldots\succ x_n\implies
+\neg x_n\succ x_1$. Si chaque $x_i$ est strictement préféré à
+$x_{i+1}$, alors $x_n$ n'est pas préféré à $x_1$.
+\end{itemize}
+
+\begin{definition}
+Nous dirons qu'une relation de préférences est rationnelle si elle
+est asymétrique et négativement transitive.
+\end{definition}
+Une relation de préférences ainsi définie possède forcément les
+autres propriétés de la liste:
+\begin{proposition}\label{rationelleimpliquelereste}
+Une relation de préférences rationnelle est irreflexive,
+transitive, et acyclique.
+\end{proposition}
+Une relation de préférences rationnelle est un ordre partiel.
+
+A partir d'une relation binaire $\succ$, nous pouvons définir une
+relation de préférences faibles $\succeq$  et une relation
+d'indifférence $\sim$ par:
+\begin{eqnarray*}
+x\succeq y &\mbox{\ si\ }& \neg y\succ x \\
+x\sim y &\mbox{\ si\ }& \neg y\succ x\mbox{\ et\ } \neg x\succ y %
+\end{eqnarray*}
+
+Voici quelques propriété des relations $\succeq$ et $\sim$ lorsque
+$\succ$ est rationnelle.
+
+\begin{proposition}
+Supposons que $\succ$ est une relation de préférences rationnelle,
+alors
+\begin{itemize}
+\item Pour tout $x$ et $y$, on a soit $x\succ y$, soit $y\succ x$,
+soit $x\sim y$.%
+\item $x\geq y$ est compl\^ete (on a toujours $x\geq y$ ou $y\geq
+x$) et transitive. %
+\item $\sim$ reflexive ($x\sim x$ pour tout $x$), symétrique
+($x\sim y$ si et seulement si $y\sim x$), et transitive. %
+\item $w\succ x$, $x\sim y$ et $y\succ z$ impliquent $w\succ y$ et
+$x\succ z$.%
+\item $x\geq y$ si et seulement si $x\succ y$ ou $x\sim y$. %
+\item $x\geq y$ et $y\geq x$ si et seulement si $x\sim y$.
+\end{itemize}
+\end{proposition}
+
+\subsection{Lien entre choix et préférences}
+Deux idées simples et importantes relient les choix et les
+préférences. Si un agent possède des préférences, ceci doit avoir
+une implication en termes de choix. Lorsqu'on cherche quelles sont
+les relations de préférences compatibles avec des choix (s'il en
+existe), on parle de préférences révélées.
+
+\subsubsection{Comment les préférences définissent des choix}
+Soit $\succ$ une relation binaire sur $X$. On définit une fonction
+$c(\cdot,\succ)$ par :
+$$
+c(A,\succ) = \{x\in A \colon \mbox{ pour tout $y\in A$ } \neq y \succ x\}
+$$
+$c(A,\succ)$ est donc le sous-ensemble des éléments de $A$ qui ne
+sont pas dominés par d'autres éléments de $A$. Si $\succ$
+représente les préférences de l'agents, alors ses choix doivent
+obéir a $c(\cdot,\succ)$. Sous quelles conditions sommes-nous
+s\^urs que $c(\cdot,\succ)$ est une fonction de choix ?
+
+\begin{proposition}
+Étant donnée une relation binaire $\succ$, $c(\cdot,\succ)$ est
+une fonction de choix si et seulement si $\succ$ est acyclique.
+\end{proposition}
+
+Montrons que l'acyclicité implique $c(B,\succ)\neq\emptyset$.
+C'est une consequence de $X$ fini. Réciproquement, $\succ$ n'est
+pas acyclique, soit $x_1\succ x_2\succ\ldots\succ x_n\succ x_1$.
+On a alors $c(\cdot, \succ)(\{x_1,x_2,\ldots, x_n\})=\emptyset$.
+
+\subsubsection{Représentation des choix par des préférences rationnelles}
+Nous partons maintenant d'une fonction de choix $c$, et cherchons
+sous quelles conditions il existe une relation de préférences
+rationnelle $\succ$ telle que $c$ soit la fonction de choix
+correspondant à $\succ$ ($c(\cdot,\succ)=c$).
+
+\begin{proposition}
+Étant donnée une fonction de choix $c$, il existe une relation
+rationnelle $\succ$ telle que $c=c(\cdot,\succ)$ si et seulement
+si $\succ$ vérifie les axiomes $(\alpha)$ et $(\beta)$ de Sen. De
+plus, cette relation est alors unique.
+\end{proposition}
+
+ Démonstration : Tout d'abord, supposons $c=c(\cdot,\succ)$, avec $\succ$
+rationnelle. Pour montrer $\alpha$, il suffit de remarquer que
+$\not\exists y \in A, y\succ x$ implique $\not\exists y \in B,
+y\succ x$, pour $B$ sous-ensemble de $A$. Pour $\beta$, supposons
+$(x,y)\in c(A)$, on a alors $x\sim y$. Si $x\in c(B)$ avec
+$A\subset B$, $\forall z\in B$, $z\preceq x$, et donc $z\preceq y$
+par transitivité, donc $y\in c(B)$.\\
+ Supposons maintenant que $c$ vérifie $\alpha$ et $\beta$.
+L'unicité de $\succ$ provient de ce que $\succ$ doit vérifier
+$x\succ y$ si et seulement si $c(\{x,y\})= \{x\}$. La reflexivité
+de $\succ$ est triviale. Pour la transitivité de $\succeq$,
+supposons $x\succeq y\succeq z$. Si $y\in c(\{x,y,z\})$ alors
+$z\in c(\{x,y,z\}$ ($\beta$). Sinon, on ne peut avoir
+$c(\{x,y,z\}=\{x\}$ (car alors on aurait $c(\{x,y,z\}=\{x\}$).
+Donc $z\in c(\{x,y,z\}=\{x\}$. On a donc aussi $z\in c(\{x,z\}$
+($\alpha$), et $x\succeq z$. La relation $\succ$ est donc
+rationnelle. Il reste à montrer que $c=c(\cdot, \succ)$, c'est à
+dire que $x\in c(A)$ si et seulement si pour tout $y\in A$, $x\in
+c(\{x,y\})$. Pour la partie ``seulement si'', $\forall y$, $x\in
+c(\{x,y\})$, par l'axiome $\alpha$. Pour la partie ``si'', soit
+$z\in c(A)$, alors $z\in c(\{x,z\})$ ($\alpha$), donc $c(\{x,z\})=
+\{x,z\}$, et ($\beta$) implique $x\in c(A)$.
+
+
+Il suffit d'observer les choix faits par les agents ($c$) pour en
+déduire leurs préférences ($\succ$). Pour cette raison, la
+conjonction des axiomes ($\alpha$) et ($\beta$) est aussi appelée
+{\em axiome des préférences révélées}.
+
+\section{Représentation ordinale}
+Soit $u$ une fonction sur $X$. On interprète $u(x)$ comme une
+utilité, ou plaisir, que l'agent peut retirer de l'alternative
+$x$. On appelle donc $u$ {\em fonction d'utilité}. Si $u$ est la
+fonction d'utilité de l'agent, quelles doivent \^etre ses
+préférences ? Simplement, définissons $\succ_u$ par
+$$
+x\succ_u y \mbox{ si et seulement si } u(x) > u(y)
+$$
+Il est aisé de vérifier que $\succ_u$ est bien une relation de
+préférences rationnelle. La proposition suivante nous dit aussi
+que toute relation de préférences résulte d'une fonction d'utilité
+($X$ est fini).
+\begin{proposition}\label{repsiXfini}
+Supposons que $X$ est fini, et soit $\succ$ une relation binaire
+sur $X$. Il existe une fonction d'utilité $u$ telle que $\succ_u =
+\succ$ si et seulement si $\succ$ est rationnelle.
+\end{proposition}
+Preuve : par induction sur le cardinal de $X$.
+
+La proposition \ref{repsiXfini} s'étend au cas $X$ dénombrable.
+
+\begin{comment}
+Pourquoi ne pouvons pas faire d'induction transfinie ? Quelles
+seraient les axiomes permettant une induction transfinie ?
+Conjecture: probablement qqch + fort que l'acyclicité, genre pas
+de cycles infinis...
+\end{comment}
+
+\begin{proposition}\label{repsiXdenom}
+Supposons $X$ dénombrable, et soit $\succ$ une relation binaire
+sur $X$. Il existe une fonction d'utilité $u$ telle que $\succ_u =
+\succ$ si et seulement si $\succ$ est rationnelle.
+\end{proposition}
+
+Nous pouvons nous poser la question de l'unicité de la
+représentation d'une relation de préférences par une fonction
+d'utilité. Il est évident que la composition de $u$ par une
+fonction strictement croissante ne change par $\succ_u$. La
+proposition suivante nous donne une réciproque:
+
+\begin{proposition}\label{unicitepreprordinale}
+Soient $u$ et $u'$ deux fonctions d'utilité sur $X$ (fini). Alors
+$\succ_u=\succ_{u'}$ si et seulement si il existe une fonction
+$f\colon \reals \to \reals$ telle que:
+\begin{itemize}
+\item $f$ est strictement croissante%
+\item $u'=f\circ u$
+\end{itemize}
+\end{proposition}
+On commence par définir $f$ sur $\{u(x), x\in X\}$. Puis on
+l'étend à $\reals$.
+
+\section{Préférences sur choix incertains}
+Introduction. Expliquer la différence entre choix incertains dont
+on peut évaluer les probabilités de manière objective ou non.
+
+\subsection{Préférences sur les probabilités objectives}
+
+Soit $Z$ un ensemble fini, appelé ensemble de prix. Soit
+$P=\Delta(Z)$ l'ensemble des lois de probabilités sur $Z$, appelé
+ensemble des loteries. Nous étudions maintenant des relations de
+préférences sur $P$. $P$  est donc l'ensemble de choix.
+
+ Il est remarquable que $P$ a une structure particulière, appelée
+structure de simplexe. Nommément :
+\begin{itemize}
+\item $P$ est convexe. Pour deux éléments $p$ et $q$ de $P$, et
+$\lambda\in[0,1]$, $\lambda p + (1-\lambda) q \in P$, o\`u
+$(\lambda p + (1-\lambda) q)(x)$ vaut par définition $\lambda p(x)
++ (1-\lambda) q(x)$. %
+\item On peut identifier chaque $z\in Z$ à l'élément de $P$ qui
+donne une probabilité de 1 à $z$, et $0$ aux autres.
+\end{itemize}
+
+ On définit maintenant des axiomes sur la relation de préférences
+$\succ$ de $P$ qui utilisent la structure particulière de $P$.
+
+\begin{itemize}
+\item[{\bf Rationalité}] $\succ$ est une relation de
+préférences rationnelle.%
+\item[\bf Indépendance] Pour $p,q,r\in P$, et $0<\lambda\leq 1$,
+$p\succ q$ implique $\lambda p+(1-\lambda)r\succ \lambda
+q+(1-\lambda)r$%
+\item[\bf Continuité] Pour $q\in P$, les ensembles $\{p, p\succ
+q\}$ et $\{p, q\succ p\}$ sont ouverts
+\end{itemize}
+
+L'axiome de continuité se comprend lorsqu'on se rappelle que
+$\succ$ représente une relation de préférences stricte. Si $p\succ
+q$, alors si on modifie de manière extr\^emement mince $p$ en $p'$
+et $q$ en $q'$ on aura $p'\succ q'$.
+
+\subsection{Utilité espérée}
+Supposons que l'agent associe une valeur, ou utilité $u(z)$ à
+chacun des prix $z\in Z$. La fonction $u$ définit une fonction
+$\tilde u$ de $P$ vers $\reals$ donnée par:
+$$
+\tilde u(p) = \sum_z p(z) u(z)
+$$
+Soit $\succ_{\tilde u}$ la relation de préférences sur $P$
+associée à $\tilde u$.
+
+Remarquons que nous n'avons aucune raison de supposer {\em a
+priori} que les préférences de l'agent soient de la forme
+$\succ_{\tilde u}$, pour un $u$ donné, ni encore qu'il existe $u$
+telle que $\succ = \succ_{\tilde u}$. Il peut d'ailleurs sembler à
+première vue que cette forme de préférences est restrictive et
+très particulière. Cependant, cette forme de préférences est très
+commode pour le modélisateur (nous), ou pour un agent cherchant à
+évaluer ses préférences entre des loteries, car la donnée
+d'utilités associées aux événements certains (les prix de $Z$) à
+elle seule définit les préférences sur l'ensemble beaucoup plus
+complexe des loteries.
+
+\subsection{Théorème de von-Neumann et Morgenstern}
+Le résultat de von-Neumann et Morgenstern est l'équivalence entre
+une famille d'axiomes sur $\succ$ et l'existence d'une
+représentation de la forme $\succ_{\tilde u}$.
+%
+\begin{proposition}
+Il existe une fonction $u:Z\to \reals$ telle que $\succ =
+\succ_{\tilde u}$ si et seulement si $\succ$ vérifie les axiomes
+de préférences, d'indépendance et de continuité.
+\end{proposition}
+%
+{\bf Démonstration de la partie ``si''} Il suffit de montrer que
+$\succ_{\tilde u}$ vérifie les propriétés requises. \\
+{\bf Démonstration de la partie ``seulement si''} Pour $z\in Z$,
+on note $\delta_z$ l'élément de $P$ qui met probabilité 1 sur $Z$.
+Si pour tous $x,y\in Z$, $\delta_x\sim\delta_y$, alors pour tous
+$p,p'\in P$, $p\sim p'$ (indépendance), et toute fonction $u$
+constante convient. Dans le cas contraire, on sélectionne parmi
+l'ensemble $\{\delta_z,\ z\in Z\}$ un élément minimal
+$\delta_{x_0}$, et un élément maximal $\delta_{x_1}$ pour $\succ$.
+D'après l'axiome de continuité, pour chaque $z$, il existe un
+unique $\lambda_z\in[0,1]$ tel que $z\sim\lambda_z
+\delta_{x_1}+(1-\lambda_z)\delta_{x_0}$. On pose alors
+$u(z)=\lambda_z$. On a donc $u(x_0)=0$, $u(x_1)=1$, et pour $p\in
+P$ $\tilde u(p)= \sum_k p(z)\lambda(z)$. Soient $p$ et
+$p'$ dans $P$.%
+\begin{eqnarray*}
+p\succ p' & \Leftrightarrow & \sum_z p'(z)(\lambda_z
+\delta_{x_1}+(1-\lambda_z)\delta_{x_0}) \succ \sum_z
+p'(z)(\lambda_z \delta_{x_1}+(1-\lambda_z)\delta_{x_0})\\
+& \Leftrightarrow & (\sum_z p(z)\lambda(z))\delta_{x_1}+(\sum_z
+p(z)(1-\lambda(z)))\delta_{x_0} \succ \\
+&&(\sum_z p(z)'\lambda(z))\delta_{x_1}+(\sum_z
+p(z)'(1-\lambda(z)))\delta_{x_0}\\
+& \Leftrightarrow & \sum_z  p(z)\lambda(z) > \sum_z p'(z)\lambda(z)\\
+& \Leftrightarrow & \tilde u(p) > \tilde u(p')
+\end{eqnarray*}
+\begin{proposition}
+Deux fonctions d'utilité $\tilde u$ et $\tilde u'$ sur $P$ sont
+associées aux m\^emes préférences si et seulement il existe $a>0$
+et $b$ tels que $\tilde u' = a\tilde u+b$.
+\end{proposition}
+\noindent
+{\bf Démonstration de la partie ``si''} est évidente.\\
+{\bf Démonstration de la partie ``seulement si''} Supposons que
+$\succ_{\tilde u} = \succ_{\tilde u'}$, et soient $\delta_{x_0}$,
+$\delta_{x_1}$ un élément minimal et un élément maximal. Pour tout
+$p\in P$, écrivons $\tilde u(p)= \frac{u(x_1)-\tilde
+u(p)}{u(x_1)-u(x_0)}u(x_0)+\frac{\tilde
+u(p)-u(x_0)}{u(x_1)-u(x_0)}u(x_1)$. Donc $p\sim_{\tilde
+u}\frac{u(x_1)-\tilde
+u(p)}{u(x_1)-u(x_0)}\delta_{x_0}+\frac{\tilde
+u(p)-u(x_0)}{u(x_1)-u(x_0)}\delta_{x_1}$. Comme $\sim_{\tilde
+u}=\sim_{\tilde u'}$,
+$$%
+\frac{u(x_1)-\tilde u(p)}{u(x_1)-u(x_0)} = \frac{u'(x_1)-\tilde
+u(p)}{u'(x_1)-u'(x_0)}
+$$%
+Cad.
+$$%
+\tilde u'(p)= \frac{u'(x_1)-u'(x_0)}{u(x_1)-u(x_0)}u(p)-
+\frac{u'(x_1)-u'(x_0)}{u(x_1)-u(x_0)}u(x_1) + u'(x_1)
+$$%
+ce qui est bien la forme recherchée.
+\subsection{Préférences et incertain subjectif}
+Dans une loterie, l'agent à un moyen objectif d'estimer la
+probabilité de chaque prix. En revanche, dans un événement comme
+une course de chevaux par exemple, il n'existe pas de moyen
+objectif de conna\^itre la probabilité que tel ou tel cheval soit
+vainqueur. La théorie de Anscombe et Aumann nous donne des
+conditions sous lesquelles l'agent se comporte {\em comme si} il
+possédait une croyance sur les chevaux vainqueurs, et effectuait
+ses choix (ici des paris) en maximisant son utilité espérée étant
+donnée cette croyance. Ces probabilités sont dites probabilités
+subjectives.
+
+\subsubsection{Paris sur des loteries}
+$S$ est un ensemble fini de possibilités incertaines (comme les
+chevaux gagnants dans le cas de la course). $Z$ est un ensemble
+fini de prix, et $P$ représente les probabilités sur $Z$. A chaque
+élément de $S$, faisons correspondre un prix aléatoire. Imaginons
+que pour chaque élément de $S$, une loterie puisse \^etre tirée
+pour déterminer le prix dans $Z$. On définit alors une {loterie
+composée} comme un vecteur $h =(h_s)_{s\in S}$ de $P^S$.
+L'ensemble de choix que nous considérons maintenant l'ensemble $H=
+P^S$ des loteries composées.
+
+Exemples de loteries composées :
+\begin{itemize}
+\item S'il pleut, mon cheval préféré Rossinante a 45\% de chances
+de remporter la course, et seulement 20\% de chances s'il ne pleut
+pas.%
+\item Si l'économie est en croissance l'an prochain, j'ai une
+chance sur deux d'obtenir une promotion, et une chance sur trois
+sinon.
+\end{itemize}
+
+ Remarquons que $H$ a lui aussi une structure de simplexe. En
+particulier, si $h,h'\in H$ et si $\lambda\in [0,1]$, $h''$ défini
+par $h_s''(z)= \lambda h_s(z)+(1-\lambda)h_s'(z)$ appartient à
+$H$.
+
+\subsubsection{Les axiomes}
+Supposons que l'agent a des préférences sur $H$, représentées par
+$\succ$. Comme dans le cas des probabilités objectives, soient les
+axiomes suivants sur $\succ$.
+
+\begin{itemize}
+\item[Axiome de rationalité] $\succ$ est une relation de
+préférences rationnelle (sur $H$). \item[Axiome d'indépendance]
+Pour $h,h',h''\in H$, et $0<\lambda\leq 1$, $h\succ h'$ implique
+$\lambda h+(1-\lambda)h''\succ \lambda h+(1-\lambda)h'$
+\item[Axiome de continuité] Pour $h,h',h''\in H$, si $h\succ
+h'\succ h''$ il existe $0<\lambda,\mu<1$ tels que $\lambda
+h+(1-\lambda)h''\succ h'\succ \mu h+(1-\mu)h''$
+\end{itemize}
+
+\subsubsection{Utilité dépendante de l'état}
+Comme pour le cas des fonctions d'utilité de von-Neumann et
+Morgenstern, nous pouvons caractériser les relations de binaires
+qui vérifient les axiomes de  préférences, d'indépendance et de
+continuité.
+%
+\begin{proposition}
+Une relation binaire $\succ$ vérifie les axiomes de préférences,
+d'indépendance et de continuité si et seulement si il existe une
+famille $u=(u_s)_{s\in S}$ d'applications $u_s\colon Z\to \reals$
+telles que
+$$
+h\succ h' \Leftrightarrow \sum_{s\in S}\sum_{z\in Z}
+h_s(z)u_s(z)>\sum_{s\in S}\sum_{z\in Z} h'_s(z)u_s(z)
+$$
+\end{proposition}
+\begin{comment}
+Parler d'unicité ? En parler pour les fonctions de vN-M ?
+\end{comment}
+La démonstration est la m\^eme que celle du théorème de
+von-Neumann et Morgenstern.
+%
+On peut alors poser $\tilde u_s(h_s)=\sum_z h_s(z)u_s(z)$, utilité
+de von-Neumann et Morgenstern dans l'état du monde $s$.
+
+\subsubsection{Utilité indépendante de l'état et probabilités subjectives}
+
+ Nous allons introduire un axiome disant que les préférences ne
+dépendent pas de l'état du monde. Soit donc $\succ_{\tilde u_s}$
+la relation de préférences dans l'état $s$.
+\begin{itemize}
+\item[\bf Indépendance de l'état] $\succ_{\tilde u_s}$ ne dépend
+pas de $s$.
+\end{itemize}
+Selon l'axiome d'indépendance de l'état, si $p$ est préféré à $p'$
+dans un état $s$, il est aussi préféré à $p'$ dans tous les états
+$s'$.
+
+Dans ce cas, fixons un état $s_0$, et posons $\tilde u = \tilde
+u_{s_0}$. On a pour tout état $s$ l'existence de réels
+$a_{s}>0,b_s$ tels que , $\tilde u_{s}=
+a_{s}\tilde u_{s_0} +b_{s}$. On peut donc écrire:%
+$$
+\sum_{s} \tilde u_s(h_s) = \sum_s a_s \tilde u_{s_0}(h_s) +\sum_s b_s
+$$
+ On a donc $h\succ h'$ si et seulement si:
+$$
+\sum_s a_s \tilde u_{s_0}(h_s) > \sum_s a_s \tilde u_{s_0}(h'_s)
+$$
+Posons alors $\pi(s) = \frac{a_s}{\sum_s a_s}$. Tous les $\pi(s)$
+sont positifs, et leur somme vaut 1. On peut donc interpréter
+$\pi=(\pi(s))_s$ comme une probabilité sur $S$. On a alors $h\succ
+h'$ si et seulement si:
+$$
+\sum_s \pi(s) \tilde u_{s_0}(h_s) > \sum_s \pi(s) \tilde
+u_{s_0}(h'_s)
+$$
+Tout se passe donc comme si les préférences de l'agent étaient
+représentées par les préférences $\tilde u$, et par une
+probabilité $\pi$ sur $S$. Il est naturel d'interpréter $\pi$
+comme les {\em croyances} de l'agent sur $S$. Ces croyances ne
+sont pas une donnée objective, on parle de croyances {\em
+subjectives} de l'agent.
+%
+\section{Exercices}
+\subsection{Exercice 1}
+Soit l'axiome suivant, appelé Axiome de Houthakker, portant sur
+une fonction de choix $c$:\\
+Si $x,y\in A\cap B$, et si $x\in c(A)$ et $y\in c(B)$, alors $x\in
+c(B)$.\\
+Montrer que l'axiome de Houthakker est équivalent à la conjonction
+des axiomes $\alpha$ et $\beta$ de Sen.
+\subsection{Exercice 2}
+Montrer la proposition \ref{rationelleimpliquelereste} %
+\subsection{Exercice 3}
+Une relation de préférences non représentable par une fonction
+d'utilité. Sur $X=[0,1]\times[0,1]$, on définit la relation de
+préférences entre $x=(x_1,x_2)$ et $y=(y_1,y_2)$ par $x\succ y$ si
+et seulement si $x_1> y_1$, ou ($x_1=y_1$ et $x_2>y_2$). C'est
+donc l'ordre lexicographique sur $X$.
+\begin{enumerate}
+\item Montrer que $\succ$ est rationnelle.%
+\item Montrer que $\succ$ n'est représentable par aucune fonction
+d'utilité. C'est à dire, montrer qu'il n'existe pas d'application
+$u$ de $X$ vers $\reals$ telle que $x\succ y$ si et seulement si
+$u(x)> u(y)$.
+\end{enumerate}
+\subsection{Exercice 5} On a deux actifs financiers. Le premier
+paye 100 dollars dans l'état du monde 1 (reprise de l'économie
+américaine), et 50 dollars dans l'état du monde 2 (pas de reprise
+de l'économie américaine). Le deuxième paye 120 dollars dans
+l'état du monde 1 et 20 dans l'état du monde 2. Sur les marchés,
+le prix du premier actif financier est de $80$ euros, celui du
+second de 70 euros. Dans le ``Financial Times'' vous lisez le
+commentaire suivant, ``d'après le marché, l'état du monde 1 et
+l'état du monde 2 ont les mêmes chances de se réaliser.''
+\begin{enumerate}
+\item Ce commentaire est-il en rapport avec les prix que vous
+observez ? %
+\item  Selon vous, quelles sont les probabilités subjectives du
+marché sur l'état 1 et sur l'état 2 ? %
+\end{enumerate}
+\subsection{Exercice 6: Paradoxe d'Allais}
+On a comme ensemble d'alternatives $X =\{ 2 500 000 $\euro$, 500
+000 $\euro$, 0 $\euro$ \}$, où $2 500 000 $\euro correspond au
+fait de gagner cette somme, etc.\ldots On a les loteries $p_1 =
+(0,1,0)$,  $p'_1 = (0.1,0.89,0.01)$, $p_2 = (0,0.11,0.89)$ et $p'2
+= (0.1,0,0.9)$. (Par exemple, avec $p_2$, la probabilité de gagner
+2500000\euro~ est de 0.11.
+\begin{enumerate}
+\item On suppose qu'un individu préfère $p_1$ à $p'_1$, et $p'_2$ à $p_2$.
+Est-ce consistant avec l'utilité espérée de von-Neumann et Morgenstern ?
+\end{enumerate}
+\subsection{Exercice 7: Paradoxe de Machina}
+$X = \{ $voyage à Venise, beau film sur Venise, rien $\}$, et $p_1
+= (0.999,0.001,0)$, $p'_1 = (0.999,0,0.001)$. Si un agent préfère
+voir un beau film sur Venise plut\^ot que rien, et préfère $p'_1$
+à $p_1$, est-ce consistant avec la théorie de l'utilité espérée de
+von-Neumann et Morgenstern ? Comment peut-on expliquer de telles
+préférences ?

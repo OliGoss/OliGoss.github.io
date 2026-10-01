@@ -1,0 +1,116 @@
+\documentclass[11pt,a4paper,openany]{book}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{newtxtext,newtxmath}
+\usepackage{microtype}
+\usepackage{geometry}
+\geometry{margin=28mm,headheight=15pt}
+\emergencystretch=1.5em
+\usepackage{amsmath,amscd,mathrsfs,euscript,bbm}
+\usepackage{eurosym}
+\usepackage{comment,url,booktabs,array,enumitem,etoolbox}
+\usepackage{xcolor}
+\usepackage{pstricks,pst-plot,pst-fill,pst-node,pst-text,pst-3d}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage[hidelinks,pdfusetitle]{hyperref}
+\usepackage{bookmark}
+
+\definecolor{forest}{HTML}{234B3A}
+\definecolor{terracotta}{HTML}{B45F3C}
+\definecolor{ink}{HTML}{25302B}
+\color{ink}
+\hypersetup{colorlinks=true,linkcolor=forest,urlcolor=terracotta,citecolor=forest,
+  pdftitle={Théorie de la décision et théorie des jeux},
+  pdfauthor={Olivier Gossner},
+  pdfsubject={Notes de cours},
+  pdfkeywords={théorie de la décision, théorie des jeux, risque, équilibre de Nash}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE]{\small\color{forest}\thepage\quad\nouppercase{\leftmark}}
+\fancyhead[RO]{\small\color{forest}\nouppercase{\rightmark}\quad\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyfoot[C]{\color{forest}\thepage}\renewcommand{\headrulewidth}{0pt}}
+
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries\color{forest}}
+  {\filleft\Large\chaptername\ \thechapter}
+  {0.5ex}
+  {\titlerule[1.2pt]\vspace{1.1ex}\Huge}
+\titleformat{\section}{\Large\bfseries\color{forest}}{\thesection}{0.7em}{}
+\titleformat{\subsection}{\large\bfseries\color{terracotta}}{\thesubsection}{0.7em}{}
+\setlist{itemsep=0.25em,topsep=0.5em}
+
+\newtheorem{theoreme}{Théorème}[chapter]
+\newtheorem{proposition}[theoreme]{Proposition}
+\newtheorem{lemme}[theoreme]{Lemme}
+\newtheorem{corollary}[theoreme]{Corollaire}
+\newtheorem{definition}[theoreme]{Définition}
+\newtheorem{claim}[theoreme]{Affirmation}
+\newtheorem{remark}[theoreme]{Remarque}
+\newtheorem{exemple}{Exemple}[chapter]
+
+\newenvironment{game}[3][]{%
+  \renewcommand{\arraystretch}{1.15}%
+  \setlength{\tabcolsep}{0.9em}%
+  \begin{tabular}{r|*{#3}{c|}}
+  \ifstrempty{#1}{}{\multicolumn{\numexpr#3+1\relax}{c}{\itshape #1}\\}}
+  {\end{tabular}}
+
+\newcommand\varal{\mathbf}
+\newcommand\seq{\mathbf}
+\newcommand\set{\mathcal}
+\newcommand\EP{\mathbf{EP}}
+\newcommand\E{\mathbf{E}}
+\newcommand\AEP{\mathbf{AEP}}
+\newcommand\indic{\mathbbm{1}_}
+\newcommand\reals{\mathbb R}
+\newcommand\naturals{\mathbb N}
+\newcommand\TypeSet{\mathbb T}
+\newcommand\spa{\,}
+\let\vare\varepsilon
+\let\Implies\implies
+\let\implies\Rightarrow
+\let\Iff\iff
+\let\iff\Leftrightarrow
+\newcommand\feq{\stackrel{\smash{\text{def}}}{=}}
+\newcommand\restr[1]{_{\smash{\vert #1}}}
+\def\p{\vskip 4pt \noindent}
+\def\co{\operatorname{co}}
+\def\cav{\operatorname{cav}}
+
+\begin{document}
+\frontmatter
+\begin{titlepage}
+\centering
+\vspace*{0.16\textheight}
+{\color{forest}\rule{\textwidth}{1.4pt}\par}
+\vspace{1.6em}
+{\Huge\bfseries Théorie de la décision\\[0.25em] et théorie des jeux\par}
+\vspace{1.4em}
+{\Large Notes de cours\par}
+\vspace{2.2em}
+{\LARGE Olivier Gossner\par}
+\vfill
+{\large Cours initialement enseigné à l'École nationale des ponts et chaussées\par}
+\vspace{0.6em}
+{\normalsize Édition remise en forme, 2026\par}
+\vspace{1.6em}
+{\color{terracotta}\rule{0.55\textwidth}{1pt}\par}
+\end{titlepage}
+
+\chapter*{Avant-propos}
+Ces notes ont été préparées pour un cours de théorie de la décision et de théorie des jeux enseigné à l'École nationale des ponts et chaussées entre 2002 et 2004. Cette édition réunit les chapitres auparavant diffusés séparément, corrige diverses erreurs typographiques et en modernise la présentation. Le contenu scientifique reste celui du cours original.
+
+Elles proposent une introduction aux préférences et à l'utilité espérée, à l'aversion au risque, à la décision dynamique, puis aux jeux sous forme normale et extensive, aux stratégies mixtes et aux principaux concepts d'équilibre.
+
+\tableofcontents
+\mainmatter
+\input{chapters/01-decision}
+\input{chapters/02-risque-dynamique}
+\input{chapters/03-forme-normale}
+\input{chapters/04-strategies-mixtes}
+\input{chapters/05-forme-extensive}
+\end{document}

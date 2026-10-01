@@ -1,0 +1,488 @@
+\chapter{Jeux sous forme extensive}
+
+Les jeux sous forme normale donne une représentation adéquate de
+joueurs effectuant des choix de stratégies simultanés. Dans ces
+jeux, aucun jouer n'a d'information sur les stratégies utilisées
+par les autres au moment de faire ses choix. Dans de nombreux cas
+concrets, les joueurs effectuent leurs choix en fonction d'une
+situation observée qui dépend en particulier des choix précédents
+des autres joueurs. Par exemple c'est le cas pour une enchère
+croissante, dans une négociation, ou dans le jeu d'échecs...
+
+Pour représenter ces possibilités, nous allons généraliser la
+représentation sous forme d'arbres et les  ensembles d'information
+vus au chapitre de la décision dynamique. La seule différence est
+que nous avons plusieurs joueurs là où nous n'avions qu'un seul
+agent.
+
+\section{Exemples préliminaires}
+Nous traitons une série d'exemples avant de définir la notion de
+jeu sous forme extensive.
+
+\subsection{Jeu d'entrée} Une firme $M$ est en situation de
+monopole sur un marché. Une autre firme $E$ peut décider d'entrer
+($e$) ou non ($n$) sur le marché. Si la firme $E$ décide d'entrer,
+la firme $M$ peut alors soit combattre ($c$), soit s'accommoder
+($a$). Les paiements pour $M$ et pour $A$ sont $(2,0)$ si $E$
+n'entre pas, $(-1,-1)$ si $E$ entre et $M$ combat, et $(1,1)$ si
+$E$ entre et $M$ s'accommode. On représente ce jeu par l'arbre suivant:\\[1cm]
+\begin{tabular}{c@{\hspace{1cm}}c@{\hspace{1cm}}c@{\hspace{1cm}}c@{\hspace{1cm}}}
+&&\circlenode{a}{\makebox[0.2cm][c]{\small $E$}}&\\[0.7cm]
+&\circlenode{b}{\makebox[0.2cm][c]{\small $M$}}&&\rnode{c}{\small$2$}\\
+&&&{\small$0$}\\[0.4cm]
+\rnode{d}{\small$-1$}&&\rnode{e}{\small$1$}&\\
+{\small$-1$}&&{\small$1$}&\\[0.7cm]
+\ncline[linewidth=1pt,linecolor=yellow]{-}{a}{b}\bput[1pt]{0}(0.5){\small$e$}%
+\ncline[linewidth=1pt,linecolor=yellow]{-}{a}{c}\aput[1pt]{0}(0.5){\small$n$}%
+\ncline[linewidth=1pt,linecolor=yellow]{-}{b}{d}\bput[1pt]{0}(0.5){\small$c$}%
+\ncline[linewidth=1pt,linecolor=yellow]{-}{b}{e}\aput[1pt]{0}(0.5){\small$a$}%
+%\rput{45}{\psellipse[linecolor=green](4.2,1)(1.3,0.3)}
+\end{tabular}
+
+\subsection{Compétition de Stackelberg}
+Supposons qu'une firme, 1, ait la possibilité de choisir son
+niveau de production $q_1$ avant que la firme $2$ ne fixe le sien
+$q_2$. Pour fixer les idées, supposons que $q_i \in \{0,1,2\}$,
+que la fonction de demande est $p=\max\{3-q_1+q_2,0\}$, et que le
+co\^ut de production est nul pour chaque firme.
+On représente ce jeu par l'arbre suivant:\\[0.8cm]
+\begin{center}
+\begin{tabular}{c@{\hspace{1cm}}c@{\hspace{1cm}}c@{\hspace{1cm}}c@{\hspace{1cm}}c@{\hspace{1cm}}c@{\hspace{1cm}}%
+c@{\hspace{1cm}}c@{\hspace{1cm}}c@{\hspace{1cm}}}
+&&&&\circlenode{a}{\makebox[0.2cm][c]{\small $1$}}&&&&\\[1cm]
+&\circlenode{b}{\makebox[0.2cm][c]{\small $2$}}&&&
+\circlenode{c}{\makebox[0.2cm][c]{\small $2$}}&&&
+\circlenode{d}{\makebox[0.2cm][c]{\small $2$}}&\\[1cm]
+\rnode{e}{\small$0$}&\rnode{f}{\small$0$}&\rnode{g}{\small$0$}&%
+\rnode{h}{\small$2$}&\rnode{i}{\small$1$}&\rnode{j}{\small$0$}&%
+\rnode{k}{\small$2$}&\rnode{l}{\small$0$}&\rnode{m}{\small$0$}\\
+\small$0$&\small$2$&\small$2$&%
+\small$0$&\small$1$&\small$0$&%
+\small$0$&\small$0$&\small$0$\\%
+\ncline[linewidth=1pt,linecolor=yellow]{-}{a}{b}\bput[1pt]{0}(0.5){\small$0$}%
+\ncline[linewidth=1pt,linecolor=yellow]{-}{a}{c}\aput[1pt]{0}(0.5){\small$1$}%
+\ncline[linewidth=1pt,linecolor=yellow]{-}{a}{d}\aput[1pt]{0}(0.5){\small$2$}%
+\ncline[linewidth=1pt,linecolor=yellow]{-}{b}{e}\bput[1pt]{0}(0.5){\small$0$}%
+\ncline[linewidth=1pt,linecolor=yellow]{-}{b}{f}\bput[1pt]{0}(0.5){\small$1$}%
+\ncline[linewidth=1pt,linecolor=yellow]{-}{b}{g}\aput[1pt]{0}(0.5){\small$2$}%
+\ncline[linewidth=1pt,linecolor=yellow]{-}{c}{h}\bput[1pt]{0}(0.5){\small$0$}%
+\ncline[linewidth=1pt,linecolor=yellow]{-}{c}{i}\bput[1pt]{0}(0.5){\small$1$}%
+\ncline[linewidth=1pt,linecolor=yellow]{-}{c}{j}\aput[1pt]{0}(0.5){\small$2$}%
+\ncline[linewidth=1pt,linecolor=yellow]{-}{d}{k}\bput[1pt]{0}(0.5){\small$0$}%
+\ncline[linewidth=1pt,linecolor=yellow]{-}{d}{l}\bput[1pt]{0}(0.5){\small$1$}%
+\ncline[linewidth=1pt,linecolor=yellow]{-}{d}{m}\aput[1pt]{0}(0.5){\small$2$}%
+\end{tabular}
+\end{center}
+
+\subsection{Pile ou face}
+
+Le joueur 1 choisit pile ou face, puis le joueur 2 choisit pile ou
+face. Le joueur 2 gagne si les choix sont égaux, et perd si les
+choix sont différents (c'est un jeu à somme nulle).
+On représente ce jeu par l'arbre suivant:\\[0.5cm]
+\begin{center}
+\begin{tabular}{c@{\hspace{0.5cm}}c@{\hspace{0.5cm}}c@{\hspace{0.5cm}}%
+c@{\hspace{0.5cm}}c@{\hspace{0.5cm}}c@{\hspace{0.5cm}}%
+c@{\hspace{0.5cm}}}
+&&&\circlenode{a}{\makebox[0.2cm][c]{\small $1$}}&&&\\[1cm]
+&\circlenode{b}{\makebox[0.2cm][c]{\small $2$}}&&&&
+\circlenode{c}{\makebox[0.2cm][c]{\small $2$}}&\\[1cm]
+\rnode{d}{\small$1$}&&\rnode{e}{\small$-1$}&&\rnode{f}{\small$-1$}%
+&&\rnode{g}{\small$1$}\\
+\small$-1$&&\small$1$&&\small$1$&&\small$-1$\\%
+\ncline[linewidth=1pt,linecolor=yellow]{-}{a}{b}\bput[1pt]{0}(0.5){\small$P$}%
+\ncline[linewidth=1pt,linecolor=yellow]{-}{a}{c}\aput[1pt]{0}(0.5){\small$F$}%
+\ncline[linewidth=1pt,linecolor=yellow]{-}{b}{d}\bput[1pt]{0}(0.5){\small$P$}%
+\ncline[linewidth=1pt,linecolor=yellow]{-}{b}{e}\aput[1pt]{0}(0.5){\small$F$}%
+\ncline[linewidth=1pt,linecolor=yellow]{-}{c}{f}\bput[1pt]{0}(0.5){\small$P$}%
+\ncline[linewidth=1pt,linecolor=yellow]{-}{c}{g}\aput[1pt]{0}(0.5){\small$F$}%
+\end{tabular}
+\end{center}
+
+\subsection{Pile ou Face sans observation}
+On suppose maintenant que 2 ne connaît pas le choix de 1 lorsqu'il
+effectue son choix. Ceci peut être représenté à l'aide d'un
+ensemble d'information :
+\begin{center}
+\begin{tabular}{c@{\hspace{0.5cm}}c@{\hspace{0.5cm}}c@{\hspace{0.5cm}}%
+c@{\hspace{0.5cm}}c@{\hspace{0.5cm}}c@{\hspace{0.5cm}}%
+c@{\hspace{0.5cm}}}
+&&&\circlenode{a}{\makebox[0.2cm][c]{\small $1$}}&&&\\[1cm]
+&\circlenode{b}{\makebox[0.2cm][c]{\small $2$}}&&&&
+\circlenode{c}{\makebox[0.2cm][c]{\small $2$}}&\\[1cm]
+\rnode{d}{\small$1$}&&\rnode{e}{\small$-1$}&&\rnode{f}{\small$-1$}%
+&&\rnode{g}{\small$1$}\\
+\small$-1$&&\small$1$&&\small$1$&&\small$-1$\\%
+\ncline[linewidth=1pt,linecolor=yellow]{-}{a}{b}\bput[1pt]{0}(0.5){\small$P$}%
+\ncline[linewidth=1pt,linecolor=yellow]{-}{a}{c}\aput[1pt]{0}(0.5){\small$F$}%
+\ncline[linewidth=1pt,linecolor=yellow]{-}{b}{d}\bput[1pt]{0}(0.5){\small$P$}%
+\ncline[linewidth=1pt,linecolor=yellow]{-}{b}{e}\aput[1pt]{0}(0.5){\small$F$}%
+\ncline[linewidth=1pt,linecolor=yellow]{-}{c}{f}\bput[1pt]{0}(0.5){\small$P$}%
+\ncline[linewidth=1pt,linecolor=yellow]{-}{c}{g}\aput[1pt]{0}(0.5){\small$F$}%
+\ncline[linewidth=2pt,linecolor=green,linestyle=dotted]{-}{b}{c}% ensemble d'information
+\end{tabular}
+\end{center}
+L'ensemble d'information du joueur 2 comprend ses deux n{\oe}uds
+de décision. Ceci signifie que le joueur 2 ne différencie pas ces
+deux n{\oe}uds. Il doit effectuer un choix indépendant de celui
+effectué précédemment par le joueur 1.
+\subsection{Pile ou Face contre la nature} Cette fois ci, il
+n'y a pas de joueur 2, mais le joueur 1 joue contre la Nature qui
+tire une pièce de monnaie, Pile ou Face, avec probabilités $\lambda$ et $1-\lambda$.\\[0.5cm]
+\begin{center}
+\begin{tabular}{c@{\hspace{0.5cm}}c@{\hspace{0.5cm}}c@{\hspace{0.5cm}}%
+c@{\hspace{0.5cm}}c@{\hspace{0.5cm}}c@{\hspace{0.5cm}}%
+c@{\hspace{0.5cm}}}
+&&&\circlenode{a}{\makebox[0.2cm][c]{\small $\red N$}}&&&\\[1cm]
+&\circlenode{b}{\makebox[0.2cm][c]{\small $1$}}&&&&
+\circlenode{c}{\makebox[0.2cm][c]{\small $1$}}&\\[1cm]
+\rnode{d}{\small$1$}&&\rnode{e}{\small$0$}&&\rnode{f}{\small$0$}%
+&&\rnode{g}{\small$1$}\\
+\ncline[linewidth=1pt,linecolor=yellow]{-}{a}{b}\bput[1pt]{0}(0.6){\small$P$}%
+\ncline[linewidth=1pt,linecolor=yellow]{-}{a}{c}\aput[1pt]{0}(0.6){\small$F$}%
+\ncline[linewidth=1pt,linecolor=yellow]{-}{a}{b}\bput[1pt]{0}(0.3){\small\red$\lambda$}%
+\ncline[linewidth=1pt,linecolor=yellow]{-}{a}{c}\aput[1pt]{0}(0.3){\small\red$1-\lambda$}%
+\ncline[linewidth=1pt,linecolor=yellow]{-}{b}{d}\bput[1pt]{0}(0.5){\small$P$}%
+\ncline[linewidth=1pt,linecolor=yellow]{-}{b}{e}\aput[1pt]{0}(0.5){\small$F$}%
+\ncline[linewidth=1pt,linecolor=yellow]{-}{c}{f}\bput[1pt]{0}(0.5){\small$P$}%
+\ncline[linewidth=1pt,linecolor=yellow]{-}{c}{g}\aput[1pt]{0}(0.5){\small$F$}%
+\ncline[linewidth=2pt,linecolor=green,linestyle=dotted]{-}{b}{c}% ensemble d'information
+\end{tabular}
+\end{center}
+$N$ représente la nature. On a représenté les probabilités
+$\lambda, 1-\lambda$ des choix pouvant être faits par la nature.
+
+\section{Jeu sous forme extensive $\Gamma$}
+
+Voici la définition formelle d'un jeu sous forme extensive. On ne
+demandera pas de la connaître par c{\oe}ur. Cependant, il est
+important de savoir reconnaître un tel jeu et de savoir
+représenter une situation stratégique par un jeu sous forme
+extensive.
+\begin{definition}
+Un jeu sous forme extensive $\Gamma$ est donné par :
+
+\begin{itemize}
+\item $I$ ensemble fini de joueurs,  $N\not\in I$ (nature);
+\item $T$ ensemble fini de n{\oe}uds, $Z\subset T$ n{\oe}uds terminaux, et pour
+$t\not\in Z$ :
+\begin{itemize}
+\item Le joueur ou la nature $i(t)\in \{N\}\cup I$ qui joue en $t$ ;
+\item L'ensemble de choix possibles $A(t)$ ;
+\item Le n{\oe}ud successeur résultant du choix $a$, $N(t,a)$ ;
+\item Une distribution $D(t)$ sur $A(t)$ si $i(t)= N$.
+\end{itemize}
+\item $u_i:Z\to\reals$ fonctions d'utilité de $i$ ;
+\item $h(t)$ classe d'équivalence de $t$ pour l'information :
+$$
+x'\in h(x) \implies i(x')= i(x),~A(x')=A(x), h(x')=h(x)
+$$
+\end{itemize}
+
+Afin que le jeu ait une structure d'arbre, on requiert que les
+éléments vérifient les propriétés suivantes.
+
+\begin{itemize}
+\item $s(t)=\{N(t,a),a\in A(t)\}$ ensemble des successeurs directs de $t$. ($\emptyset$ si $t\in Z$).
+\item $S(t)= s(t)\cup s(s(t)) \cup s(s(s(t)))...$ tous les successeurs de $t$.
+\end{itemize}
+\begin{itemize}
+\item Il n'y a pas de cycle : $\forall t, t\not\in S(t)$
+\item N{\oe}ud initial $\exists\tilde t, S(\tilde t)\cup\{\tilde t\}=T$
+\item Chaque n{\oe}ud non initial a un unique prédécesseur:
+$\forall t\neq \tilde t,~\exists ! t',~t\in s(t')$
+\end{itemize}
+\end{definition}
+En exercice, on pourra définir les composants $T$, $Z$, etc qui
+représentent les jeux précédents, puis vérifier que ces jeux ont
+bien les propriétés de structure d'arbre.
+
+\subsection{Hypothèse de mémoire parfaite}
+
+Il est naturel de supposer qu'un joueur ne peut oublier de
+l'information au cours du déroulement du jeu. Notamment, ce joueur
+doit se rappeler tous ses choix précédents. C'est l'hypothèse dite
+de mémoire parfaite.
+
+\begin{definition}
+Le jeu $\Gamma$ est à mémoire parfaite si pour tout $x, y, z$ tels
+que $i(x)=i(y)=i(z)$, $h(y)=h(z)$ et $a$ tels que $z\in
+S(N(x,a))\cup\{N(x,a)\}$, il existe $w$ tel que :
+\begin{itemize}
+\item $h(w)=h(x)$ ;
+\item $y\in S(N(w,a))\cup\{N(w,a)\}$.
+\end{itemize}
+\end{definition}
+
+A titre d'exemple, considérons le cas du conducteur distrait. Une
+autoroute comprend deux sorties. Afin de se rendre chez lui, un
+automobiliste doit prendre la seconde sortie. Cependant, on
+suppose que le conducteur est distrait, c'est-à-dire qu'au moment
+de décider de sortir de l'autoroute ou d'y rester, il est
+incapable de déterminer s'il se trouve à la première ou a la
+deuxième sortie. Sauriez-vous représenter cette situation par un
+arbre de jeu ? L'hypothèse de mémoire parfaite est-elle vérifiée ?
+Pourquoi ?
+
+Sauf exception, on ne considérera des jeux avec mémoire parfaite. %
+
+\subsection{Stratégies pures}
+Comme dans le cas de la décision dynamique, une stratégie pour un
+joueur est une fonction de ces ensembles d'information vers ses
+choix.
+
+\begin{definition}
+ Une stratégie pure pour $i\in I$ dans $\Gamma$ est une
+application $s_i\colon \{t,i(t)=i\}\to\cup_{t}A(t)$ telle que:
+\begin{itemize}
+\item $\forall t, s_i(t)\in A(t)$ ;
+\item $s_i(t) = s_i(t')$ si $t\in h(t')$.
+\end{itemize}
+\end{definition}
+
+Remarquons que cette définition permet facilement d'énumérer les
+stratégies du joueur. Cependant, deux stratégies peuvent toujours
+donner le même résultat. On dira alors qu'elles sont équivalentes
+(nous reviendrons plus tard sur cette notion).
+
+Comme exercice, et à titre de rappel des problèmes de décision
+dynamiques, quelles sont les stratégies du joueur 1 dans le jeu
+suivant ? Quelles stratégies sont équivalentes ?
+
+\begin{tabular}{c@{\hspace{1cm}}c@{\hspace{1cm}}c@{\hspace{1cm}}c@{\hspace{1cm}}}
+&&\circlenode{a}{\makebox[0.2cm][c]{\small $1$}}&\\[0.7cm]
+&\circlenode{b}{\makebox[0.2cm][c]{\small $1$}}&&\rnode{c}{\small$2$}\\
+&&&{}\\[0.4cm]
+\rnode{d}{\small$-1$}&&\rnode{e}{\small$1$}&\\
+{}&&{}&\\[0.7cm]
+\ncline[linewidth=1pt,linecolor=yellow]{-}{a}{b}\bput[1pt]{0}(0.5){\small$a$}%
+\ncline[linewidth=1pt,linecolor=yellow]{-}{a}{c}\aput[1pt]{0}(0.5){\small$b$}%
+\ncline[linewidth=1pt,linecolor=yellow]{-}{b}{d}\bput[1pt]{0}(0.5){\small$c$}%
+\ncline[linewidth=1pt,linecolor=yellow]{-}{b}{e}\aput[1pt]{0}(0.5){\small$d$}%
+%\rput{45}{\psellipse[linecolor=green](4.2,1)(1.3,0.3)}
+\end{tabular}
+
+\subsection{Stratégies aléatoires}
+
+Comme dans le cas des jeux sous forme normale, nous avons besoin
+de représenter les possibilités de jouer de manière aléatoire.
+Deux types de stratégies représentent des choix aléatoires des
+joueurs.
+\begin{definition}
+Une stratégie mixte est une loi de probabilité sur les stratégies
+pures.
+\end{definition}
+
+
+\begin{definition}
+Une stratégie de comportement est une application $\sigma_i\colon
+\{t,i(t)=i\}\to\cup_{t}\Delta(A(t))$ telle que :
+\begin{itemize}
+\item $\forall t, \sigma_i(t)(a)>0\implies a\in A(t)$ ;
+\item $\sigma_i(t) = \sigma_i(t')$ si $t\in h(t')$.
+\end{itemize}
+\end{definition}
+
+Dans une stratégie mixte, le joueur choisit aléatoirement ``au
+début du jeu'' la stratégie pure qu'il utilisera par la suite. Une
+fois qu'il a choisi cette stratégie, il joue en suivant cette
+règle déterministe de décisions. Une stratégie de comportements,
+spécifie un choix aléatoire à chaque n{\oe}ud de décision, on donc
+un aléa a chaque fois qu'il s'agit de prendre une décision. L'aléa
+porte sur la prochaine action choisie, et non pas sur une règle
+globale de comportement.
+
+\subsection{\'Equivalence des stratégies mixtes et de comportement}
+
+Deux stratégies $\sigma_i$ et $\sigma_i'$ du joueur $i$ (pures,
+mixtes ou de comportement) sont équivalentes lorsque pour toutes
+stratégies $\sigma_{-i}$ des autres joueurs (idem),
+$(\sigma_i,\sigma_{-i})$ et $(\sigma'_i,\sigma_{-i})$ induisent la
+m\^eme distribution sur les n{\oe}uds terminaux.
+
+Comme nous l'avons vu, des stratégies pures peuvent en particulier
+être équivalentes entre elles.
+
+\subsection{Théorème de Kuhn}
+
+\begin{theoreme}[de Kuhn]
+Dans tout jeu à mémoire parfaite,
+\begin{enumerate}
+\item Toute stratégie mixte admet une stratégie de comportement
+qui lui est équivalente ;
+\item Toute stratégie de comportement
+admet une stratégie mixte qui lui est équivalente.
+\end{enumerate}
+\end{theoreme}
+
+Les deux manières de modéliser la capacité de jouer aléatoirement
+-- en utilisant les stratégies mixtes ou les stratégies de
+comportement -- sont donc équivalentes dans les jeux à mémoire
+parfaite. On utilisera en pratique la représentation la plus
+commode selon les cas.%
+
+Ce résultat n'est vrai que pour les jeux à mémoire parfaite.
+Reprenez l'exemple du conducteur distrait. Toutes les stratégies
+mixtes sont-elles équivalentes à des stratégies de comportement ?
+Le contraire est-il vrai ?
+
+\section{Forme normale et équilibres de Nash}
+Pour ``résoudre'' des jeux en forme extensive, nous allons
+utiliser le concept d'équilibre de Nash de la forme normale, puis
+montrer que la forme extensive permet de faire des prédictions
+plus fines (équilibre parfait dans les sous-jeux).
+
+\subsection{Forme normale et forme normale réduite}
+La forme normale associée à
+$\Gamma$ est le jeu sous forme normale $G = (I,(S_i)_i,(g_i)_i)$,
+avec
+$$
+g_i(s) = \E_{P_s} u_i(z)
+$$
+où $P_s$ est la probabilité sur les n{\oe}uds terminaux induite
+par le profil de stratégies (pures) $s$.
+
+Soit $S^r_i$ l'ensemble des classes d'équivalences de stratégies
+du joueur $i$. Un élément de $S^r_i$ est appelé
+une stratégie réduite du joueur $i$.\\
+La forme normale réduite de $\Gamma$ est le jeu sous forme normale
+$G^r = (I,(S^r_i)_i,(g^r_i))$ avec
+$$
+g^r_i (s^r)= g_i(s)
+$$
+où $s^r = (s^r_j)_j$, $s = (s_j)_j$, $s_j\in s^r_j$ pour tout $j$.
+(Le choix de $s_j$ dans $s_j^r$ est indifférent.)
+
+\subsection{\'Equilibre de Nash}
+
+\begin{definition}
+Un équilibre de Nash d'un jeu sous forme extensive est un
+équilibre de Nash de la forme normale associée.
+\end{definition}
+
+{\bf Remarque :} Tout les équilibres de Nash d'un jeu sont obtenus
+dans la forme normale réduite.
+
+{\bf Remarque :} Lorsqu'on recherche les équilibres de Nash d'un
+jeu sous forme extensive, on utilise la notion de stratégies
+mixtes. Cette notion est ici plus utile que celle de stratégies de
+comportement.
+
+{\bf Exemple :}
+Quels sont les équilibres de Nash du jeu d'entrée (en stratégies pures ou mixtes)~?\\
+\begin{center}
+\begin{tabular}{c@{\hspace{1cm}}c@{\hspace{1cm}}c@{\hspace{1cm}}c@{\hspace{1cm}}}
+&&\circlenode{a}{\makebox[0.2cm][c]{\small $E$}}&\\[0.7cm]
+&\circlenode{b}{\makebox[0.2cm][c]{\small $M$}}&&\rnode{c}{\small$2$}\\
+&&&{\small$0$}\\[0.4cm]
+\rnode{d}{\small$-1$}&&\rnode{e}{\small$1$}&\\
+{\small$-1$}&&{\small$1$}&\\[0.7cm]
+\ncline[linewidth=1pt,linecolor=yellow]{-}{a}{b}\bput[1pt]{0}(0.5){\small$E$}%
+\ncline[linewidth=1pt,linecolor=yellow]{-}{a}{c}\aput[1pt]{0}(0.5){\small$N$}%
+\ncline[linewidth=1pt,linecolor=yellow]{-}{b}{d}\bput[1pt]{0}(0.5){\small$C$}%
+\ncline[linewidth=1pt,linecolor=yellow]{-}{b}{e}\aput[1pt]{0}(0.5){\small$A$}%
+%\rput{45}{\psellipse[linecolor=green](4.2,1)(1.3,0.3)}
+\end{tabular}
+\end{center}
+
+\section{Jeux à information parfaite et complète}
+
+\begin{definition}
+C'est un jeu sous forme extensive dans lequel chaque ensemble
+d'information est un singleton.
+\end{definition}
+Des exemples sont fournis par jeu de Nim, d'échecs, de Go, et par
+le jeu d'entrée précédent.
+
+Revenons sur ce jeu d'entrée. La menace de jouer $c$ si $E$ joue $e$ est-elle crédible~?\\
+\begin{itemize}
+\item Supposons que $E$ ait déjà joué $e$. $M$ a-t-il intérêt
+à jouer $c$ ou $a$~? ($E$ est ``mis devant le fait accompli'').\\
+\item Ayant effectué ce raisonnement, $E$ a-t-il intérêt à jouer
+$e$ ou bien $s$~?
+\end{itemize}
+
+\subsection{Procédure d'induction à rebours} Comme pour la
+programmation dynamique (jeux à un seul joueur). On définit les
+stratégies des joueurs en partant des n{\oe}uds terminaux, puis
+pour les décisions plus ``en amont'' de l'arbre progressivement
+jusqu'au n{\oe}ud initial.
+
+On obtient une stratégie unique pour chaque joueur si pas
+d'égalité entre deux paiements de n{\oe}uds terminaux et s'il n'y
+a pas de n{\oe}uds où joue la nature.
+
+\begin{theoreme}[dit de Zermelo]
+Tout jeu à information complète et parfaite admet un équilibre de
+Nash en stratégies pures, qui peut \^etre calculé par la procédure
+d'induction à rebours.
+\end{theoreme}
+
+ Application au jeu d'échecs : Dans le cas du jeu d'échecs,
+appliquer le théorème de Zermelo donne le résultat suivant :
+\begin{itemize}
+\item Soit un joueur a une stratégie gagnante ;
+\item Soit chacun des joueurs peut se garantir la nulle.
+\end{itemize}
+Pourquoi joue-t-on encore aux échecs ?
+
+\section{\'Equilibre parfait dans les sous-jeux}
+La procédure d'induction à rebours dans les jeux à information
+complète et parfaite permet de résoudre les jeux en ayant des
+prédictions plus fortes que celles de l'équilibre de Nash. Cette
+procédure et ces raisonnements peuvent-ils être généralisés aux
+jeux où les ensembles d'information ne sont pas des singletons ?
+
+Nous commençons par définir la notion de sous-jeu, qui peut-être
+vu comme une partie d'un jeu pouvant être étudiée séparément du
+jeu dans son entièreté.
+
+\begin{definition} Un sous-jeu $\Gamma'$ de $\Gamma$ consiste en
+\begin{itemize}
+\item Un sous-ensemble de n{\oe}uds non terminaux $T'\subset T$ tel que $T' = S(t')$ pour
+un certain $t'$ et $\forall t\in T'$, $h(t)\subset T'$.
+\item Les joueurs, mouvements de la nature, actions possibles, successeurs,
+utilités et ensembles d'information de $\Gamma'$ sont définis
+comme dans $\Gamma$.
+\end{itemize}
+\end{definition}
+
+{\bf Remarque} : En particulier, $\Gamma$ est un sous-jeu de
+$\Gamma$. Tout jeu admet par conséquent au moins un sous-jeu :
+lui-même. Les sous-jeux de $\Gamma$ non égaux à $\Gamma$ sont
+appelés sous-jeux stricts de $\Gamma$.
+
+{\bf Remarque} : Dans un jeu à information parfaite et complète,
+on a autant de sous-jeux que de n{\oe}uds non terminaux..
+
+Si on a des stratégies de comportement pour les joueurs dans un
+jeu, on connaît leurs probabilités de choix à tous les n{\oe}uds.
+Ceci définit en particulier des stratégies dans tous les
+sous-jeux.
+
+\begin{definition} Un profil de stratégies $s$ (pures ou de
+comportement) est un équilibre parfait dans les sous-jeux de
+$\Gamma$ si $s$ induit un équilibre de Nash dans tout les
+sous-jeux de $\Gamma$.
+\end{definition}
+
+La proposition suivante est immédiate, car le jeu tout entier est
+toujours un sous-jeu de lui-même.
+
+\begin{proposition} Un équilibre parfait dans les sous-jeux est
+un équilibre de Nash de $\Gamma$. %
+\end{proposition}
+
+\begin{proposition}
+Tout jeu $\Gamma$ admet un équilibre de Nash parfait dans les
+sous-jeux.
+\end{proposition}
+
+{\bf Méthode} : Appliquer la procédure d'induction à rebours à
+chaque fois que l'on peut.
+\begin{enumerate}
+\item Identifier un sous-jeu ``minimal'' $\Gamma'$;
+\item Calculer un équilibre de Nash de $\Gamma'$ ;
+\item Remplacer $\Gamma'$ par ce paiement de Nash ;
+\item Recommencer en $1$ tant que possible.
+\end{enumerate}
