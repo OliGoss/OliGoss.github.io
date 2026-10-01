@@ -27,10 +27,10 @@ Graduate lecture notes · English
 ```{=html}
 <ul class="resource-list">
   <li><a href="/assets/teaching/advanced-game-theory-lecture-1.pdf">Lecture 1: Knowledge and agreement</a><small>Lecture slides · PDF</small></li>
-  <li><a href="/wp-content/uploads/2023/10/M2_MicroEconomics_Session_1.pdf">Modeling information and knowledge</a><small>Lecture notes · PDF</small></li>
-  <li><a href="/wp-content/uploads/2023/10/M2_MicroEconomics_Solution-Concepts.pdf">Solution concepts</a><small>Lecture notes · PDF</small></li>
-  <li><a href="/wp-content/uploads/2023/10/M2_MicroEconomics_Value-of-Information.pdf">Value of information</a><small>Lecture notes · PDF</small></li>
-  <li><a href="/wp-content/uploads/2024/01/Ozgadar-correlated-rationalizability.pdf">Rationalizability</a><small>Additional notes by Ozgadar · PDF</small></li>
+  <li><a href="/assets/teaching/advanced-game-theory-chapter-1.pdf">Chapter 1: Modeling information and knowledge</a><small>Lecture notes · PDF</small></li>
+  <li><a href="/assets/teaching/advanced-game-theory-chapter-2.pdf">Chapter 2: Solution concepts</a><small>Lecture notes · PDF</small></li>
+  <li><a href="/assets/teaching/advanced-game-theory-chapters-3-4.pdf">Chapters 3–4: Value of information</a><small>Lecture notes · PDF</small></li>
+  <li><a href="/assets/teaching/advanced-game-theory-chapter-5.pdf">Chapter 5: Higher-order beliefs</a><small>Lecture notes · PDF</small></li>
 </ul>
 ```
 :::
