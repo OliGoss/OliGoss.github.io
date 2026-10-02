@@ -8,7 +8,7 @@ lang: fr
 Notes de cours en français sur la décision individuelle et stratégique.
 :::
 
-Ces notes ont été préparées pour un cours enseigné à l'École nationale des ponts et chaussées entre 2002 et 2004. L'édition 2026 réunit les cinq polycopiés auparavant diffusés séparément, corrige diverses erreurs typographiques et modernise leur présentation. Le contenu scientifique reste celui du cours initial.
+Ces notes ont été préparées pour un cours enseigné à l'École nationale des ponts et chaussées entre 2002 et 2004.
 
 [Télécharger les notes complètes](/assets/teaching/theorie-decision-et-theorie-des-jeux.pdf){.btn .btn-primary}
 
