@@ -10,9 +10,9 @@ Lecture notes in economics and game theory, for undergraduate and graduate study
 ::: {.course-section}
 ## Théorie de la décision et théorie des jeux
 
-École nationale des ponts et chaussées · French
+Notes de cours à l'ENPC
 
-An introductory course on preferences and expected utility, risk aversion, dynamic choice, normal-form and extensive-form games, mixed strategies, and Nash equilibrium. The five original handouts have been cleaned up and consolidated into a single edition.
+Cours d'introduction à la théorie de la décision et à la théorie des jeux couvrant : les préférences, l'utilité espérée, l'aversion au risque, les choix dynamiques, les jeux sous forme normale et sous forme extensive, les stratégies pures, mixtes et comportementales, les équilibres de Nash et les équilibres parfaits dans les sous-jeux.
 
 [Course description](theorie-decision-jeux.qmd){.btn .btn-outline-primary}
 [Download the notes](/assets/teaching/theorie-decision-et-theorie-des-jeux.pdf){.btn .btn-primary}
