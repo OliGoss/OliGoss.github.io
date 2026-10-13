@@ -32,6 +32,14 @@ Game theory; modelling, value, and strategic use of information; bounded rationa
 
 [SInfoNiA](sinfonia/index.qmd) — awarded an ERC Advanced Grant in 2024; funded by UKRI.
 
+## Teaching resources
+
+[*Théorie de la décision et théorie des jeux*](teaching-material/theorie-decision-jeux.qmd) — notes de cours en français.
+
+[Advanced microeconomics: game theory](teaching-material/index.qmd#advanced-game-theory) — graduate lecture notes in English.
+
+[*Introduction aux sciences économiques*](papers/index.qmd#book-section) — textbook with Jean-Baptiste Michau and Vincent Rollet, Economica, 2024.
+
 ## Contact {#contact}
 
 [ogossner@gmail.com](mailto:ogossner@gmail.com)

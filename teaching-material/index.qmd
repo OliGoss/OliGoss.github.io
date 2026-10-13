@@ -31,7 +31,7 @@ The textbook [*Introduction aux sciences économiques*](https://www.economica.fr
 :::
 
 ::: {.course-section}
-## Advanced microeconomics: game theory
+## Advanced microeconomics: game theory {#advanced-game-theory}
 
 Graduate lecture notes · English
 
