@@ -10,6 +10,7 @@ import os
 from pathlib import Path
 import re
 import shutil
+import xml.etree.ElementTree as ET
 from urllib.parse import quote, unquote, urlparse
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -186,6 +187,17 @@ for old, new in routes.items():
         f'<script>location.replace({json.dumps(new)} + location.hash);</script></body></html>')
 
 add_search_metadata()
+# Quarto lists directory indexes explicitly; use the same URLs as our canonicals.
+sitemap = OUTPUT / 'sitemap.xml'
+if sitemap.is_file():
+    namespace = 'http://www.sitemaps.org/schemas/sitemap/0.9'
+    ET.register_namespace('', namespace)
+    tree = ET.parse(sitemap)
+    for location in tree.findall(f'.//{{{namespace}}}loc'):
+        url = location.text or ''
+        if url.startswith(SITE_URL + '/') and url.endswith('/index.html'):
+            location.text = url[:-10]
+    tree.write(sitemap, encoding='utf-8', xml_declaration=True)
 (OUTPUT / '.nojekyll').touch()
 production = 'production' in os.environ.get('QUARTO_PROFILE', '').split(',')
 (OUTPUT / 'robots.txt').write_text('User-agent: *\nAllow: /\nSitemap: https://gossner.me/sitemap.xml\n' if production else 'User-agent: *\nDisallow: /\n')
