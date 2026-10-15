@@ -411,5 +411,26 @@
     "bytes": 488704,
     "sha256": "7a126e4fedaedf266b4817d15ce51744c2f25e50ab2718689ff948e8aa687d62",
     "status": "saved"
+  },
+  {
+    "source_url": "http://gossner.me/wp-content/uploads/2020/07/Value.pdf",
+    "path": "/wp-content/uploads/2020/07/Value.pdf",
+    "bytes": 362054,
+    "sha256": "5ba2b9007207626721699d1dd3e69e6179bbe742d49b1ad24543b3908b9f913e",
+    "status": "saved"
+  },
+  {
+    "source_url": "http://gossner.me/wp-content/uploads/2017/01/EntropyInvestors.pdf",
+    "path": "/wp-content/uploads/2017/01/EntropyInvestors.pdf",
+    "bytes": 173593,
+    "sha256": "6bb3b1fc8373fefb6cd4c8decaa5d204306326298e0653c96c56bf75018ceb6d",
+    "status": "saved"
+  },
+  {
+    "source_url": "http://gossner.me/wp-content/uploads/2023/06/2016-Transatlantic-Theory-Workshop-programme.pdf",
+    "path": "/wp-content/uploads/2023/06/2016-Transatlantic-Theory-Workshop-programme.pdf",
+    "bytes": 60260,
+    "sha256": "5463cdc8e1abdaa041a31933bfc9ece86b575dba2ec65dc9c40ef11ad73fe31a",
+    "status": "saved"
   }
 ]

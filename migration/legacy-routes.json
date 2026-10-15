@@ -34,5 +34,6 @@
   "/teaching/": "/teaching-material/",
   "/workshops/": "/ttw/",
   "/media/": "/press/",
-  "/about/": "/"
+  "/about/": "/",
+  "/category/research-article/page/2/": "/papers/"
 }
