@@ -7,7 +7,7 @@ publication: "International Economic Review, 60(1), 241–257 (2019)"
 status: "published"
 paper-record: true
 featured: false
-pdf: "/wp-content/uploads/2022/12/PreferencesUnverIgnorance.pdf"
+pdf: "/assets/papers/preferences-under-ignorance.pdf"
 pdf-label: "Paper PDF"
 publisher-url: ""
 body-classes: "paper-page"

@@ -8,7 +8,7 @@ status: "published"
 paper-record: true
 sinfonia: true
 featured: 1
-pdf: "/wp-content/uploads/2023/01/management_costs_WP.pdf"
+pdf: "/assets/papers/market-equilibrium-with-management-costs-and-implications-for-insurance-accounting.pdf"
 pdf-label: "Working paper PDF"
 publisher-url: "https://doi.org/10.1057/s10713-024-00107-7"
 body-classes: "paper-page"

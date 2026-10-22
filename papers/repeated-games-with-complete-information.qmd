@@ -11,7 +11,7 @@ body-classes: "paper-page"
 google-scholar: true
 citation: {"issued": {"year": 2009}, "type": "chapter", "container-title": "Encyclopedia of Complexity and Systems Science"}
 description: "Repeated Games with Complete Information — Encyclopedia of Complexity and Systems Science (2009); subsequent editions in 2012 and 2020"
-pdf: "/wp-content/uploads/2017/01/RG_3dec07.pdf"
+pdf: "/assets/papers/repeated-games-with-complete-information.pdf"
 pdf-label: "Author draft (2007)"
 ---
 

@@ -7,7 +7,7 @@ publication: "SIAM Journal on Optimization, 30(1), 464–489 (2020)"
 status: "published"
 paper-record: true
 featured: false
-pdf: "/wp-content/uploads/2022/12/payoff-beliefs-duality.pdf"
+pdf: "/assets/papers/payoffs-beliefs-duality-and-the-value-of-information.pdf"
 pdf-label: "Paper PDF"
 publisher-url: ""
 body-classes: "paper-page"

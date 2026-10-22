@@ -7,7 +7,7 @@ publication: "Working paper, June 2020 version"
 status: "archived"
 paper-record: true
 featured: false
-pdf: "/wp-content/uploads/2022/12/ValueofInfo2020.pdf"
+pdf: "/assets/papers/the-value-of-information-in-zero-sum-games.pdf"
 pdf-label: "Paper PDF"
 publisher-url: ""
 body-classes: "paper-page"

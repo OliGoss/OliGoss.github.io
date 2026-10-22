@@ -7,7 +7,7 @@ publication: "American Economic Review, 103(1), 360–377 (2013)"
 status: "published"
 paper-record: true
 featured: 3
-pdf: "/wp-content/uploads/2022/12/Entropy_Investors.pdf"
+pdf: "/assets/papers/entropy-and-the-value-of-information-to-investors.pdf"
 pdf-label: "Paper PDF"
 publisher-url: "https://doi.org/10.1257/aer.103.1.360"
 body-classes: "paper-page"

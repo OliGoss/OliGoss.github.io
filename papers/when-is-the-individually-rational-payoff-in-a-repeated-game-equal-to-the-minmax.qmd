@@ -7,7 +7,7 @@ publication: "Journal of Economic Theory, 145(1), 63–84 (2010)"
 status: "published"
 paper-record: true
 featured: false
-pdf: "/wp-content/uploads/2022/12/minmax-repeatedgames.pdf"
+pdf: "/assets/papers/when-is-the-individually-rational-payoff-in-a-repeated-game-equal-to-the-minmax.pdf"
 pdf-label: "Paper PDF"
 publisher-url: "https://doi.org/10.1016/j.jet.2009.07.002"
 body-classes: "paper-page"

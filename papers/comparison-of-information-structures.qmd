@@ -12,7 +12,7 @@ google-scholar: true
 citation: {"issued": {"year": 2000}, "type": "article-journal", "container-title": "Games and Economic Behavior", "volume": "30", "issue": "1", "page": "44-63", "doi": "10.1006/game.1998.0706"}
 description: "Comparison of Information Structures — Games and Economic Behavior 30(1), 44–63 (2000)"
 publisher-url: "https://doi.org/10.1006/game.1998.0706"
-pdf: "/wp-content/uploads/2017/01/ComparisonofInformationStructures.pdf"
+pdf: "/assets/papers/comparison-of-information-structures.pdf"
 pdf-label: "Paper PDF"
 ---
 

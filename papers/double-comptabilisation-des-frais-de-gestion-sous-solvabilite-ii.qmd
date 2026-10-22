@@ -7,7 +7,7 @@ publication: "Risques, 133, 125–130 (2023)"
 status: "published"
 paper-record: true
 featured: false
-pdf: "/wp-content/uploads/2022/12/S-2-frais-de-gestion-projet-Risques.docx.pdf"
+pdf: "/assets/papers/double-comptabilisation-des-frais-de-gestion-sous-solvabilite-ii.pdf"
 pdf-label: "Paper PDF"
 publisher-url: ""
 body-classes: "paper-page"

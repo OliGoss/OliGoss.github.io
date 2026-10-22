@@ -7,7 +7,7 @@ publication: "Journal of Economic Theory, 177, 816–847 (2018)"
 status: "published"
 paper-record: true
 featured: false
-pdf: "/wp-content/uploads/2022/12/optimism_published.pdf"
+pdf: "/assets/papers/on-the-cost-of-misperception-general-results-and-behavioural-applications.pdf"
 pdf-label: "Paper PDF"
 publisher-url: ""
 body-classes: "paper-page"

@@ -7,7 +7,7 @@ publication: "International Economic Review, 47(1), 297–325 (2006)"
 status: "published"
 paper-record: true
 featured: false
-pdf: "/wp-content/uploads/2023/01/informational-cascades-elicit-private-information.pdf"
+pdf: "/assets/papers/informational-cascades-elicit-private-information.pdf"
 pdf-label: "Paper PDF"
 publisher-url: ""
 body-classes: "paper-page"

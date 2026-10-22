@@ -7,7 +7,7 @@ publication: "CREST WP, 2023"
 status: "working"
 paper-record: true
 featured: false
-pdf: "/wp-content/uploads/2023/01/WP01GOSSNER.pdf"
+pdf: "/assets/papers/unintended-consequences-of-german-stock-delisting-legislation.pdf"
 pdf-label: "Paper PDF"
 publisher-url: ""
 body-classes: "paper-page"

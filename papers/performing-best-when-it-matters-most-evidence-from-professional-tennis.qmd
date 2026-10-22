@@ -7,7 +7,7 @@ publication: "Journal of Economic Behavior & Organization, 84(3), 767–781 (201
 status: "published"
 paper-record: true
 featured: false
-pdf: "/wp-content/uploads/2022/12/Tennis.pdf"
+pdf: "/assets/papers/performing-best-when-it-matters-most-evidence-from-professional-tennis.pdf"
 pdf-label: "Paper PDF"
 publisher-url: "https://doi.org/10.1016/j.jebo.2012.09.021"
 body-classes: "paper-page"

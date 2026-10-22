@@ -7,7 +7,7 @@ publication: "Journal of Economic Theory, 147(1), 162–178 (2012)"
 status: "published"
 paper-record: true
 featured: false
-pdf: "/wp-content/uploads/2022/12/impermanent-types-JET.pdf"
+pdf: "/assets/papers/impermanent-types-and-permanent-reputations.pdf"
 pdf-label: "Paper PDF"
 publisher-url: ""
 body-classes: "paper-page"

@@ -7,7 +7,7 @@ publication: "Econometrica, 89(4), 1717–1751 (2021)"
 status: "published"
 paper-record: true
 featured: 2
-pdf: "/wp-content/uploads/2022/12/attention-please-ecta.pdf"
+pdf: "/assets/papers/attention-please.pdf"
 pdf-label: "Paper PDF"
 publisher-url: ""
 body-classes: "paper-page"

@@ -7,7 +7,7 @@ publication: "International Journal of Game Theory, 45(1–2), 461–496 (2016)"
 status: "published"
 paper-record: true
 featured: false
-pdf: "/wp-content/uploads/2022/12/Interacting-Automata-journal_version.pdf"
+pdf: "/assets/papers/the-complexity-of-interacting-automata.pdf"
 pdf-label: "Paper PDF"
 publisher-url: ""
 body-classes: "paper-page"

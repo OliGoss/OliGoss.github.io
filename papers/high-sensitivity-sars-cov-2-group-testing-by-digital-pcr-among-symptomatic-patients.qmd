@@ -7,7 +7,7 @@ publication: "Journal of Clinical Virology, 141, 104895 (2021)"
 status: "published"
 paper-record: true
 featured: false
-pdf: "/wp-content/uploads/2022/12/High-sensititvity.pdf"
+pdf: "/assets/papers/high-sensitivity-sars-cov-2-group-testing-by-digital-pcr-among-symptomatic-patients.pdf"
 pdf-label: "Paper PDF"
 publisher-url: "https://doi.org/10.1016/j.jcv.2021.104895"
 body-classes: "paper-page"

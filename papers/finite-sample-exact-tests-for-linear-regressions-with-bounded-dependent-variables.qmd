@@ -7,7 +7,7 @@ publication: "Journal of Econometrics, 177(1), 75–84 (2013)"
 status: "published"
 paper-record: true
 featured: false
-pdf: "/wp-content/uploads/2022/12/exact_linear_regressions-.pdf"
+pdf: "/assets/papers/finite-sample-exact-tests-for-linear-regressions-with-bounded-dependent-variables.pdf"
 pdf-label: "Paper PDF"
 publisher-url: "https://doi.org/10.1016/j.jeconom.2013.06.003"
 body-classes: "paper-page"

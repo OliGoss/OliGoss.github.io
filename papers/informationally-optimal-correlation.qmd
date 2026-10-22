@@ -7,7 +7,7 @@ publication: "Mathematical Programming, 116(1–2), 147–172 (2009)"
 status: "published"
 paper-record: true
 featured: false
-pdf: "/wp-content/uploads/2023/01/informationally_optimal_correlation.pdf"
+pdf: "/assets/papers/informationally-optimal-correlation.pdf"
 pdf-label: "Paper PDF"
 publisher-url: ""
 body-classes: "paper-page"

@@ -7,7 +7,7 @@ publication: "Journal of Risk and Insurance, 72(4), 577–599 (2005)"
 status: "published"
 paper-record: true
 featured: false
-pdf: "/wp-content/uploads/2023/01/RoadSafety.pdf"
+pdf: "/assets/papers/on-the-consequences-of-behavioural-adaptations-in-the-cost-benefits-analysis-of-road.pdf"
 pdf-label: "Paper PDF"
 publisher-url: ""
 body-classes: "paper-page"

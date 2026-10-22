@@ -7,7 +7,7 @@ publication: "SSRN preprint, 2022"
 status: "working"
 paper-record: true
 featured: false
-pdf: "/wp-content/uploads/2023/01/rationalizable.pdf"
+pdf: "/assets/papers/rationalizable-outcome-distributions-a-markov-characterization.pdf"
 pdf-label: "Paper PDF"
 publisher-url: ""
 body-classes: "paper-page"

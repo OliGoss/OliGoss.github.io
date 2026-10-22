@@ -7,7 +7,7 @@ publication: "Journal of Economic Theory, 170, 266–288 (2017)"
 status: "published"
 paper-record: true
 featured: false
-pdf: "/wp-content/uploads/2022/12/value-for-information-purchases.pdf"
+pdf: "/assets/papers/a-normalized-value-for-information-purchases.pdf"
 pdf-label: "Paper PDF"
 publisher-url: ""
 body-classes: "paper-page"
