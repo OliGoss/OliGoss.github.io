@@ -9,7 +9,7 @@ Selected contributions and coverage, from economic policy to the public use of i
 
 ```{=html}
 <ul class="resource-list">
-<li><a href="/assets/media/le-monde-parcoursup-2026-10-22.pdf">« Avant Parcoursup, des candidats étaient pareillement refoulés, mais sur des bases arbitraires ou par une sélection masquée »</a><small>Le Monde · 22 October 2026 · French · PDF</small></li>
+<li><a href="/assets/media/le-monde-parcoursup-2026-10-22.png">« Avant Parcoursup, des candidats étaient pareillement refoulés, mais sur des bases arbitraires ou par une sélection masquée »</a><small>Le Monde · 22 October 2026 · French · Newspaper clipping</small></li>
 <li><a href="/assets/media/le-figaro-vox-ressources-mondiales-2023-06-19.pdf">Et si on gérait les ressources à l’échelle mondiale ?</a><small>Le Figaro Vox · 19 June 2023 · French · PDF</small></li>
 <li><a href="/assets/media/lopinion-des-patates-et-des-vaccins-2021-01-07.pdf">Des patates et des vaccins</a><small>L’Opinion · 7 January 2021 · French · PDF</small></li>
 <li><a href="/assets/media/le-monde-tests-groupes-2020-04-01.pdf">Nous pouvons accroître notre capacité de dépistage sans attendre la fabrication de nouveaux tests</a><small>Le Monde · 1 April 2020 · French · PDF</small></li>
