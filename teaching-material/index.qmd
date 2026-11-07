@@ -44,6 +44,7 @@ Graduate lecture notes · English
   <li><a href="/assets/teaching/advanced-game-theory-chapter-2.pdf">Chapter 2: Solution concepts</a><small>Lecture notes · PDF</small></li>
   <li><a href="/assets/teaching/advanced-game-theory-chapters-3-4.pdf">Chapters 3–4: Value of information</a><small>Lecture notes · PDF</small></li>
   <li><a href="/assets/teaching/advanced-game-theory-chapter-5.pdf">Chapter 5: Higher-order beliefs</a><small>Lecture notes · PDF</small></li>
+  <li><a href="https://sites.google.com/site/frederickoessler/teaching">Frédéric Koessler’s course materials</a><small>Materials for the part of the course taught by Frédéric Koessler.</small></li>
 </ul>
 ```
 :::
